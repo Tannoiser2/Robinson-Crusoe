@@ -1,0 +1,402 @@
+[
+ {
+  "id": 600,
+  "tipo": "oggetto_iniziale",
+  "titolo_en": "Bible",
+  "titolo_it": "Bibbia",
+  "testo_en": "During {sistemare}, player gets 3 {det} and +{cuore} instead of only 2 {det}.",
+  "testo_it": "Durante {sistemare}, il giocatore ottiene 3 {det} e +{cuore} invece di soli 2 {det}.",
+  "dati": {
+   "usi": 2
+  },
+  "note": "Usi: 2 casse disegnate."
+ },
+ {
+  "id": 601,
+  "tipo": "oggetto_iniziale",
+  "titolo_en": "Biscuits",
+  "titolo_it": "Gallette",
+  "testo_en": "Get 1 {cibo}.",
+  "testo_it": "Ottieni 1 {cibo}.",
+  "dati": {
+   "usi": 2
+  },
+  "note": "L'icona è banane/cocco (cibo deperibile), non la cassetta. Usi: 2 casse disegnate."
+ },
+ {
+  "id": 602,
+  "tipo": "oggetto_iniziale",
+  "titolo_en": "Empty Bottle",
+  "titolo_it": "Bottiglia vuota",
+  "testo_en": "+1 {arma}",
+  "testo_it": "+1 {arma}",
+  "dati": {
+   "usi": 2
+  },
+  "note": "Usi: 2 casse disegnate."
+ },
+ {
+  "id": 603,
+  "tipo": "oggetto_iniziale",
+  "titolo_en": "Flask of Rum",
+  "titolo_it": "Fiaschetta di rum",
+  "testo_en": "+{cuore}",
+  "testo_it": "+{cuore}",
+  "dati": {
+   "usi": 2
+  },
+  "note": "«+» senza numero (= +1). Usi: 2 casse disegnate."
+ },
+ {
+  "id": 604,
+  "tipo": "oggetto_iniziale",
+  "titolo_en": "Hammer & Nails",
+  "titolo_it": "Martello e chiodi",
+  "testo_en": "{?:pedina aggiuntiva Costruire (sfondo marrone)}",
+  "testo_it": "{?:pedina aggiuntiva Costruire (sfondo marrone)}",
+  "dati": {
+   "usi": 2
+  },
+  "note": "Effetto: solo pedina su riquadro marrone. Usi: 2 casse disegnate."
+ },
+ {
+  "id": 605,
+  "tipo": "oggetto_iniziale",
+  "titolo_en": "Pipe & Tobacco",
+  "titolo_it": "Pipa e tabacco",
+  "testo_en": "Get 2 {det}.",
+  "testo_it": "Ottieni 2 {det}.",
+  "dati": {
+   "usi": 2
+  },
+  "note": "Usi: 2 casse disegnate."
+ },
+ {
+  "id": 606,
+  "tipo": "oggetto_iniziale",
+  "titolo_en": "Pistol",
+  "titolo_it": "Pistola",
+  "testo_en": "Temporarily gives you +3 {arma}.",
+  "testo_it": "Ti dà temporaneamente +3 {arma}.",
+  "dati": {
+   "usi": 2
+  },
+  "note": "Usi: 2 casse disegnate."
+ },
+ {
+  "id": 607,
+  "tipo": "oggetto_iniziale",
+  "titolo_en": "Storm Glass",
+  "titolo_it": "Barometro",
+  "testo_en": "Roll the Weather dice (as specified by the Scenario) before the Action phase, but resolve the outcome normally during the Weather phase.",
+  "testo_it": "Tira i dadi Meteo (come indicato dallo Scenario) prima della fase Azione, ma risolvi il risultato normalmente durante la fase Meteo.",
+  "dati": {
+   "usi": 2
+  },
+  "note": "Usi: 2 casse disegnate."
+ },
+ {
+  "id": 200,
+  "tipo": "relitto",
+  "titolo_en": "Captain's Chest",
+  "titolo_it": "Il forziere del capitano",
+  "angolo": "?",
+  "flavor_en": "You see a large chest floating on the water. It used to belong to the ship's captain.",
+  "flavor_it": "Vedi un grande forziere che galleggia sull'acqua. Apparteneva al capitano della nave.",
+  "parte2": {
+   "titolo_en": "Expedition for Treasure",
+   "titolo_it": "Spedizione per il tesoro",
+   "angolo": "mappa",
+   "testo_en": "{pedina} ▼ {legno} / 2 {pedina} ▼ {legno} {?:carta incorniciata (medaglione/sacchetto)} Discard this card.",
+   "testo_it": "{pedina} ▼ {legno} / 2 {pedina} ▼ {legno} {?:carta incorniciata (medaglione/sacchetto)} Scarta questa carta."
+  },
+  "minaccia_en": "Nothing happens.",
+  "minaccia_it": "Non succede nulla.",
+  "note": "Nessun testo nella metà superiore oltre al flavor. Azione di minaccia: 1 pedina o 2 pedine, con risultato sotto il triangolo nero. Fascia minaccia con icona bandierina «?» rossa. Icona incerta: piccola carta incorniciata con disegnato un oggetto tipo medaglione/sacchetto (forse pescare un tesoro/carta Mistero)."
+ },
+ {
+  "id": 201,
+  "tipo": "relitto",
+  "titolo_en": "Food Crates",
+  "titolo_it": "Casse di cibo",
+  "angolo": "?",
+  "flavor_en": "You notice food crates scattered along the shore.",
+  "flavor_it": "Noti delle casse di cibo sparse lungo la riva.",
+  "parte2": {
+   "titolo_en": "Expedition for Food",
+   "titolo_it": "Spedizione per il cibo",
+   "angolo": "mappa",
+   "testo_en": "{pedina} ▼ {cibo} / 2 {pedina} ▼ {cibo} {cibo_np} Discard this card.",
+   "testo_it": "{pedina} ▼ {cibo} / 2 {pedina} ▼ {cibo} {cibo_np} Scarta questa carta."
+  },
+  "minaccia_en": "Nothing happens.",
+  "minaccia_it": "Non succede nulla.",
+  "note": "Nessun testo nella metà superiore oltre al flavor. Azione di minaccia: 1 pedina o 2 pedine, con risultato sotto il triangolo nero. Fascia minaccia con icona bandierina «?» rossa."
+ },
+ {
+  "id": 202,
+  "tipo": "relitto",
+  "titolo_en": "Wrecked Lifeboat",
+  "titolo_it": "Scialuppa naufragata",
+  "angolo": "?",
+  "flavor_en": "You see remains of a lifeboat a few miles away, crashed on a giant rock.",
+  "flavor_it": "Vedi i resti di una scialuppa a qualche miglio di distanza, schiantata su un enorme scoglio.",
+  "parte2": {
+   "titolo_en": "Expedition for Wood",
+   "titolo_it": "Spedizione per il legno",
+   "angolo": "mappa",
+   "testo_en": "{pedina} ▼ {legno} / 2 {pedina} ▼ 2 {legno} Discard this card.",
+   "testo_it": "{pedina} ▼ {legno} / 2 {pedina} ▼ 2 {legno} Scarta questa carta."
+  },
+  "minaccia_en": "Nothing happens.",
+  "minaccia_it": "Non succede nulla.",
+  "note": "Nessun testo nella metà superiore oltre al flavor. Azione di minaccia: 1 pedina o 2 pedine, con risultato sotto il triangolo nero. Fascia minaccia con icona bandierina «?» rossa."
+ },
+ {
+  "id": 100,
+  "tipo": "aiutante",
+  "titolo_en": "Dog",
+  "titolo_it": "Cane",
+  "testo_en": "{?:pedina aggiuntiva Esplorare (sfondo verde)} / {?:pedina aggiuntiva Caccia (sfondo rosso)}",
+  "testo_it": "{?:pedina aggiuntiva Esplorare (sfondo verde)} / {?:pedina aggiuntiva Caccia (sfondo rosso)}",
+  "dati": {
+   "immune": [
+    "{rifugio}",
+    "{cibo}",
+    "{pioggia}",
+    "{neve}"
+   ]
+  },
+  "note": "Fascia in basso: tenda, cibo, nuvola di pioggia, nuvola di neve, tutte barrate (non serve rifugio, non mangia, non subisce pioggia/neve). Nessuna traccia vita. Tenda resa {rifugio}."
+ },
+ {
+  "id": 101,
+  "tipo": "aiutante",
+  "titolo_en": "Friday",
+  "titolo_it": "Venerdì",
+  "testo_en": "May discard 2 {det} to reroll any Action die once.",
+  "testo_it": "Può scartare 2 {det} per rilanciare una volta un qualsiasi dado Azione.",
+  "dati": {
+   "pedine": 1,
+   "vita": 3,
+   "traccia_vita": "[casella vuota] {cuore}{cuore}{cuore} {?:teschio nero}",
+   "avventura": "{avv} = {ferita}",
+   "immune": [
+    "{rifugio}",
+    "{cibo}",
+    "{pioggia}",
+    "{neve}"
+   ]
+  },
+  "note": "In alto 1 pedina; traccia: casella vuota (per Determinazione?), 3 cuori, teschio. Fascia in basso: «? = cuore spezzato» (risultato avventura = ferita) e tenda, cibo, pioggia, neve barrati."
+ },
+ {
+  "id": 700,
+  "tipo": "belva",
+  "titolo_en": "Alligator",
+  "titolo_it": "Alligatore",
+  "dati": {
+   "forza": 6,
+   "arma": -2,
+   "cibo": 3,
+   "pelliccia": 0
+  }
+ },
+ {
+  "id": 701,
+  "tipo": "belva",
+  "titolo_en": "Bear",
+  "titolo_it": "Orso",
+  "dati": {
+   "forza": 6,
+   "arma": -1,
+   "cibo": 5,
+   "pelliccia": 2
+  }
+ },
+ {
+  "id": 702,
+  "tipo": "belva",
+  "titolo_en": "Birds",
+  "titolo_it": "Uccelli",
+  "dati": {
+   "forza": 1,
+   "arma": 0,
+   "cibo": 2,
+   "pelliccia": 0
+  }
+ },
+ {
+  "id": 703,
+  "tipo": "belva",
+  "titolo_en": "Boa",
+  "titolo_it": "Boa",
+  "dati": {
+   "forza": 2,
+   "arma": -2,
+   "cibo": 2,
+   "pelliccia": 0
+  },
+  "testo_en": "After the fight, you get {?:moneta d'oro}.",
+  "testo_it": "Dopo il combattimento ottieni {?:moneta d'oro}.",
+  "note": "Gettone dorato tondo con stemma: forse segnalino Scoperta/tesoro, non identificato."
+ },
+ {
+  "id": 704,
+  "tipo": "belva",
+  "titolo_en": "Chamois",
+  "titolo_it": "Camoscio",
+  "dati": {
+   "forza": 5,
+   "arma": -1,
+   "cibo": 3,
+   "pelliccia": 2
+  }
+ },
+ {
+  "id": 705,
+  "tipo": "belva",
+  "titolo_en": "Cheetah",
+  "titolo_it": "Ghepardo",
+  "dati": {
+   "forza": 4,
+   "arma": -1,
+   "cibo": 2,
+   "pelliccia": 1
+  }
+ },
+ {
+  "id": 706,
+  "tipo": "belva",
+  "titolo_en": "Fox",
+  "titolo_it": "Volpe",
+  "dati": {
+   "forza": 2,
+   "arma": 0,
+   "cibo": 2,
+   "pelliccia": 1
+  }
+ },
+ {
+  "id": 707,
+  "tipo": "belva",
+  "titolo_en": "Goats",
+  "titolo_it": "Capre",
+  "dati": {
+   "forza": 4,
+   "arma": -1,
+   "cibo": 3,
+   "pelliccia": 1
+  }
+ },
+ {
+  "id": 708,
+  "tipo": "belva",
+  "titolo_en": "Gorilla",
+  "titolo_it": "Gorilla",
+  "dati": {
+   "forza": 6,
+   "arma": -3,
+   "cibo": 5,
+   "pelliccia": 2
+  },
+  "testo_en": "After the fight, you get {?:moneta d'oro}.",
+  "testo_it": "Dopo il combattimento ottieni {?:moneta d'oro}.",
+  "note": "Stesso gettone dorato della Boa."
+ },
+ {
+  "id": 709,
+  "tipo": "belva",
+  "titolo_en": "Iguana",
+  "titolo_it": "Iguana",
+  "dati": {
+   "forza": 4,
+   "arma": -1,
+   "cibo": 3,
+   "pelliccia": 1
+  },
+  "testo_en": "Regardless of your {arma}, you get an additional {ferita}.",
+  "testo_it": "Indipendentemente dal tuo livello dell'Arma {arma}, subisci una {ferita} aggiuntiva."
+ },
+ {
+  "id": 710,
+  "tipo": "belva",
+  "titolo_en": "Jaguar",
+  "titolo_it": "Giaguaro",
+  "dati": {
+   "forza": 5,
+   "arma": 0,
+   "cibo": 4,
+   "pelliccia": 1
+  },
+  "testo_en": "If you do not have the {inv:Cure} Item, you get 2 {ferita}.",
+  "testo_it": "Se non hai l'Oggetto {inv:Medicina}, subisci 2 {ferita}.",
+  "note": "Oggetto indicato dall'icona mortaio (Cure/Medicina)."
+ },
+ {
+  "id": 711,
+  "tipo": "belva",
+  "titolo_en": "Puma",
+  "titolo_it": "Puma",
+  "dati": {
+   "forza": 5,
+   "arma": 0,
+   "cibo": 2,
+   "pelliccia": 1
+  },
+  "testo_en": "If you do not have the {inv:Cure} Item, you get 2 {ferita}.",
+  "testo_it": "Se non hai l'Oggetto {inv:Medicina}, subisci 2 {ferita}.",
+  "note": "Oggetto indicato dall'icona mortaio (Cure/Medicina)."
+ },
+ {
+  "id": 712,
+  "tipo": "belva",
+  "titolo_en": "Tapir",
+  "titolo_it": "Tapiro",
+  "dati": {
+   "forza": 3,
+   "arma": -1,
+   "cibo": 2,
+   "pelliccia": 1
+  }
+ },
+ {
+  "id": 713,
+  "tipo": "belva",
+  "titolo_en": "Tiger",
+  "titolo_it": "Tigre",
+  "dati": {
+   "forza": 6,
+   "arma": -2,
+   "cibo": 5,
+   "pelliccia": 2
+  }
+ },
+ {
+  "id": 714,
+  "tipo": "belva",
+  "titolo_en": "Wild Dog",
+  "titolo_it": "Cane selvatico",
+  "dati": {
+   "forza": 3,
+   "arma": 0,
+   "cibo": 2,
+   "pelliccia": 1
+  },
+  "testo_en": "If you do not have the {inv:Cure} Item, you get 2 {ferita}.",
+  "testo_it": "Se non hai l'Oggetto {inv:Medicina}, subisci 2 {ferita}.",
+  "note": "Oggetto indicato dall'icona mortaio (Cure/Medicina)."
+ },
+ {
+  "id": 715,
+  "tipo": "belva",
+  "titolo_en": "Wild Pig",
+  "titolo_it": "Cinghiale",
+  "dati": {
+   "forza": 3,
+   "arma": -1,
+   "cibo": 3,
+   "pelliccia": 1
+  }
+ }
+]

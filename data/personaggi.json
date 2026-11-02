@@ -1,0 +1,162 @@
+[
+ {
+  "id": "carpentiere",
+  "nome": "Carpentiere",
+  "tipo": "pg",
+  "segmenti": [
+   4,
+   3,
+   2,
+   3
+  ],
+  "invenzione": 1127,
+  "colore": [
+   0.55,
+   0.36,
+   0.2
+  ],
+  "abilita": [
+   [
+    "Costruzione economica",
+    "2 Det.: 1 legno in meno per un'azione"
+   ],
+   [
+    "Maestria",
+    "2 Det.: rilancia un dado marrone"
+   ],
+   [
+    "Una nuova idea",
+    "3 Det.: pesca 5 invenzioni, tienine 1"
+   ],
+   [
+    "Tuttofare",
+    "3 Det.: una pedina in più per Costruire"
+   ]
+  ]
+ },
+ {
+  "id": "cuoco",
+  "nome": "Cuoca",
+  "tipo": "pg",
+  "segmenti": [
+   3,
+   3,
+   2,
+   2,
+   2
+  ],
+  "invenzione": 1112,
+  "colore": [
+   0.92,
+   0.9,
+   0.85
+  ],
+  "abilita": [
+   [
+    "Ricetta della nonna",
+    "2 Det. e 1 cibo: guarisci 2 ferite"
+   ],
+   [
+    "Arrangiarsi",
+    "2 Det.: rilancia un dado grigio"
+   ],
+   [
+    "Zuppa di sassi",
+    "3 Det.: prendi 1 cibo"
+   ],
+   [
+    "Grappa",
+    "3 Det.: ignora 1 pioggia o trasforma 1 neve in pioggia"
+   ]
+  ]
+ },
+ {
+  "id": "esploratore",
+  "nome": "Esploratrice",
+  "tipo": "pg",
+  "segmenti": [
+   5,
+   5,
+   1
+  ],
+  "invenzione": 1124,
+  "colore": [
+   0.35,
+   0.6,
+   0.3
+  ],
+  "abilita": [
+   [
+    "Figlia della fortuna",
+    "2 Det.: rilancia un dado verde"
+   ],
+   [
+    "Ricognizione",
+    "2 Det.: guarda 3 tessere, una in cima"
+   ],
+   [
+    "Discorso motivazionale",
+    "3 Det.: +1 morale"
+   ],
+   [
+    "In avanscoperta",
+    "3 Det.: pesca 2 segnalini Scoperta, tienine 1"
+   ]
+  ]
+ },
+ {
+  "id": "soldato",
+  "nome": "Soldatessa",
+  "tipo": "pg",
+  "segmenti": [
+   4,
+   4,
+   3
+  ],
+  "invenzione": 1128,
+  "colore": [
+   0.75,
+   0.2,
+   0.15
+  ],
+  "abilita": [
+   [
+    "Seguire le tracce",
+    "2 Det.: guarda la prima belva della Caccia"
+   ],
+   [
+    "Piano di difesa",
+    "3 Det.: +1 palizzata o +1 arma"
+   ],
+   [
+    "Frenesia",
+    "3 Det.: +3 arma nella propria azione"
+   ],
+   [
+    "La caccia",
+    "4 Det.: una belva in cima al mazzo Caccia"
+   ]
+  ]
+ },
+ {
+  "id": "venerdi",
+  "nome": "Venerdì",
+  "tipo": "venerdi",
+  "segmenti": [
+   3
+  ],
+  "pedine": 1,
+  "invenzione": 0,
+  "colore": [
+   0.95,
+   0.95,
+   0.95
+  ],
+  "abilita": [
+   [
+    "Rilancio",
+    "2 Det.: rilancia un dado d'azione"
+   ]
+  ]
+ }
+]

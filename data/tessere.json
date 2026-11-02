@@ -1,0 +1,112 @@
+[
+ {
+  "n": 1,
+  "terreno": "pianura",
+  "legno": true,
+  "cibo": "",
+  "belva": true,
+  "totem": false,
+  "scoperte": 2,
+  "rifugio": false
+ },
+ {
+  "n": 2,
+  "terreno": "montagna",
+  "legno": false,
+  "cibo": "pappagallo",
+  "belva": true,
+  "totem": true,
+  "scoperte": 1,
+  "rifugio": true
+ },
+ {
+  "n": 3,
+  "terreno": "fiume",
+  "legno": false,
+  "cibo": "pesce",
+  "belva": true,
+  "totem": false,
+  "scoperte": 3,
+  "rifugio": false
+ },
+ {
+  "n": 4,
+  "terreno": "collina",
+  "legno": true,
+  "cibo": "pesce",
+  "belva": false,
+  "totem": true,
+  "scoperte": 1,
+  "rifugio": false
+ },
+ {
+  "n": 5,
+  "terreno": "montagna",
+  "legno": true,
+  "cibo": "pappagallo",
+  "belva": false,
+  "totem": true,
+  "scoperte": 1,
+  "rifugio": false
+ },
+ {
+  "n": 6,
+  "terreno": "pianura",
+  "legno": true,
+  "cibo": "pappagallo",
+  "belva": false,
+  "totem": true,
+  "scoperte": 1,
+  "rifugio": false
+ },
+ {
+  "n": 7,
+  "terreno": "collina",
+  "legno": true,
+  "cibo": "",
+  "belva": true,
+  "totem": true,
+  "scoperte": 2,
+  "rifugio": false
+ },
+ {
+  "n": 8,
+  "terreno": "spiaggia",
+  "legno": true,
+  "cibo": "pesce",
+  "belva": false,
+  "totem": false,
+  "scoperte": 0,
+  "rifugio": false
+ },
+ {
+  "n": 9,
+  "terreno": "pianura",
+  "legno": false,
+  "cibo": "pappagallo",
+  "belva": true,
+  "totem": false,
+  "scoperte": 3,
+  "rifugio": false
+ },
+ {
+  "n": 10,
+  "terreno": "fiume",
+  "legno": true,
+  "cibo": "pesce",
+  "belva": false,
+  "totem": true,
+  "scoperte": 1,
+  "rifugio": false
+ },
+ {
+  "n": 11,
+  "terreno": "montagna",
+  "legno": true,
+  "cibo": "",
+  "belva": true,
+  "totem": false,
+  "scoperte": 1,
+  "rifugio": true
+ }
+]

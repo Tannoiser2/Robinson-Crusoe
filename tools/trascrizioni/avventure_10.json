@@ -1,0 +1,528 @@
+[
+ {
+  "id": 1000,
+  "titolo_en": "Tiger!",
+  "titolo_it": "Tigre!",
+  "angolo": "esplora",
+  "flavor_en": "You find a tiger and hide. If you go back to the camp now, it will track you.",
+  "flavor_it": "Trovi una tigre e ti nascondi. Se torni al campo adesso, ti seguirà.",
+  "testo_en": "DECIDE: Discard this card and execute the Night phase outside the camp OR shuffle into the Event deck.",
+  "testo_it": "DECIDI: Scarta questa carta e svolgi la fase Notte fuori dal campo OPPURE mescola nel mazzo Eventi.",
+  "parte2": {
+   "titolo_en": "The Tiger Finds You!",
+   "titolo_it": "La tigre ti trova!",
+   "angolo": "?",
+   "flavor_en": "The tiger found your camp and attacks you",
+   "flavor_it": "La tigre ha trovato il tuo campo e ti attacca",
+   "testo_en": "Fight the Beast: [tabella Belva] Draw another card.",
+   "testo_it": "Combatti la Belva: [tabella Belva] Pesca un'altra carta.",
+   "dati": {
+    "forza": 4,
+    "arma": -1,
+    "cibo": 2,
+    "pelliccia": 1,
+    "palizzata": -1
+   }
+  },
+  "note": "Angolo: icona cannocchiale (azione Esplorare). Tabella belva in parte2.dati: colonne forza (teschio), riduzione arma, cibo, pelliccia, palizzata (-1)."
+ },
+ {
+  "id": 1001,
+  "titolo_en": "Swamp",
+  "titolo_it": "Palude",
+  "angolo": "esplora",
+  "flavor_en": "The area you are exploring is barely accessible.",
+  "flavor_it": "La zona che stai esplorando è a malapena accessibile.",
+  "testo_en": "Put {lento} on the tile you are exploring. (If {esplorare} wasn't successful, then put it on the space you wanted to explore.)",
+  "testo_it": "Metti {lento} sulla tessera Isola che stai esplorando. (Se l'azione {esplorare} non ha avuto successo, mettilo sullo spazio che volevi esplorare.)",
+  "note": "Il segnalino è un omino con machete su disco chiaro: interpretato come {lento} (azione che richiede tempo), coerente con «palude»; non ha clessidra. Nessuna metà inferiore."
+ },
+ {
+  "id": 1002,
+  "titolo_en": "Flu",
+  "titolo_it": "Influenza",
+  "angolo": "esplora",
+  "flavor_en": "During your trip, a cold rain leaves you soaking wet. You feel like you are getting the flu.",
+  "flavor_it": "Durante il viaggio una pioggia fredda ti inzuppa. Ti senti come se stessi prendendo l'influenza.",
+  "testo_en": "DECIDE: Discard {cibo} OR shuffle into the Event deck.",
+  "testo_it": "DECIDI: Scarta {cibo} OPPURE mescola nel mazzo Eventi.",
+  "parte2": {
+   "titolo_en": "Sore Throat",
+   "titolo_it": "Mal di gola",
+   "angolo": "?",
+   "flavor_en": "You have infected the whole group.",
+   "flavor_it": "Hai contagiato tutto il gruppo.",
+   "testo_en": "Put this card in the Night space. During the next Night phase, each player has to eat +1 {cibo} or get one additional {ferita}. Discard it after the Night phase. Draw another card.",
+   "testo_it": "Metti questa carta nello spazio Notte. Durante la prossima fase Notte, ogni giocatore deve mangiare +1 {cibo} o subire una {ferita} aggiuntiva. Scartala dopo la fase Notte. Pesca un'altra carta."
+  }
+ },
+ {
+  "id": 1003,
+  "titolo_en": "Surprising Discovery",
+  "titolo_it": "Scoperta sorprendente",
+  "angolo": "esplora",
+  "flavor_en": "You have found a skeleton in the jungle. It's holding... a pistol!",
+  "flavor_it": "Hai trovato uno scheletro nella giungla. Tiene in mano... una pistola!",
+  "testo_en": "Keep this card. You can use it once. It temporarily gives you +3 {arma}. Discard after use.",
+  "testo_it": "Tieni questa carta. Puoi usarla una volta. Ti dà temporaneamente +3 {arma}. Scartala dopo l'uso.",
+  "note": "Nessuna metà inferiore."
+ },
+ {
+  "id": 1004,
+  "titolo_en": "Vipers!",
+  "titolo_it": "Vipere!",
+  "angolo": "esplora",
+  "flavor_en": "As you take your next step, you get bitten by a viper.",
+  "flavor_it": "Al passo successivo vieni morso da una vipera.",
+  "testo_en": "Put {ferita_esplorare} on your Character's head. Shuffle into the Event deck.",
+  "testo_it": "Metti {ferita_esplorare} sulla testa del tuo Personaggio. Mescola nel mazzo Eventi.",
+  "parte2": {
+   "titolo_en": "Fever",
+   "titolo_it": "Febbre",
+   "angolo": "?",
+   "flavor_en": "As you expected, this small bite turned into a serious illness.",
+   "flavor_it": "Come temevi, questo piccolo morso si è trasformato in una grave malattia.",
+   "testo_en": "If you don't have {inv:Medicine}, the Character with {ferita_esplorare} on his head has only one {pedina} available this round. Discard {ferita_esplorare}. Draw another card.",
+   "testo_it": "Se non hai {inv:Medicina}, il Personaggio con {ferita_esplorare} sulla testa ha solo una {pedina} disponibile in questo round. Scarta {ferita_esplorare}. Pesca un'altra carta."
+  },
+  "note": "Segnalino ferita verde (cuore spezzato su disco verde) reso {ferita_esplorare}. Icona mortaio e pestello interpretata come Invenzione Medicine (Cure)."
+ },
+ {
+  "id": 1005,
+  "titolo_en": "There's Something in the Air",
+  "titolo_it": "C'è qualcosa nell'aria",
+  "angolo": "esplora",
+  "flavor_en": "The island is full of danger. Something bad is going to happen.",
+  "flavor_it": "L'isola è piena di pericoli. Sta per succedere qualcosa di brutto.",
+  "testo_en": "Put {avv_esplorare} on the Exploration Action field. Shuffle into the Event deck.",
+  "testo_it": "Metti {avv_esplorare} sullo spazio dell'azione Esplorare. Mescola nel mazzo Eventi.",
+  "parte2": {
+   "titolo_en": "Cursed Island",
+   "titolo_it": "Isola maledetta",
+   "angolo": "?",
+   "flavor_en": "Every time you go into the woods, something bad happens.",
+   "flavor_it": "Ogni volta che vai nei boschi succede qualcosa di brutto.",
+   "testo_en": "Put {avv_esplorare} on the Exploration Action field. Draw another card.",
+   "testo_it": "Metti {avv_esplorare} sullo spazio dell'azione Esplorare. Pesca un'altra carta."
+  }
+ },
+ {
+  "id": 1006,
+  "titolo_en": "Wrong Track",
+  "titolo_it": "Pista sbagliata",
+  "angolo": "esplora",
+  "flavor_en": "You got lost and you don't come back to the camp for the night. At the beginning of the next day, you return to the camp with some wood.",
+  "flavor_it": "Ti sei perso e non torni al campo per la notte. All'inizio del giorno dopo torni al campo con un po' di legna.",
+  "testo_en": "Execute the Night phase outside the camp. At the beginning of the next round (before the Event phase): Get 2 {legno}.",
+  "testo_it": "Svolgi la fase Notte fuori dal campo. All'inizio del prossimo round (prima della fase Evento): ottieni 2 {legno}.",
+  "note": "Nessuna metà inferiore."
+ },
+ {
+  "id": 1007,
+  "titolo_en": "Empty Forest",
+  "titolo_it": "Foresta vuota",
+  "angolo": "esplora",
+  "flavor_en": "The animals are hungry and are fighting for their survival.",
+  "flavor_it": "Gli animali sono affamati e lottano per sopravvivere.",
+  "testo_en": "Shuffle into the Event deck.",
+  "testo_it": "Mescola nel mazzo Eventi.",
+  "parte2": {
+   "titolo_en": "Hungry Predators",
+   "titolo_it": "Predatori affamati",
+   "angolo": "?",
+   "flavor_en": "These predators are hungry and dangerous.",
+   "flavor_it": "Questi predatori sono affamati e pericolosi.",
+   "testo_en": "During the next Hunting Action, the Beast is stronger. Put {pericolo} next to the Hunting Deck. Draw another card.",
+   "testo_it": "Durante la prossima azione di Caccia, la Belva è più forte. Metti {pericolo} accanto al mazzo Caccia. Pesca un'altra carta."
+  }
+ },
+ {
+  "id": 1008,
+  "titolo_en": "Carcass",
+  "titolo_it": "Carcassa",
+  "angolo": "esplora",
+  "flavor_en": "You have found a dead goat but you have no idea how it died.",
+  "flavor_it": "Hai trovato una capra morta ma non hai idea di come sia morta.",
+  "testo_en": "DECIDE: Discard this card OR get 2 {cibo} and {pelliccia} and shuffle into the Event deck.",
+  "testo_it": "DECIDI: Scarta questa carta OPPURE ottieni 2 {cibo} e {pelliccia} e mescola nel mazzo Eventi.",
+  "parte2": {
+   "titolo_en": "Diarrhea",
+   "titolo_it": "Diarrea",
+   "angolo": "?",
+   "flavor_en": "The goat died because it was sick and now, you are sick too.",
+   "flavor_it": "La capra è morta perché era malata, e ora sei malato anche tu.",
+   "testo_en": "Each player gets {ferita}. Draw another card.",
+   "testo_it": "Ogni giocatore subisce {ferita}. Pesca un'altra carta."
+  }
+ },
+ {
+  "id": 1009,
+  "titolo_en": "Shrine",
+  "titolo_it": "Santuario",
+  "angolo": "esplora",
+  "flavor_en": "Down in the valley you spot a shrine in the woods.",
+  "flavor_it": "Giù nella valle scorgi un santuario nei boschi.",
+  "testo_en": "DECIDE: Discard this card OR draw 1 Mystery card (only resolve {?:tesoro (scrigno)}) and shuffle this Adventure into the Event deck.",
+  "testo_it": "DECIDI: Scarta questa carta OPPURE pesca 1 carta Mistero (risolvi solo {?:tesoro (scrigno)}) e mescola questa Avventura nel mazzo Eventi.",
+  "parte2": {
+   "titolo_en": "Nightmares",
+   "titolo_it": "Incubi",
+   "angolo": "?",
+   "flavor_en": "All night you had nightmares about pagan gods, which made for restless sleep.",
+   "flavor_it": "Per tutta la notte hai avuto incubi su divinità pagane e hai dormito male.",
+   "testo_en": "Put {successo_negato} on the Building, Gathering Resources, Exploration Action fields. During the next Action of each of these types, you have to one {succ} result. Draw another card.",
+   "testo_it": "Metti {successo_negato} sugli spazi delle azioni Costruire, Raccogliere risorse ed Esplorare. Durante la prossima azione di ciascuno di questi tipi devi rilanciare un risultato {succ}. Pesca un'altra carta."
+  },
+  "note": "Parte2: il testo inglese stampato manca di un verbo («you have to one Y result», sottinteso «reroll»); trascritto così, tradotto con «rilanciare»."
+ },
+ {
+  "id": 1010,
+  "titolo_en": "Signs of Fire",
+  "titolo_it": "Tracce d'incendio",
+  "angolo": "esplora",
+  "flavor_en": "The whole area is wasted after massive fire.",
+  "flavor_it": "Tutta la zona è devastata da un grande incendio.",
+  "testo_en": "Cover one source on the tile you are exploring with {segno_nero}. It is exhausted. (If exploration was not successful, then put {segno_nero} on the space you wanted to explore and you must cover the source later).",
+  "testo_it": "Copri una fonte sulla tessera Isola che stai esplorando con {segno_nero}. È esaurita. (Se l'esplorazione non ha avuto successo, metti {segno_nero} sullo spazio che volevi esplorare e dovrai coprire la fonte in seguito).",
+  "note": "Nessuna metà inferiore. Il segno nero è un cubetto nero."
+ },
+ {
+  "id": 1011,
+  "titolo_en": "Cold Wind",
+  "titolo_it": "Vento freddo",
+  "angolo": "esplora",
+  "flavor_en": "During your walk you feel a cold winter wind blowing on your back.",
+  "flavor_it": "Durante la camminata senti un freddo vento invernale soffiarti alle spalle.",
+  "testo_en": "Shuffle into the Event deck.",
+  "testo_it": "Mescola nel mazzo Eventi.",
+  "parte2": {
+   "titolo_en": "Snow",
+   "titolo_it": "Neve",
+   "angolo": "?",
+   "flavor_en": "It is morning and it is snowing. It will be a cold night.",
+   "flavor_it": "È mattina e nevica. Sarà una notte fredda.",
+   "testo_en": "Put {neve} in the Weather space. Draw another card.",
+   "testo_it": "Metti {neve} nello spazio Meteo. Pesca un'altra carta."
+  }
+ },
+ {
+  "id": 1012,
+  "titolo_en": "Secret Cave",
+  "titolo_it": "Grotta segreta",
+  "angolo": "esplora",
+  "flavor_en": "Deep in the bushes you find a mysterious cave.",
+  "flavor_it": "In mezzo ai cespugli trovi una grotta misteriosa.",
+  "testo_en": "DECIDE: Discard this card OR draw 3 Mystery cards (only resolve 1 {?:creatura} or 1 {?:trappola} and up to 2 {?:tesoro (scrigno)}) and shuffle this Adventure into the Event deck.",
+  "testo_it": "DECIDI: Scarta questa carta OPPURE pesca 3 carte Mistero (risolvi solo 1 {?:creatura} o 1 {?:trappola} e fino a 2 {?:tesoro (scrigno)}) e mescola questa Avventura nel mazzo Eventi.",
+  "parte2": {
+   "titolo_en": "The Beast Awakes",
+   "titolo_it": "La Belva si sveglia",
+   "angolo": "?",
+   "flavor_en": "The secret cave is the lair of a beast. The beast attacks you!",
+   "flavor_it": "La grotta segreta è la tana di una belva. La belva ti attacca!",
+   "testo_en": "Fight the Beast: [tabella Belva] Draw another card.",
+   "testo_it": "Combatti la Belva: [tabella Belva] Pesca un'altra carta.",
+   "dati": {
+    "forza": 3,
+    "arma": 0,
+    "cibo": 2,
+    "pelliccia": 1,
+    "palizzata": -1
+   }
+  },
+  "note": "Riduzione arma stampata «-» = 0."
+ },
+ {
+  "id": 1013,
+  "titolo_en": "Thorny Bush",
+  "titolo_it": "Rovo spinoso",
+  "angolo": "esplora",
+  "flavor_en": "You've got scratched by thorny bushes. Your arm burns.",
+  "flavor_it": "Ti sei graffiato tra i rovi spinosi. Il braccio ti brucia.",
+  "testo_en": "Put {ferita_esplorare} on your Character's arm. Shuffle into the Event deck.",
+  "testo_it": "Metti {ferita_esplorare} sul braccio del tuo Personaggio. Mescola nel mazzo Eventi.",
+  "parte2": {
+   "titolo_en": "Swollen Arm",
+   "titolo_it": "Braccio gonfio",
+   "angolo": "?",
+   "flavor_en": "You've got an infection and you can't work today.",
+   "flavor_it": "Hai un'infezione e oggi non puoi lavorare.",
+   "testo_en": "If you don't have {inv:Medicine} the Character with {ferita_esplorare} on his arm has only one {pedina} available this round. Discard {ferita_esplorare}. Draw another card.",
+   "testo_it": "Se non hai {inv:Medicina}, il Personaggio con {ferita_esplorare} sul braccio ha solo una {pedina} disponibile in questo round. Scarta {ferita_esplorare}. Pesca un'altra carta."
+  }
+ },
+ {
+  "id": 1014,
+  "titolo_en": "It's Going to Rain",
+  "titolo_it": "Sta per piovere",
+  "angolo": "esplora",
+  "flavor_en": "Dark rainy clouds are gathering above the island.",
+  "flavor_it": "Nubi scure di pioggia si addensano sopra l'isola.",
+  "testo_en": "Shuffle into the Event deck.",
+  "testo_it": "Mescola nel mazzo Eventi.",
+  "parte2": {
+   "titolo_en": "Heavy Rain",
+   "titolo_it": "Pioggia battente",
+   "angolo": "?",
+   "flavor_en": "It starts raining and it looks like it'll rain the whole day.",
+   "flavor_it": "Inizia a piovere e sembra che pioverà tutto il giorno.",
+   "testo_en": "Put {pioggia} in the Weather space. Draw another card.",
+   "testo_it": "Metti {pioggia} nello spazio Meteo. Pesca un'altra carta."
+  }
+ },
+ {
+  "id": 1015,
+  "titolo_en": "Remains of a Settlement",
+  "titolo_it": "Resti di un insediamento",
+  "angolo": "esplora",
+  "flavor_en": "Deep in the forest you discover a ruined settlement.",
+  "flavor_it": "Nel fitto della foresta scopri un insediamento in rovina.",
+  "testo_en": "DECIDE: Discard this card OR draw 3 Mystery cards (only resolve 1 {?:trappola} and 2 {?:tesoro (scrigno)}) and shuffle into the Event deck.",
+  "testo_it": "DECIDI: Scarta questa carta OPPURE pesca 3 carte Mistero (risolvi solo 1 {?:trappola} e 2 {?:tesoro (scrigno)}) e mescola nel mazzo Eventi.",
+  "parte2": {
+   "titolo_en": "Epidemic",
+   "titolo_it": "Epidemia",
+   "angolo": "?",
+   "flavor_en": "You suffer from the disease that killed the village inhabitants.",
+   "flavor_it": "Ti ammali della malattia che ha ucciso gli abitanti del villaggio.",
+   "testo_en": "Each player gets {ferita}. Draw another card.",
+   "testo_it": "Ogni giocatore subisce {ferita}. Pesca un'altra carta."
+  }
+ },
+ {
+  "id": 1016,
+  "titolo_en": "Lost in the Woods",
+  "titolo_it": "Perso nei boschi",
+  "angolo": "esplora",
+  "flavor_en": "You went so far that you got lost and you're frightened.",
+  "flavor_it": "Ti sei spinto così lontano che ti sei perso e sei spaventato.",
+  "testo_en": "Discard 2 {det}.",
+  "testo_it": "Scarta 2 {det}.",
+  "note": "Nessuna metà inferiore."
+ },
+ {
+  "id": 1017,
+  "titolo_en": "Lost",
+  "titolo_it": "Smarrito",
+  "angolo": "esplora",
+  "flavor_en": "It's getting dark. You lose your way to the camp. At the beginning of the next day you come back and everyone's happy to see you're alive.",
+  "flavor_it": "Si fa buio. Perdi la strada per il campo. All'inizio del giorno dopo torni e tutti sono felici di vederti vivo.",
+  "testo_en": "Execute the Night phase outside the camp. At the beginning of the next round (before Event phase): {morale+}",
+  "testo_it": "Svolgi la fase Notte fuori dal campo. All'inizio del prossimo round (prima della fase Evento): {morale+}",
+  "note": "Nessuna metà inferiore. Freccia singola con punta a destra (impennaggio a sinistra)."
+ },
+ {
+  "id": 1018,
+  "titolo_en": "Old Hut",
+  "titolo_it": "Vecchia capanna",
+  "angolo": "esplora",
+  "flavor_en": "While wandering through the forest, you come across an old hut.",
+  "flavor_it": "Vagando per la foresta, ti imbatti in una vecchia capanna.",
+  "testo_en": "DECIDE: Discard this card OR draw 2 Mystery cards (only resolve 1 {?:creatura} and 1 {?:tesoro (scrigno)}) and shuffle into the Event deck.",
+  "testo_it": "DECIDI: Scarta questa carta OPPURE pesca 2 carte Mistero (risolvi solo 1 {?:creatura} e 1 {?:tesoro (scrigno)}) e mescola nel mazzo Eventi.",
+  "parte2": {
+   "titolo_en": "Robinson's Ghost",
+   "titolo_it": "Il fantasma di Robinson",
+   "angolo": "?",
+   "flavor_en": "Last night, you had nightmares about Robinson's death.",
+   "flavor_it": "La notte scorsa hai avuto incubi sulla morte di Robinson.",
+   "testo_en": "Each player discards {det}. Draw another card.",
+   "testo_it": "Ogni giocatore scarta {det}. Pesca un'altra carta."
+  }
+ },
+ {
+  "id": 1019,
+  "titolo_en": "Misadventure",
+  "titolo_it": "Disavventura",
+  "angolo": "esplora",
+  "flavor_en": "Unexpectedly, you have fallen into a burrow.",
+  "flavor_it": "All'improvviso sei caduto in una tana.",
+  "testo_en": "Put {ferita_esplorare} on your Character's leg. Shuffle into the Event deck.",
+  "testo_it": "Metti {ferita_esplorare} sulla gamba del tuo Personaggio. Mescola nel mazzo Eventi.",
+  "parte2": {
+   "titolo_en": "Swollen Ankle",
+   "titolo_it": "Caviglia gonfia",
+   "angolo": "?",
+   "flavor_en": "Your ankle causes you so much pain that you can barely move.",
+   "flavor_it": "La caviglia ti fa così male che riesci a malapena a muoverti.",
+   "testo_en": "This round, the Character with {ferita_esplorare} on his leg can only {riposo} {sistemare} {costruire}. Discard {ferita_esplorare}. Draw another card.",
+   "testo_it": "In questo round, il Personaggio con {ferita_esplorare} sulla gamba può solo {riposo} {sistemare} {costruire}. Scarta {ferita_esplorare}. Pesca un'altra carta."
+  },
+  "note": "Parte2: tre icone azione quadrate gialla (Riposo), blu (Sistemare il campo), marrone (Costruire)."
+ },
+ {
+  "id": 1020,
+  "titolo_en": "Lost in the Thicket",
+  "titolo_it": "Perso nella boscaglia",
+  "angolo": "esplora",
+  "flavor_en": "You don't come back to the camp for the night. At the beginning of the next day, you return with something useful.",
+  "flavor_it": "Non torni al campo per la notte. All'inizio del giorno dopo torni con qualcosa di utile.",
+  "testo_en": "Execute the Night phase outside the camp. At the beginning of the next round (before Event phase): Draw {scoperta}.",
+  "testo_it": "Svolgi la fase Notte fuori dal campo. All'inizio del prossimo round (prima della fase Evento): pesca {scoperta}.",
+  "note": "Nessuna metà inferiore."
+ },
+ {
+  "id": 1021,
+  "titolo_en": "Wild Dog",
+  "titolo_it": "Cane selvatico",
+  "angolo": "esplora",
+  "flavor_en": "You see a wild dog on the glade. First, it stares at you, then it bites you, and runs away.",
+  "flavor_it": "Vedi un cane selvatico nella radura. Prima ti fissa, poi ti morde e scappa.",
+  "testo_en": "You get {ferita}. Shuffle into the Event deck.",
+  "testo_it": "Subisci {ferita}. Mescola nel mazzo Eventi.",
+  "parte2": {
+   "titolo_en": "The Dog Is Back!",
+   "titolo_it": "Il cane è tornato!",
+   "angolo": "?",
+   "flavor_en": "The dog you met comes to your camp. You try to train it.",
+   "flavor_it": "Il cane che hai incontrato arriva al tuo campo. Provi ad addestrarlo.",
+   "testo_en": "DECIDE: Discard {cibo} and get +1 {arma} OR discard this card. Draw another card.",
+   "testo_it": "DECIDI: Scarta {cibo} e ottieni +1 {arma} OPPURE scarta questa carta. Pesca un'altra carta."
+  }
+ },
+ {
+  "id": 1022,
+  "titolo_en": "Dangerous Terrain",
+  "titolo_it": "Terreno pericoloso",
+  "angolo": "esplora",
+  "flavor_en": "During your trip throught the woods you see a lot of predators.",
+  "flavor_it": "Durante il cammino nei boschi vedi molti predatori.",
+  "testo_en": "Put {pericolo} on the tile you are exploring. (If your Exploration Action wasn't successful then put {pericolo} on the space you wanted to explore). Starting next round, each time a player wants to gather resources from this tile (or explore this space), your {arma} should be at least 1 (or the player gets {ferita}).",
+  "testo_it": "Metti {pericolo} sulla tessera Isola che stai esplorando. (Se l'azione Esplorare non ha avuto successo, metti {pericolo} sullo spazio che volevi esplorare). Dal prossimo round, ogni volta che un giocatore vuole raccogliere risorse da questa tessera (o esplorare questo spazio), il livello dell'Arma {arma} deve essere almeno 1 (altrimenti il giocatore subisce {ferita}).",
+  "note": "Nessuna metà inferiore. Refuso stampato «throught» mantenuto."
+ },
+ {
+  "id": 1023,
+  "titolo_en": "Signs of Fire",
+  "titolo_it": "Tracce d'incendio",
+  "angolo": "esplora",
+  "flavor_en": "The whole area is wasted after a massive fire.",
+  "flavor_it": "Tutta la zona è devastata da un grande incendio.",
+  "testo_en": "Cover one source on the tile you are exploring with {segno_nero}. It is exhausted. (If exploration was not successful, then put {segno_nero} on the space you wanted to explore and you must cover the source later).",
+  "testo_it": "Copri una fonte sulla tessera Isola che stai esplorando con {segno_nero}. È esaurita. (Se l'esplorazione non ha avuto successo, metti {segno_nero} sullo spazio che volevi esplorare e dovrai coprire la fonte in seguito).",
+  "note": "Nessuna metà inferiore. Doppione di 1010 (differisce solo «after a massive fire»)."
+ },
+ {
+  "id": 1024,
+  "titolo_en": "Bamboo",
+  "titolo_it": "Bambù",
+  "angolo": "esplora",
+  "flavor_en": "You have found a few bamboo sticks in the woods.",
+  "flavor_it": "Hai trovato qualche canna di bambù nei boschi.",
+  "testo_en": "DECIDE: Discard this card OR get 2 {legno} and shuffle into the Event deck.",
+  "testo_it": "DECIDI: Scarta questa carta OPPURE ottieni 2 {legno} e mescola nel mazzo Eventi.",
+  "parte2": {
+   "titolo_en": "Crack of Broken Wood",
+   "titolo_it": "Schianto di legno rotto",
+   "angolo": "?",
+   "flavor_en": "The bamboo breaks and the whole consruction collapses.",
+   "flavor_it": "Il bambù si spezza e l'intera costruzione crolla.",
+   "testo_en": "-1 {tetto} or {palizzata}. Draw another card.",
+   "testo_it": "-1 {tetto} o {palizzata}. Pesca un'altra carta."
+  },
+  "note": "Refuso stampato «consruction» mantenuto."
+ },
+ {
+  "id": 1025,
+  "titolo_en": "Wild Berries",
+  "titolo_it": "Bacche selvatiche",
+  "angolo": "esplora",
+  "flavor_en": "You have eaten some strange berries that you found in the woods. You were so hungry that you ate more that you should have.",
+  "flavor_it": "Hai mangiato delle strane bacche trovate nei boschi. Avevi così fame che ne hai mangiate più del dovuto.",
+  "testo_en": "Put {ferita_esplorare} on your character's belly. Shuffle into the Event deck.",
+  "testo_it": "Metti {ferita_esplorare} sulla pancia del tuo Personaggio. Mescola nel mazzo Eventi.",
+  "parte2": {
+   "titolo_en": "Nausea",
+   "titolo_it": "Nausea",
+   "angolo": "?",
+   "flavor_en": "You feel terrible and you won't be able to work hard today.",
+   "flavor_it": "Ti senti malissimo e oggi non riuscirai a lavorare sodo.",
+   "testo_en": "The character with {ferita_esplorare} on his belly has only one {pedina} this round. Discard {ferita_esplorare}. Draw another card.",
+   "testo_it": "Il Personaggio con {ferita_esplorare} sulla pancia ha solo una {pedina} in questo round. Scarta {ferita_esplorare}. Pesca un'altra carta."
+  }
+ },
+ {
+  "id": 1026,
+  "titolo_en": "Old Grave",
+  "titolo_it": "Vecchia tomba",
+  "angolo": "esplora",
+  "flavor_en": "You come across an old grave. You reluctantly look inside, but instantly regret it after seeing the old corpse.",
+  "flavor_it": "Ti imbatti in una vecchia tomba. Controvoglia guardi dentro, ma te ne penti subito alla vista del vecchio cadavere.",
+  "testo_en": "Discard {det}. Shuffle into the Event deck.",
+  "testo_it": "Scarta {det}. Mescola nel mazzo Eventi.",
+  "parte2": {
+   "titolo_en": "Memories of a Dead Castaway",
+   "titolo_it": "Ricordi di un naufrago morto",
+   "angolo": "?",
+   "flavor_en": "You have heard a dreadful story about an old grave.",
+   "flavor_it": "Hai sentito una storia terribile su una vecchia tomba.",
+   "testo_en": "The First Player discards 2 {det}. Draw another card.",
+   "testo_it": "Il primo giocatore scarta 2 {det}. Pesca un'altra carta."
+  }
+ },
+ {
+  "id": 1027,
+  "titolo_en": "Ruined Hut",
+  "titolo_it": "Capanna diroccata",
+  "angolo": "esplora",
+  "flavor_en": "You come across an old ruined hut in the bushes.",
+  "flavor_it": "Ti imbatti in una vecchia capanna diroccata tra i cespugli.",
+  "testo_en": "DECIDE: Discard this card OR build one Item (Knife, Rope, Shovel or Cure) for free and without an Action and shuffle this Adventure into the Event deck.",
+  "testo_it": "DECIDI: Scarta questa carta OPPURE costruisci un Oggetto (Coltello, Corda, Pala o Medicina) gratis e senza azione e mescola questa Avventura nel mazzo Eventi.",
+  "parte2": {
+   "titolo_en": "Bad Dreams",
+   "titolo_it": "Brutti sogni",
+   "angolo": "?",
+   "flavor_en": "All night long you had nightmares about the dead resident of the ruined hut.",
+   "flavor_it": "Per tutta la notte hai avuto incubi sul defunto abitante della capanna diroccata.",
+   "testo_en": "{morale-} Draw another card.",
+   "testo_it": "{morale-} Pesca un'altra carta."
+  },
+  "note": "Parte2: freccia singola con punta a sinistra."
+ },
+ {
+  "id": 1028,
+  "titolo_en": "Puma!",
+  "titolo_it": "Puma!",
+  "angolo": "esplora",
+  "flavor_en": "You spot a puma in the bushes. If you go back to the camp now, you will bring death with you.",
+  "flavor_it": "Scorgi un puma tra i cespugli. Se torni al campo adesso, porterai la morte con te.",
+  "testo_en": "DECIDE: Discard this card and execute the Night phase outside the camp OR shuffle into the Event deck.",
+  "testo_it": "DECIDI: Scarta questa carta e svolgi la fase Notte fuori dal campo OPPURE mescola nel mazzo Eventi.",
+  "parte2": {
+   "titolo_en": "The Puma Attacks!",
+   "titolo_it": "Il puma attacca!",
+   "angolo": "?",
+   "flavor_en": "The puma found your camp and attacks you!",
+   "flavor_it": "Il puma ha trovato il tuo campo e ti attacca!",
+   "testo_en": "Fight the Beast: [tabella Belva] Draw another card.",
+   "testo_it": "Combatti la Belva: [tabella Belva] Pesca un'altra carta.",
+   "dati": {
+    "forza": 3,
+    "arma": -1,
+    "cibo": 2,
+    "pelliccia": 1,
+    "palizzata": -1
+   }
+  }
+ },
+ {
+  "id": 1029,
+  "titolo_en": "Storm on the Horizon",
+  "titolo_it": "Tempesta all'orizzonte",
+  "angolo": "esplora",
+  "flavor_en": "A storm is fast approaching the island.",
+  "flavor_it": "Una tempesta si avvicina rapidamente all'isola.",
+  "testo_en": "Shuffle into the Event deck.",
+  "testo_it": "Mescola nel mazzo Eventi.",
+  "parte2": {
+   "titolo_en": "Storm",
+   "titolo_it": "Tempesta",
+   "angolo": "?",
+   "flavor_en": "The storm is here. The night will be very difficult.",
+   "flavor_it": "La tempesta è arrivata. La notte sarà molto difficile.",
+   "testo_en": "Put {tempesta} in the Weather space. Draw another card.",
+   "testo_it": "Metti {tempesta} nello spazio Meteo. Pesca un'altra carta."
+  }
+ }
+]

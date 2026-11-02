@@ -1,0 +1,150 @@
+[
+ {
+  "n": 1,
+  "nome": "Naufraghi",
+  "round": 12,
+  "meteo": {
+   "4-6": [
+    "pioggia"
+   ],
+   "7-12": [
+    "pioggia",
+    "neve",
+    "belve"
+   ]
+  },
+  "pira": [
+   1,
+   2,
+   3,
+   4,
+   5
+  ],
+  "obiettivo": "Costruite il Fuoco e completate la pira di legna (1+2+3+4+5): se la nave passa (round 10, 11 o 12) vi salvate.",
+  "libro": "Nessun effetto.",
+  "totem": "Nessun effetto."
+ },
+ {
+  "n": 2,
+  "nome": "L'isola maledetta",
+  "round": 10,
+  "meteo": {
+   "6-10": [
+    "neve"
+   ]
+  },
+  "obiettivo": "Costruite la Croce su cinque tessere diverse e sopravvivete fino alla fine del round.",
+  "libro": "Nebbia misteriosa: 2 segnalini nebbia su caselle diverse.",
+  "totem": "1: Tempio oscuro (esplorazione speciale). 2: Altare della morte (2 ferite). 3 e oltre: Nascondigli dei cultisti (nebbia)."
+ },
+ {
+  "n": 3,
+  "nome": "Jenny ha bisogno d'aiuto",
+  "round": 8,
+  "meteo": {
+   "5-8": [
+    "belve"
+   ]
+  },
+  "jenny_vita": 11,
+  "obiettivo": "Costruite la Zattera, salvate Jenny con un'esplorazione e poi costruite la Scialuppa.",
+  "libro": "Tempesta: -1 palizzata.",
+  "totem": "1: Rocce scivolose (2 ferite). 2: Cimitero (-2 morale). 3: Resti di alberi (Corda gratis). 4: Relitto del pallone (2 pellicce)."
+ },
+ {
+  "n": 4,
+  "nome": "L'isola del vulcano",
+  "round": 8,
+  "meteo": {
+   "1-8": [
+    "pioggia"
+   ]
+  },
+  "casella_vulcano": 4,
+  "casella_partenza": 5,
+  "lava": {
+   "4": [
+    5
+   ],
+   "5": [
+    2,
+    9
+   ],
+   "6": [
+    1,
+    8
+   ],
+   "7": [
+    3
+   ],
+   "8": [
+    0,
+    7
+   ]
+  },
+  "esplora": {
+   "1": 6,
+   "2": 6,
+   "3": 7,
+   "4": 8
+  },
+  "totem_obiettivo": {
+   "1": 3,
+   "2": 3,
+   "3": 4,
+   "4": 4
+  },
+  "obiettivo": "Esplorate abbastanza caselle e luoghi speciali dei totem, poi costruite la Lancia di bordo.",
+  "libro": "Eruzione: 2 segnalini cenere su caselle diverse.",
+  "totem": "Luoghi speciali: Piccolo tempio (3 Misteri), Villaggio in rovina (4), Grotta nascosta (4, +1 pedina), Tempio sotterraneo (5, +1 pedina)."
+ },
+ {
+  "n": 5,
+  "nome": "L'isola dei cannibali",
+  "round": 10,
+  "meteo": {},
+  "oggetti": [
+   603,
+   605
+  ],
+  "obiettivo": "Bruciate i villaggi e distruggete la Città dei cannibali (forza 21 meno 3 per villaggio bruciato).",
+  "libro": "Attacco dei cannibali: ogni personaggio subisce 3 ferite meno i villaggi bruciati; il campo va spostato.",
+  "totem": "Villaggi dei cannibali (forza 4 + totem visibili): bruciateli con un'azione di Caccia."
+ },
+ {
+  "n": 6,
+  "nome": "La famiglia Robinson",
+  "round": 12,
+  "meteo": {
+   "3-4": [
+    "pioggia"
+   ],
+   "5-6": [
+    "neve"
+   ],
+   "7-8": [
+    "pioggia",
+    "belve"
+   ],
+   "9-10": [
+    "neve",
+    "belve"
+   ],
+   "11-12": [
+    "pioggia",
+    "belve"
+   ]
+  },
+  "figli": {
+   "7": 1,
+   "8": 1,
+   "9": 2,
+   "10": 2,
+   "11": 3,
+   "12": 3
+  },
+  "obiettivo": "Costruite le 9 invenzioni pescate, il rifugio, almeno 1 di tetto, palizzata e arma, e sfamate i figli.",
+  "libro": "Raccolto scarso: in questo round la produzione si dimezza.",
+  "totem": "Terra desolata: il primo terreno di un tipo resta inesplorato."
+ }
+]

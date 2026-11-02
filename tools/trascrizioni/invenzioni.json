@@ -1,0 +1,691 @@
+[
+ {
+  "id": 1100,
+  "titolo_en": "Basket",
+  "titolo_it": "Cesto",
+  "testo_en": "During a successful {raccogliere} you get 1 additional Resource of the gathered Resource. Can be used for only 1 Action per round.",
+  "testo_it": "Durante un'azione {raccogliere} riuscita ottieni 1 risorsa aggiuntiva del tipo raccolto. Utilizzabile per una sola azione per round.",
+  "dati": {
+   "requisiti": [
+    "{pianura}"
+   ],
+   "requisiti_it": [
+    "{pianura}"
+   ]
+  }
+ },
+ {
+  "id": 1101,
+  "titolo_en": "Bed",
+  "titolo_it": "Letto",
+  "testo_en": "{riposo} ▼ +1 {det} +2 {cuore}",
+  "testo_it": "{riposo} ▼ +1 {det} +2 {cuore}",
+  "dati": {
+   "requisiti": [
+    "{pianura}"
+   ],
+   "requisiti_it": [
+    "{pianura}"
+   ]
+  },
+  "note": "Effetto solo iconico: icona Riposo, triangolo nero (=> risultato), +1 Determinazione, +2 cuori (guarire)."
+ },
+ {
+  "id": 1102,
+  "titolo_en": "Belts",
+  "titolo_it": "Cinture",
+  "testo_en": "{?:pedina aggiuntiva Raccogliere (sfondo grigio)}",
+  "testo_it": "{?:pedina aggiuntiva Raccogliere (sfondo grigio)}",
+  "dati": {
+   "requisiti": [
+    "{inv:Knife}"
+   ],
+   "requisiti_it": [
+    "{inv:Coltello}"
+   ],
+   "costo": "1 {pelliccia}"
+  },
+  "note": "Effetto: solo l'immagine di una pedina su riquadro grigio (pedina aggiuntiva per Raccogliere)."
+ },
+ {
+  "id": 1103,
+  "titolo_en": "Bow",
+  "titolo_it": "Arco",
+  "testo_en": "+3 {arma}",
+  "testo_it": "+3 {arma}",
+  "dati": {
+   "requisiti": [
+    "{inv:Rope}",
+    "{inv:Knife}"
+   ],
+   "requisiti_it": [
+    "{inv:Corda}",
+    "{inv:Coltello}"
+   ],
+   "costo": "1 {legno}"
+  }
+ },
+ {
+  "id": 1104,
+  "titolo_en": "Bricks",
+  "titolo_it": "Mattoni",
+  "testo_en": "{?:mattone} +1 {palizzata}",
+  "testo_it": "{?:mattone} +1 {palizzata}",
+  "dati": {
+   "requisiti": [
+    "{collina}"
+   ],
+   "requisiti_it": [
+    "{collina}"
+   ],
+   "base": true
+  },
+  "note": "Banner del titolo con frecce triangolari ai lati: invenzione di base (sempre disponibile), segnato in dati.base. Effetto: disegno del mattone (oggetto) e +1 palizzata."
+ },
+ {
+  "id": 1105,
+  "titolo_en": "Cellar",
+  "titolo_it": "Cantina",
+  "testo_en": "{cibo} = {cibo_np}",
+  "testo_it": "{cibo} = {cibo_np}",
+  "dati": {
+   "requisiti": [
+    "{inv:Shovel}"
+   ],
+   "requisiti_it": [
+    "{inv:Pala}"
+   ]
+  },
+  "note": "Effetto: banane/cocco = pane (il cibo deperibile vale come non deperibile)."
+ },
+ {
+  "id": 1106,
+  "titolo_en": "Corral",
+  "titolo_it": "Recinto",
+  "testo_en": "Cover {?:fonte di cibo (pappagallo)} on any tile adjacent to your camp with {segno_nero} and put {cibo_extra} on the tile with your camp.",
+  "testo_it": "Copri {?:fonte di cibo (pappagallo)} su una tessera Isola adiacente al tuo campo con {segno_nero} e metti {cibo_extra} sulla tessera del tuo campo.",
+  "dati": {
+   "requisiti": [
+    "{inv:Rope}"
+   ],
+   "requisiti_it": [
+    "{inv:Corda}"
+   ],
+   "costo": "1 {legno}"
+  },
+  "note": "L'icona da coprire è un riquadro con un pappagallo (fonte di cibo/animali); il segnalino nero è un disco."
+ },
+ {
+  "id": 1107,
+  "titolo_en": "Cure",
+  "titolo_it": "Medicina",
+  "testo_en": "{?:mortaio (Medicina)}",
+  "testo_it": "{?:mortaio (Medicina)}",
+  "dati": {
+   "requisiti": [
+    "{pianura}"
+   ],
+   "requisiti_it": [
+    "{pianura}"
+   ],
+   "base": true
+  },
+  "note": "Banner del titolo con frecce triangolari ai lati: invenzione di base (sempre disponibile), segnato in dati.base. Effetto: solo il disegno del mortaio (l'oggetto Medicina)."
+ },
+ {
+  "id": 1108,
+  "titolo_en": "Dam",
+  "titolo_it": "Diga",
+  "testo_en": "+2 {cibo_np}",
+  "testo_it": "+2 {cibo_np}",
+  "dati": {
+   "requisiti": [
+    "{fiume}"
+   ],
+   "requisiti_it": [
+    "{fiume}"
+   ],
+   "costo": "1 {legno}",
+   "base": true
+  },
+  "note": "Banner del titolo con frecce triangolari ai lati: invenzione di base (sempre disponibile), segnato in dati.base."
+ },
+ {
+  "id": 1109,
+  "titolo_en": "Diary",
+  "titolo_it": "Diario",
+  "testo_en": "+1 {det} during the Morale phase",
+  "testo_it": "+1 {det} durante la fase Morale",
+  "dati": {
+   "requisiti": [],
+   "requisiti_it": [],
+   "costo": "1 {pelliccia}"
+  }
+ },
+ {
+  "id": 1110,
+  "titolo_en": "Drums",
+  "titolo_it": "Tamburi",
+  "testo_en": "+2 {det} during the Morale phase",
+  "testo_it": "+2 {det} durante la fase Morale",
+  "dati": {
+   "requisiti": [
+    "{collina}"
+   ],
+   "requisiti_it": [
+    "{collina}"
+   ],
+   "costo": "1 {pelliccia}"
+  }
+ },
+ {
+  "id": 1111,
+  "titolo_en": "Fire",
+  "titolo_it": "Fuoco",
+  "testo_en": "{?:fuoco} +1 {palizzata}",
+  "testo_it": "{?:fuoco} +1 {palizzata}",
+  "dati": {
+   "requisiti": [
+    "{montagna}"
+   ],
+   "requisiti_it": [
+    "{montagna}"
+   ],
+   "base": true
+  },
+  "note": "Banner del titolo con frecce triangolari ai lati: invenzione di base (sempre disponibile), segnato in dati.base. Effetto: disegno del fuoco (oggetto) e +1 palizzata."
+ },
+ {
+  "id": 1112,
+  "titolo_en": "Fireplace",
+  "titolo_it": "Focolare",
+  "testo_en": "{cibo} ▼ +2 {cuore} during the Night phase",
+  "testo_it": "{cibo} ▼ +2 {cuore} durante la fase Notte",
+  "dati": {
+   "requisiti": [
+    "{inv:Fire}"
+   ],
+   "requisiti_it": [
+    "{inv:Fuoco}"
+   ]
+  }
+ },
+ {
+  "id": 1113,
+  "titolo_en": "Furnace",
+  "titolo_it": "Fornace",
+  "testo_en": "{?:nuvola di neve barrata}",
+  "testo_it": "{?:nuvola di neve barrata}",
+  "dati": {
+   "requisiti": [
+    "{inv:Bricks}"
+   ],
+   "requisiti_it": [
+    "{inv:Mattoni}"
+   ]
+  },
+  "note": "Effetto: nuvola di neve con un tratto rosso diagonale (annulla/ignora una nuvola di neve); nessun numero."
+ },
+ {
+  "id": 1114,
+  "titolo_en": "Knife",
+  "titolo_it": "Coltello",
+  "testo_en": "{?:coltello} +1 {arma}",
+  "testo_it": "{?:coltello} +1 {arma}",
+  "dati": {
+   "requisiti": [
+    "{montagna}"
+   ],
+   "requisiti_it": [
+    "{montagna}"
+   ],
+   "base": true
+  },
+  "note": "Banner del titolo con frecce triangolari ai lati: invenzione di base (sempre disponibile), segnato in dati.base."
+ },
+ {
+  "id": 1115,
+  "titolo_en": "Lantern",
+  "titolo_it": "Lanterna",
+  "testo_en": "{?:pedina aggiuntiva Costruire (sfondo marrone)}",
+  "testo_it": "{?:pedina aggiuntiva Costruire (sfondo marrone)}",
+  "dati": {
+   "requisiti": [
+    "{collina}",
+    "{inv:Fire}"
+   ],
+   "requisiti_it": [
+    "{collina}",
+    "{inv:Fuoco}"
+   ]
+  },
+  "note": "Effetto: solo pedina su riquadro marrone (pedina aggiuntiva per Costruire)."
+ },
+ {
+  "id": 1116,
+  "titolo_en": "Map",
+  "titolo_it": "Mappa",
+  "testo_en": "{?:mappa} + {?:pedina aggiuntiva Esplorare (sfondo verde)}",
+  "testo_it": "{?:mappa} + {?:pedina aggiuntiva Esplorare (sfondo verde)}",
+  "dati": {
+   "requisiti": [
+    "{fiume}"
+   ],
+   "requisiti_it": [
+    "{fiume}"
+   ],
+   "base": true
+  },
+  "note": "Banner del titolo con frecce triangolari ai lati: invenzione di base (sempre disponibile), segnato in dati.base. Effetto: disegno della mappa e «+» pedina su riquadro verde (pedina aggiuntiva Esplorare)."
+ },
+ {
+  "id": 1117,
+  "titolo_en": "Moat",
+  "titolo_it": "Fossato",
+  "testo_en": "+2 {palizzata}",
+  "testo_it": "+2 {palizzata}",
+  "dati": {
+   "requisiti": [
+    "{inv:Shovel}"
+   ],
+   "requisiti_it": [
+    "{inv:Pala}"
+   ],
+   "costo": "1 {legno}"
+  }
+ },
+ {
+  "id": 1118,
+  "titolo_en": "Pit",
+  "titolo_it": "Fossa",
+  "testo_en": "During the Production phase, roll {?:dado marrone con ferita}. {ferita} ▶ +2 {cibo}",
+  "testo_it": "Durante la fase Produzione, tira {?:dado marrone con ferita}. {ferita} ▶ +2 {cibo}",
+  "dati": {
+   "requisiti": [
+    "{inv:Shovel}"
+   ],
+   "requisiti_it": [
+    "{inv:Pala}"
+   ],
+   "costo": "1 {legno}"
+  },
+  "note": "Dado marrone con cuore spezzato: probabilmente il dado Ferita di Costruire. Freccia ▶ = «ottieni»."
+ },
+ {
+  "id": 1119,
+  "titolo_en": "Pot",
+  "titolo_it": "Pentola",
+  "testo_en": "{?:pentola} {cibo} ▶ +{cuore} during the Night phase",
+  "testo_it": "{?:pentola} {cibo} ▶ +{cuore} durante la fase Notte",
+  "dati": {
+   "requisiti": [
+    "{collina}"
+   ],
+   "requisiti_it": [
+    "{collina}"
+   ],
+   "base": true
+  },
+  "note": "Banner del titolo con frecce triangolari ai lati: invenzione di base (sempre disponibile), segnato in dati.base. «+» senza numero davanti al cuore (= +1)."
+ },
+ {
+  "id": 1120,
+  "titolo_en": "Raft",
+  "titolo_it": "Zattera",
+  "testo_en": "{?:pedina aggiuntiva Raccogliere (sfondo grigio)} / {?:pedina aggiuntiva Esplorare (sfondo verde)}",
+  "testo_it": "{?:pedina aggiuntiva Raccogliere (sfondo grigio)} / {?:pedina aggiuntiva Esplorare (sfondo verde)}",
+  "dati": {
+   "requisiti": [
+    "{inv:Rope}"
+   ],
+   "requisiti_it": [
+    "{inv:Corda}"
+   ],
+   "costo": "2 {legno}"
+  },
+  "note": "Effetto: pedina su riquadro grigio / pedina su riquadro verde (pedina aggiuntiva Raccogliere oppure Esplorare)."
+ },
+ {
+  "id": 1121,
+  "titolo_en": "Rope",
+  "titolo_it": "Corda",
+  "testo_en": "{?:corda}",
+  "testo_it": "{?:corda}",
+  "dati": {
+   "requisiti": [
+    "{pianura}"
+   ],
+   "requisiti_it": [
+    "{pianura}"
+   ],
+   "base": true
+  },
+  "note": "Banner del titolo con frecce triangolari ai lati: invenzione di base (sempre disponibile), segnato in dati.base. Effetto: solo il disegno della corda."
+ },
+ {
+  "id": 1122,
+  "titolo_en": "Sack",
+  "titolo_it": "Sacco",
+  "testo_en": "During a successful {raccogliere} you get 1 additional Resource of the gathered Resource. Can be used for only 1 Action per round.",
+  "testo_it": "Durante un'azione {raccogliere} riuscita ottieni 1 risorsa aggiuntiva del tipo raccolto. Utilizzabile per una sola azione per round.",
+  "dati": {
+   "requisiti": [],
+   "requisiti_it": [],
+   "costo": "1 {pelliccia}"
+  }
+ },
+ {
+  "id": 1123,
+  "titolo_en": "Shield",
+  "titolo_it": "Scudo",
+  "testo_en": "{?:pedina aggiuntiva Caccia (sfondo rosso)}",
+  "testo_it": "{?:pedina aggiuntiva Caccia (sfondo rosso)}",
+  "dati": {
+   "requisiti": [
+    "{inv:Rope}"
+   ],
+   "requisiti_it": [
+    "{inv:Corda}"
+   ],
+   "costo": "1 {legno}"
+  },
+  "note": "Effetto: solo pedina su riquadro rosso (pedina aggiuntiva per Caccia)."
+ },
+ {
+  "id": 1124,
+  "titolo_en": "Shortcut",
+  "titolo_it": "Scorciatoia",
+  "testo_en": "Put {scorciatoia} on any tile adjacent to your camp. During the Production phase you get 1 chosen Resource available on that tile.",
+  "testo_it": "Metti {scorciatoia} su una tessera Isola adiacente al tuo campo. Durante la fase Produzione ottieni 1 risorsa a scelta tra quelle disponibili su quella tessera.",
+  "dati": {
+   "requisiti": [
+    "{inv:Map}"
+   ],
+   "requisiti_it": [
+    "{inv:Mappa}"
+   ]
+  }
+ },
+ {
+  "id": 1125,
+  "titolo_en": "Shovel",
+  "titolo_it": "Pala",
+  "testo_en": "{?:pala}",
+  "testo_it": "{?:pala}",
+  "dati": {
+   "requisiti": [
+    "{spiaggia}"
+   ],
+   "requisiti_it": [
+    "{spiaggia}"
+   ],
+   "base": true
+  },
+  "note": "Banner del titolo con frecce triangolari ai lati: invenzione di base (sempre disponibile), segnato in dati.base. Effetto: solo il disegno della pala."
+ },
+ {
+  "id": 1126,
+  "titolo_en": "Sling",
+  "titolo_it": "Fionda",
+  "testo_en": "+2 {arma}",
+  "testo_it": "+2 {arma}",
+  "dati": {
+   "requisiti": [],
+   "requisiti_it": [],
+   "costo": "1 {pelliccia} / 1 {legno}"
+  },
+  "note": "Costo alternativo: 1 pelliccia OPPURE 1 legno."
+ },
+ {
+  "id": 1127,
+  "titolo_en": "Snare",
+  "titolo_it": "Laccio",
+  "testo_en": "{cibo_extra} on the tile with your camp",
+  "testo_it": "{cibo_extra} sulla tessera del tuo campo",
+  "dati": {
+   "requisiti": [
+    "{inv:Rope}"
+   ],
+   "requisiti_it": [
+    "{inv:Corda}"
+   ]
+  }
+ },
+ {
+  "id": 1128,
+  "titolo_en": "Spear",
+  "titolo_it": "Lancia",
+  "testo_en": "+3 {arma}",
+  "testo_it": "+3 {arma}",
+  "dati": {
+   "requisiti": [
+    "{inv:Knife}"
+   ],
+   "requisiti_it": [
+    "{inv:Coltello}"
+   ],
+   "costo": "1 {legno}"
+  }
+ },
+ {
+  "id": 1129,
+  "titolo_en": "Wall",
+  "titolo_it": "Muro",
+  "testo_en": "+2 {palizzata}",
+  "testo_it": "+2 {palizzata}",
+  "dati": {
+   "requisiti": [
+    "{inv:Bricks}"
+   ],
+   "requisiti_it": [
+    "{inv:Mattoni}"
+   ]
+  }
+ },
+ {
+  "id": 1200,
+  "titolo_en": "Hatchet",
+  "titolo_it": "Accetta",
+  "testo_en": "{legno_extra} On the tile with your Camp",
+  "testo_it": "{legno_extra} sulla tessera del tuo campo",
+  "dati": {
+   "requisiti": [
+    "{montagna}"
+   ],
+   "requisiti_it": [
+    "{montagna}"
+   ],
+   "costo": "1 {legno}",
+   "scenario": true
+  }
+ },
+ {
+  "id": 1201,
+  "titolo_en": "Mast",
+  "titolo_it": "Albero maestro",
+  "testo_en": "+3 {legno} Only for pile.",
+  "testo_it": "+3 {legno} Solo per la catasta.",
+  "dati": {
+   "requisiti": [
+    "{inv:Rope}"
+   ],
+   "requisiti_it": [
+    "{inv:Corda}"
+   ],
+   "costo": "1 {pelliccia} 1 {legno}",
+   "scenario": true
+  }
+ },
+ {
+  "id": 1202,
+  "titolo_en": "Sacred Bell",
+  "titolo_it": "Campana sacra",
+  "testo_en": "Remove 3 {segno_bianco}. Can be built multiple times.",
+  "testo_it": "Rimuovi 3 {segno_bianco}. Può essere costruita più volte.",
+  "dati": {
+   "requisiti": [
+    "{collina}",
+    "{inv:Rope}"
+   ],
+   "requisiti_it": [
+    "{collina}",
+    "{inv:Corda}"
+   ],
+   "scenario": true
+  },
+  "note": "Il segno bianco è un dischetto bianco."
+ },
+ {
+  "id": 1203,
+  "titolo_en": "Cross",
+  "titolo_it": "Croce",
+  "testo_en": "{?:dischetto blu} Can be built multiple times.",
+  "testo_it": "{?:dischetto blu} Può essere costruita più volte.",
+  "dati": {
+   "requisiti": [],
+   "requisiti_it": [],
+   "costo": "2 {legno}",
+   "scenario": true
+  },
+  "note": "Effetto: dischetto blu senza testo (segnalino di scenario)."
+ },
+ {
+  "id": 1204,
+  "titolo_en": "Raft",
+  "titolo_it": "Zattera",
+  "testo_en": "{esplorare} {pedina}{pedina} / {pedina}{pedina}{pedina} ▼ Rescue Jenny. {avv} = {ferita}",
+  "testo_it": "{esplorare} {pedina}{pedina} / {pedina}{pedina}{pedina} ▼ Salva Jenny. {avv} = {ferita}",
+  "dati": {
+   "requisiti": [
+    "{inv:Rope}"
+   ],
+   "requisiti_it": [
+    "{inv:Corda}"
+   ],
+   "costo": "2 {legno}",
+   "scenario": true
+  },
+  "note": "Icona azione verde col cannocchiale (Esplorare) seguita da 2 pedine / 3 pedine; in basso «?» = cuore spezzato (risultato avventura = ferita). ID diverso dalla Zattera 1120."
+ },
+ {
+  "id": 1205,
+  "titolo_en": "Lifeboat",
+  "titolo_it": "Scialuppa di salvataggio",
+  "testo_en": "You win!",
+  "testo_it": "Hai vinto!",
+  "dati": {
+   "requisiti": [
+    "{inv:Knife}",
+    "{inv:Rope}"
+   ],
+   "requisiti_it": [
+    "{inv:Coltello}",
+    "{inv:Corda}"
+   ],
+   "costo": "4 {pelliccia} 6 {legno}",
+   "scenario": true
+  }
+ },
+ {
+  "id": 1206,
+  "titolo_en": "Rope Ladder",
+  "titolo_it": "Scala di corda",
+  "testo_en": "{?:pedina aggiuntiva Esplorare (sfondo verde)} only for {totem}",
+  "testo_it": "{?:pedina aggiuntiva Esplorare (sfondo verde)} solo per {totem}",
+  "dati": {
+   "requisiti": [
+    "{inv:Rope}"
+   ],
+   "requisiti_it": [
+    "{inv:Corda}"
+   ],
+   "scenario": true
+  },
+  "note": "Pedina su riquadro verde; icona del totem (maschera scolpita)."
+ },
+ {
+  "id": 1207,
+  "titolo_en": "Jolly-Boat",
+  "titolo_it": "Lancia di bordo",
+  "testo_en": "You win!",
+  "testo_it": "Hai vinto!",
+  "dati": {
+   "requisiti": [
+    "{inv:Rope}"
+   ],
+   "requisiti_it": [
+    "{inv:Corda}"
+   ],
+   "costo": "3 {legno}",
+   "scenario": true
+  }
+ },
+ {
+  "id": 1208,
+  "titolo_en": "Ballista",
+  "titolo_it": "Balista",
+  "testo_en": "+2 {palizzata} + {arma}",
+  "testo_it": "+2 {palizzata} + {arma}",
+  "dati": {
+   "requisiti": [
+    "{inv:Rope}"
+   ],
+   "requisiti_it": [
+    "{inv:Corda}"
+   ],
+   "costo": "2 {legno}",
+   "scenario": true
+  },
+  "note": "«+» senza numero davanti all'icona arma (probabilmente +1 livello Arma)."
+ },
+ {
+  "id": 1209,
+  "titolo_en": "Canoe",
+  "titolo_it": "Canoa",
+  "testo_en": "During Exploration take 2 {scoperta} and choose 1",
+  "testo_it": "Durante l'esplorazione prendi 2 {scoperta} e scegline 1",
+  "dati": {
+   "requisiti": [
+    "{fiume}"
+   ],
+   "requisiti_it": [
+    "{fiume}"
+   ],
+   "costo": "1 {legno}",
+   "scenario": true
+  }
+ },
+ {
+  "id": 1210,
+  "titolo_en": "Fence",
+  "titolo_it": "Staccionata",
+  "testo_en": "+1 {palizzata}",
+  "testo_it": "+1 {palizzata}",
+  "dati": {
+   "requisiti": [
+    "{inv:Shovel}"
+   ],
+   "requisiti_it": [
+    "{inv:Pala}"
+   ],
+   "scenario": true
+  }
+ },
+ {
+  "id": 1211,
+  "titolo_en": "Garden",
+  "titolo_it": "Orto",
+  "testo_en": "+4 {cibo}",
+  "testo_it": "+4 {cibo}",
+  "dati": {
+   "requisiti": [
+    "{inv:Shovel}"
+   ],
+   "requisiti_it": [
+    "{inv:Pala}"
+   ],
+   "costo": "2 {cibo}",
+   "scenario": true
+  }
+ }
+]

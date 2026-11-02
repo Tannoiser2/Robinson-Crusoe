@@ -1,0 +1,210 @@
+{
+ "base": [
+  {
+   "k": "tesoro",
+   "quanti": 2
+  },
+  {
+   "k": "larve",
+   "quanti": 2
+  },
+  {
+   "k": "capra",
+   "quanti": 2
+  },
+  {
+   "k": "albero_caduto",
+   "quanti": 2
+  },
+  {
+   "k": "candele",
+   "quanti": 2
+  },
+  {
+   "k": "verdure"
+  },
+  {
+   "k": "tabacco"
+  },
+  {
+   "k": "rovi"
+  },
+  {
+   "k": "veleno"
+  },
+  {
+   "k": "machete"
+  },
+  {
+   "k": "foglie"
+  },
+  {
+   "k": "erbe"
+  },
+  {
+   "k": "erbe_curative"
+  }
+ ],
+ "scenari": {
+  "1": [
+   {
+    "k": "medaglione"
+   },
+   {
+    "k": "sciabola"
+   },
+   {
+    "k": "olio"
+   },
+   {
+    "k": "erbe_c"
+   }
+  ],
+  "2": [
+   {
+    "k": "pugnale"
+   },
+   {
+    "k": "campana_decorata"
+   },
+   {
+    "k": "fiale"
+   },
+   {
+    "k": "candele_culto"
+   }
+  ],
+  "3": [
+   {
+    "k": "liane"
+   },
+   {
+    "k": "capanna"
+   },
+   {
+    "k": "pistola_j"
+   },
+   {
+    "k": "erbe_c"
+   }
+  ],
+  "4": [
+   {
+    "k": "tela"
+   },
+   {
+    "k": "torcia"
+   },
+   {
+    "k": "diario_indy"
+   },
+   {
+    "k": "vecchia_mappa"
+   }
+  ],
+  "5": [
+   {
+    "k": "machete_c"
+   },
+   {
+    "k": "mappa_isola"
+   },
+   {
+    "k": "unguento"
+   },
+   {
+    "k": "cerbottana"
+   }
+  ],
+  "6": [
+   {
+    "k": "semi"
+   },
+   {
+    "k": "polvere_sparo"
+   },
+   {
+    "k": "aratro"
+   },
+   {
+    "k": "attrezzi_vecchi"
+   }
+  ]
+ },
+ "nomi": {
+  "tesoro": "Tesoro",
+  "larve": "Larve nutrienti",
+  "capra": "Capra",
+  "albero_caduto": "Albero caduto",
+  "candele": "Candele",
+  "verdure": "Verdure",
+  "tabacco": "Tabacco",
+  "rovi": "Rovi spinosi",
+  "veleno": "Veleno",
+  "machete": "Vecchio machete",
+  "foglie": "Foglie larghe",
+  "erbe": "Erbe",
+  "erbe_curative": "Erbe curative",
+  "medaglione": "Medaglione con dama",
+  "sciabola": "Sciabola del pirata",
+  "olio": "Olio",
+  "erbe_c": "Erbe medicinali",
+  "pugnale": "Pugnale sacrificale",
+  "campana_decorata": "Campana decorata",
+  "fiale": "Fiale misteriose",
+  "candele_culto": "Candele dei cultisti",
+  "liane": "Liane",
+  "capanna": "Capanna in rovina",
+  "pistola_j": "Pistola",
+  "tela": "Vecchia tela",
+  "torcia": "Torcia",
+  "diario_indy": "Diario di Indy",
+  "vecchia_mappa": "Vecchia mappa",
+  "machete_c": "Vecchio machete",
+  "mappa_isola": "Mappa dell'isola",
+  "unguento": "Unguento curativo",
+  "cerbottana": "Cerbottana",
+  "semi": "Semi",
+  "polvere_sparo": "Polvere da sparo",
+  "aratro": "Aratro",
+  "attrezzi_vecchi": "Vecchi attrezzi"
+ },
+ "testi": {
+  "tesoro": "il primo giocatore pesca un tesoro dal mazzo Misteri",
+  "larve": "+2 cibo (subito)",
+  "capra": "con arma 1 o più: +1 pelliccia e +1 cibo",
+  "albero_caduto": "+1 legno (subito)",
+  "candele": "una pedina in più per Costruire, una volta",
+  "verdure": "con la Pentola, di notte: guarisci 2 ferite",
+  "tabacco": "+1 morale",
+  "rovi": "con il rifugio: +1 palizzata",
+  "veleno": "con la Pentola: +2 arma",
+  "machete": "+1 arma",
+  "foglie": "ignora 1 nuvola di pioggia",
+  "erbe": "con la Pentola: +1 morale",
+  "erbe_curative": "con la Pentola: costruisci la Medicina",
+  "medaglione": "+3 Determinazione divise come volete",
+  "sciabola": "+1 arma",
+  "olio": "2 legno sulla pira",
+  "erbe_c": "guarisci 1 ferita",
+  "pugnale": "+3 arma in combattimento, ma 1 ferita (si tiene)",
+  "campana_decorata": "togli 2 segnalini nebbia",
+  "fiale": "costruisci la Medicina",
+  "candele_culto": "una pedina in più per Costruire, una volta",
+  "liane": "+1 palizzata",
+  "capanna": "+2 legno",
+  "pistola_j": "+3 arma in un combattimento",
+  "tela": "ignora 1 nuvola",
+  "torcia": "ignora una creatura",
+  "diario_indy": "ignora una trappola",
+  "vecchia_mappa": "una carta Mistero in meno da pescare",
+  "machete_c": "+1 arma",
+  "mappa_isola": "guarda le prime 3 tessere e riordinale",
+  "unguento": "guarisci 1 ferita",
+  "cerbottana": "+2 arma in un combattimento",
+  "semi": "+1 cibo non deperibile",
+  "polvere_sparo": "rilancia una volta il dado delle belve",
+  "aratro": "togli un segnalino nero da una tessera",
+  "attrezzi_vecchi": "costruisci gratis Corda, Pentola o Coltello"
+ }
+}

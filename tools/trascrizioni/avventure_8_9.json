@@ -1,0 +1,1039 @@
+[
+ {
+  "id": 800,
+  "titolo_en": "Visit of a Predator",
+  "titolo_it": "Visita di un predatore",
+  "angolo": "martello",
+  "flavor_en": "While you are working, your camp is visited by a predator. It eats your food and escapes.",
+  "flavor_it": "Mentre lavorate, il vostro campo riceve la visita di un predatore. Mangia il vostro cibo e scappa.",
+  "testo_en": "Discard {cibo}. Shuffle into the Event deck.",
+  "testo_it": "Scarta {cibo}. Mescola nel mazzo Eventi.",
+  "parte2": {
+   "titolo_en": "Night Visit",
+   "titolo_it": "Visita notturna",
+   "angolo": "?",
+   "flavor_en": "The predator thinks that your camp is a source of free food.",
+   "flavor_it": "Il predatore pensa che il vostro campo sia una fonte di cibo gratis.",
+   "testo_en": "Put {dado_belve} in the Weather space. During the Weather phase of this round, roll {dado_belve} and resolve its effect. Draw another card.",
+   "testo_it": "Metti {dado_belve} nello spazio Meteo. Durante la fase Meteo di questo round, tira {dado_belve} e risolvine l'effetto. Pesca un'altra carta."
+  }
+ },
+ {
+  "id": 801,
+  "titolo_en": "Sting",
+  "titolo_it": "Puntura",
+  "angolo": "martello",
+  "flavor_en": "You have been stung by a bee.",
+  "flavor_it": "Sei stato punto da un'ape.",
+  "testo_en": "Put {ferita_pancia} on your Character's belly. Shuffle into the Event deck.",
+  "testo_it": "Metti {ferita_pancia} sulla pancia del tuo Personaggio. Mescola nel mazzo Eventi.",
+  "parte2": {
+   "titolo_en": "Shivers",
+   "titolo_it": "Brividi",
+   "angolo": "?",
+   "flavor_en": "It didn't look so bad at first.",
+   "flavor_it": "All'inizio non sembrava così grave.",
+   "testo_en": "If you don't have {inv:Cure}, the Character with {ferita_pancia} on his belly has only one {pedina} available in this round. Discard {ferita_pancia}. Draw another card.",
+   "testo_it": "Se non avete {inv:Medicina}, il Personaggio con {ferita_pancia} sulla pancia ha solo una {pedina} disponibile in questo round. Scarta {ferita_pancia}. Pesca un'altra carta."
+  },
+  "note": "Icona mortaio e pestello = Invenzione Cure (Medicina), trascritta {inv:Cure}/{inv:Medicina}."
+ },
+ {
+  "id": 802,
+  "titolo_en": "Savings",
+  "titolo_it": "Risparmi",
+  "angolo": "martello",
+  "flavor_en": "You have found some weak branches. You're thinking of saving them for future uses.",
+  "flavor_it": "Avete trovato alcuni rami deboli. Pensate di conservarli per usi futuri.",
+  "testo_en": "DECIDE: Discard this card OR get 2 {legno} and shuffle into the Event deck.",
+  "testo_it": "DECIDI: scarta questa carta OPPURE ottieni 2 {legno} e mescolala nel mazzo Eventi.",
+  "parte2": {
+   "titolo_en": "Unsteady Construction",
+   "titolo_it": "Costruzione instabile",
+   "angolo": "?",
+   "flavor_en": "You don't feel safe.",
+   "flavor_it": "Non vi sentite al sicuro.",
+   "testo_en": "{morale-} Draw another card.",
+   "testo_it": "{morale-} Pesca un'altra carta."
+  },
+  "note": "Freccia del morale: estremità a punta/riccioli a sinistra, impennaggio a destra; letta come {morale-} (coerente col testo narrativo)."
+ },
+ {
+  "id": 803,
+  "titolo_en": "Lack of Hope!",
+  "titolo_it": "Mancanza di speranza!",
+  "angolo": "martello",
+  "flavor_en": "You feel that some of your ideas are impossible to realize.",
+  "flavor_it": "Sentite che alcune delle vostre idee sono impossibili da realizzare.",
+  "testo_en": "Discard 3 Invention cards.",
+  "testo_it": "Scarta 3 carte Invenzione."
+ },
+ {
+  "id": 804,
+  "titolo_en": "Broken Tool",
+  "titolo_it": "Attrezzo rotto",
+  "angolo": "martello",
+  "flavor_en": "Damn it!",
+  "flavor_it": "Maledizione!",
+  "testo_en": "IF POSSIBLE: Turn 1 Item face up (to Invention side) and cancel its effect.",
+  "testo_it": "SE POSSIBILE: gira 1 Oggetto a faccia in su (sul lato Invenzione) e annullane l'effetto."
+ },
+ {
+  "id": 805,
+  "titolo_en": "In a Hurry",
+  "titolo_it": "Di fretta",
+  "angolo": "martello",
+  "flavor_en": "You get careless in your haste.",
+  "flavor_it": "Nella fretta diventate sbadati.",
+  "testo_en": "DECIDE: Discard this card OR draw 2 {scoperta} and shuffle into the Event deck.",
+  "testo_it": "DECIDI: scarta questa carta OPPURE pesca 2 {scoperta} e mescolala nel mazzo Eventi.",
+  "parte2": {
+   "titolo_en": "Crack!",
+   "titolo_it": "Crac!",
+   "angolo": "?",
+   "flavor_en": "Next time, work more carefully.",
+   "flavor_it": "La prossima volta lavorate con più attenzione.",
+   "testo_en": "-1 {palizzata}. Draw another card.",
+   "testo_it": "-1 {palizzata}. Pesca un'altra carta."
+  },
+  "note": "Parte 1: il gettone grigio rotondo è stato letto come segnalino Scoperta (non nitido). Parte 2: Il disco dorato appeso a un cordino è stato letto come {palizzata} (coincide con l'ultima colonna delle tabelle «Fight a Beast»); è diverso dal segnalino Determinazione (disco scuro con rosa dei venti)."
+ },
+ {
+  "id": 806,
+  "titolo_en": "Construction",
+  "titolo_it": "Costruzione",
+  "angolo": "martello",
+  "flavor_en": "You take a break to strengthen the camp with vegetation. When it overgrows with grass, it will be even stronger.",
+  "flavor_it": "Fate una pausa per rinforzare il campo con la vegetazione. Quando sarà ricoperto d'erba, sarà ancora più solido.",
+  "testo_en": "Shuffle into the Event deck.",
+  "testo_it": "Mescola nel mazzo Eventi.",
+  "parte2": {
+   "titolo_en": "Stronger Construction",
+   "titolo_it": "Costruzione più solida",
+   "angolo": "?",
+   "flavor_en": "The grass and bushes made the palisade stronger.",
+   "flavor_it": "L'erba e i cespugli hanno reso la palizzata più solida.",
+   "testo_en": "+1 {palizzata} (if you have a Shelter). Draw another card.",
+   "testo_it": "+1 {palizzata} (se avete un Rifugio). Pesca un'altra carta."
+  },
+  "note": "Il disco dorato appeso a un cordino è stato letto come {palizzata} (coincide con l'ultima colonna delle tabelle «Fight a Beast»); è diverso dal segnalino Determinazione (disco scuro con rosa dei venti)."
+ },
+ {
+  "id": 807,
+  "titolo_en": "Tired",
+  "titolo_it": "Stanco",
+  "angolo": "martello",
+  "flavor_en": "You feel sleepy. You decide to take a nap.",
+  "flavor_it": "Avete sonno. Decidete di fare un pisolino.",
+  "testo_en": "DECIDE: Discard this card OR heal 2 {cuore} and shuffle into the Event deck.",
+  "testo_it": "DECIDI: scarta questa carta OPPURE guarisci 2 {cuore} e mescolala nel mazzo Eventi.",
+  "parte2": {
+   "titolo_en": "Quarrel",
+   "titolo_it": "Litigio",
+   "angolo": "?",
+   "flavor_en": "Finally, someone can't stand your naps anymore and an argument begins.",
+   "flavor_it": "Alla fine qualcuno non sopporta più i vostri pisolini e scoppia una discussione.",
+   "testo_en": "{morale-} Draw another card.",
+   "testo_it": "{morale-} Pesca un'altra carta."
+  },
+  "note": "Freccia del morale: estremità a punta/riccioli a sinistra, impennaggio a destra; letta come {morale-} (coerente col testo narrativo)."
+ },
+ {
+  "id": 808,
+  "titolo_en": "Weak Construction",
+  "titolo_it": "Costruzione fragile",
+  "angolo": "martello",
+  "flavor_en": "Your camp is made out of scraps and is barely holding on.",
+  "flavor_it": "Il vostro campo è fatto di avanzi e sta in piedi a malapena.",
+  "testo_en": "Shuffle into the Event deck.",
+  "testo_it": "Mescola nel mazzo Eventi.",
+  "parte2": {
+   "titolo_en": "Bash!",
+   "titolo_it": "Schianto!",
+   "angolo": "?",
+   "flavor_en": "No good roof can be made out of scraps.",
+   "flavor_it": "Con gli avanzi non si fa un buon tetto.",
+   "testo_en": "-1/2 {tetto} (rounded down). Draw another card.",
+   "testo_it": "-1/2 {tetto} (arrotondato per difetto). Pesca un'altra carta."
+  }
+ },
+ {
+  "id": 809,
+  "titolo_en": "Tools Inspection",
+  "titolo_it": "Ispezione degli attrezzi",
+  "angolo": "martello",
+  "flavor_en": "Some of your tools are slowly falling apart.",
+  "flavor_it": "Alcuni dei vostri attrezzi stanno lentamente andando in pezzi.",
+  "testo_en": "IF POSSIBLE: Put {segno_nero} on up to 2 Items. Shuffle into the Event deck.",
+  "testo_it": "SE POSSIBILE: metti {segno_nero} su un massimo di 2 Oggetti. Mescola nel mazzo Eventi.",
+  "parte2": {
+   "titolo_en": "Broken Tools",
+   "titolo_it": "Attrezzi rotti",
+   "angolo": "?",
+   "flavor_en": "It's a miracle that they lasted this long.",
+   "flavor_it": "È un miracolo che siano durati così a lungo.",
+   "testo_en": "Turn the marked Items face up (to Invention side) and cancel their effects (if possible). Draw another card.",
+   "testo_it": "Gira a faccia in su gli Oggetti segnati (sul lato Invenzione) e annullane gli effetti (se possibile). Pesca un'altra carta."
+  }
+ },
+ {
+  "id": 810,
+  "titolo_en": "Dangerous Work",
+  "titolo_it": "Lavoro pericoloso",
+  "angolo": "martello",
+  "flavor_en": "Without a good workshop, work is very dangerous.",
+  "flavor_it": "Senza una buona officina, il lavoro è molto pericoloso.",
+  "testo_en": "Put {successo_negato} and {avv_costruire} on the Building Action field.",
+  "testo_it": "Metti {successo_negato} e {avv_costruire} sullo spazio dell'Azione Costruire.",
+  "note": "Il gettone «?» è marrone/bruno (segnalino avventura Costruire)."
+ },
+ {
+  "id": 811,
+  "titolo_en": "Fast Work",
+  "titolo_it": "Lavoro veloce",
+  "angolo": "martello",
+  "flavor_en": "You work in a frenzy, ignoring outside concerns.",
+  "flavor_it": "Lavorate freneticamente, ignorando ciò che accade intorno.",
+  "testo_en": "DECIDE: Discard this card OR take 1 more Building Action (must roll all 3 {?:dado azione Costruire, marrone}) and shuffle into the Event deck.",
+  "testo_it": "DECIDI: scarta questa carta OPPURE effettua 1 Azione Costruire in più (devi tirare tutti e 3 i {?:dado azione Costruire, marrone}) e mescolala nel mazzo Eventi.",
+  "parte2": {
+   "titolo_en": "Haste Makes Waste",
+   "titolo_it": "La fretta è cattiva consigliera",
+   "angolo": "?",
+   "flavor_en": "The construction collapses.",
+   "flavor_it": "La costruzione crolla.",
+   "testo_en": "-1 {tetto} or {palizzata}. Draw another card.",
+   "testo_it": "-1 {tetto} o {palizzata}. Pesca un'altra carta."
+  },
+  "note": "Il disco dorato appeso a un cordino è stato letto come {palizzata} (coincide con l'ultima colonna delle tabelle «Fight a Beast»); è diverso dal segnalino Determinazione (disco scuro con rosa dei venti)."
+ },
+ {
+  "id": 812,
+  "titolo_en": "Laborious Work",
+  "titolo_it": "Lavoro faticoso",
+  "angolo": "martello",
+  "flavor_en": "The work is very hard and takes a lot of time.",
+  "flavor_it": "Il lavoro è molto duro e richiede molto tempo.",
+  "testo_en": "Put {lento} on the Building Action field.",
+  "testo_it": "Metti {lento} sullo spazio dell'Azione Costruire.",
+  "note": "Icona: pedina con segno meno = segnalino Azione che richiede tempo (time-consuming)."
+ },
+ {
+  "id": 813,
+  "titolo_en": "Breakdown",
+  "titolo_it": "Esaurimento",
+  "angolo": "martello",
+  "flavor_en": "You're not used to working with hand-made tools.",
+  "flavor_it": "Non siete abituati a lavorare con attrezzi fatti a mano.",
+  "testo_en": "{morale-} Shuffle into the Event deck.",
+  "testo_it": "{morale-} Mescola nel mazzo Eventi.",
+  "parte2": {
+   "titolo_en": "After Some Time...",
+   "titolo_it": "Dopo un po'...",
+   "angolo": "?",
+   "flavor_en": "The tools are not the best, but by working hard, you manage to achieve your goal.",
+   "flavor_it": "Gli attrezzi non sono il massimo, ma lavorando sodo riuscite a raggiungere il vostro obiettivo.",
+   "testo_en": "The First Player gets 2 {det}. Draw another card.",
+   "testo_it": "Il Primo giocatore ottiene 2 {det}. Pesca un'altra carta."
+  },
+  "note": "Freccia del morale: estremità a punta/riccioli a sinistra, impennaggio a destra; letta come {morale-} (coerente col testo narrativo)."
+ },
+ {
+  "id": 814,
+  "titolo_en": "Laborious Work",
+  "titolo_it": "Lavoro faticoso",
+  "angolo": "martello",
+  "flavor_en": "The work is very hard and takes a lot of time.",
+  "flavor_it": "Il lavoro è molto duro e richiede molto tempo.",
+  "testo_en": "Put {lento} on the Building Action field.",
+  "testo_it": "Metti {lento} sullo spazio dell'Azione Costruire.",
+  "note": "Identica alla 812."
+ },
+ {
+  "id": 815,
+  "titolo_en": "Hungry Predator",
+  "titolo_it": "Predatore affamato",
+  "angolo": "martello",
+  "flavor_en": "While working, a hungry beast visits to your camp.",
+  "flavor_it": "Mentre lavorate, una belva affamata fa visita al vostro campo.",
+  "testo_en": "DECIDE: Get 2 {ferita}, 2 {cibo}, {pelliccia} and discard this card OR discard {cibo} and -1 {palizzata} and shuffle into the Event deck.",
+  "testo_it": "DECIDI: subisci 2 {ferita}, ottieni 2 {cibo} e {pelliccia} e scarta questa carta OPPURE scarta {cibo} e -1 {palizzata} e mescolala nel mazzo Eventi.",
+  "parte2": {
+   "titolo_en": "Revisit",
+   "titolo_it": "Nuova visita",
+   "angolo": "?",
+   "flavor_en": "The hungry predator visits you again.",
+   "flavor_it": "Il predatore affamato torna a farvi visita.",
+   "testo_en": "Fight a Beast: (see dati). Draw another card.",
+   "testo_it": "Combatti una Belva: (vedi dati). Pesca un'altra carta.",
+   "dati": {
+    "forza": 3,
+    "arma": 0,
+    "cibo": 1,
+    "pelliccia": 1,
+    "palizzata": -1
+   }
+  },
+  "note": "Parte 1: «Get 2 {ferita}» = 2 ferite (nell'originale un unico «Get» per ferite, cibo e pelliccia; davanti a {pelliccia} non c'è numero, quindi 1). Parte 2: colonna arma «-» = 0. Il disco dorato appeso a un cordino è stato letto come {palizzata} (coincide con l'ultima colonna delle tabelle «Fight a Beast»); è diverso dal segnalino Determinazione (disco scuro con rosa dei venti)."
+ },
+ {
+  "id": 816,
+  "titolo_en": "Hard Work",
+  "titolo_it": "Lavoro duro",
+  "angolo": "martello",
+  "flavor_en": "You're working so hard that it you get hungry.",
+  "flavor_it": "Lavorate così duramente che vi viene fame.",
+  "testo_en": "IF POSSIBLE: Discard {cibo}.",
+  "testo_it": "SE POSSIBILE: scarta {cibo}.",
+  "note": "Flavor stampato con refuso «that it you get hungry»."
+ },
+ {
+  "id": 817,
+  "titolo_en": "Howling in the Bushes",
+  "titolo_it": "Ululati tra i cespugli",
+  "angolo": "martello",
+  "flavor_en": "While working, you hear some scary howling coming from the bushes. After a while, the predator goes away.",
+  "flavor_it": "Mentre lavorate, sentite ululati spaventosi provenire dai cespugli. Dopo un po' il predatore se ne va.",
+  "testo_en": "Shuffle into the Event deck.",
+  "testo_it": "Mescola nel mazzo Eventi.",
+  "parte2": {
+   "titolo_en": "The Beast Is Here!",
+   "titolo_it": "La belva è qui!",
+   "angolo": "?",
+   "flavor_en": "The predator comes into your camp and attacks you.",
+   "flavor_it": "Il predatore entra nel vostro campo e vi attacca.",
+   "testo_en": "Fight a Beast: (see dati). Draw another card.",
+   "testo_it": "Combatti una Belva: (vedi dati). Pesca un'altra carta.",
+   "dati": {
+    "forza": 3,
+    "arma": -1,
+    "cibo": 2,
+    "pelliccia": 1,
+    "palizzata": -1
+   }
+  },
+  "note": "Il disco dorato appeso a un cordino è stato letto come {palizzata} (coincide con l'ultima colonna delle tabelle «Fight a Beast»); è diverso dal segnalino Determinazione (disco scuro con rosa dei venti)."
+ },
+ {
+  "id": 818,
+  "titolo_en": "Wind-Storm",
+  "titolo_it": "Tempesta di vento",
+  "angolo": "martello",
+  "flavor_en": "Wind rages along the camp, throwing everything around.",
+  "flavor_it": "Il vento infuria sul campo, sparpagliando ogni cosa.",
+  "testo_en": "-1 {palizzata}. Shuffle into the Event deck.",
+  "testo_it": "-1 {palizzata}. Mescola nel mazzo Eventi.",
+  "parte2": {
+   "titolo_en": "Natural Palisade",
+   "titolo_it": "Palizzata naturale",
+   "angolo": "?",
+   "flavor_en": "Your camp got overgrown with bushes.",
+   "flavor_it": "Il vostro campo è stato ricoperto dai cespugli.",
+   "testo_en": "+1 {palizzata} (if you have Shelter). Draw another card.",
+   "testo_it": "+1 {palizzata} (se avete un Rifugio). Pesca un'altra carta."
+  },
+  "note": "Il disco dorato appeso a un cordino è stato letto come {palizzata} (coincide con l'ultima colonna delle tabelle «Fight a Beast»); è diverso dal segnalino Determinazione (disco scuro con rosa dei venti)."
+ },
+ {
+  "id": 819,
+  "titolo_en": "Cut Head",
+  "titolo_it": "Testa tagliata",
+  "angolo": "martello",
+  "flavor_en": "You have cut your head and are angry.",
+  "flavor_it": "Vi siete tagliati la testa e siete arrabbiati.",
+  "testo_en": "Get {ferita} and 2 {det}. Put {ferita_testa} on your Character's head. Shuffle into the Event deck.",
+  "testo_it": "Subisci {ferita} e ottieni 2 {det}. Metti {ferita_testa} sulla testa del tuo Personaggio. Mescola nel mazzo Eventi.",
+  "parte2": {
+   "titolo_en": "Headache",
+   "titolo_it": "Mal di testa",
+   "angolo": "?",
+   "flavor_en": "You have a big bruise on your head and an enormous headache.",
+   "flavor_it": "Avete un grosso livido in testa e un tremendo mal di testa.",
+   "testo_en": "If you don't have {inv:Cure}, the Character with {ferita_testa} on his head gets 2 {ferita}. Discard {ferita_testa}. Draw another card.",
+   "testo_it": "Se non avete {inv:Medicina}, il Personaggio con {ferita_testa} sulla testa subisce 2 {ferita}. Scarta {ferita_testa}. Pesca un'altra carta."
+  },
+  "note": "Icona mortaio e pestello = Invenzione Cure (Medicina), trascritta {inv:Cure}/{inv:Medicina}."
+ },
+ {
+  "id": 820,
+  "titolo_en": "Fear of the Beasts",
+  "titolo_it": "Paura delle belve",
+  "angolo": "martello",
+  "flavor_en": "Sooner or later, you will need much stronger weapons.",
+  "flavor_it": "Prima o poi vi serviranno armi molto più potenti.",
+  "testo_en": "Shuffle into the Event deck.",
+  "testo_it": "Mescola nel mazzo Eventi.",
+  "parte2": {
+   "titolo_en": "Extensive Protection",
+   "titolo_it": "Protezione estesa",
+   "angolo": "?",
+   "flavor_en": "As you expected, the island is very dangerous and you need to make better weapons.",
+   "flavor_it": "Come vi aspettavate, l'isola è molto pericolosa e dovete costruire armi migliori.",
+   "testo_en": "Put {legno_extra} on the Weapon Cost field. From now on, you have to spend 2 {legno} instead of 1 to increase {arma}. Draw another card.",
+   "testo_it": "Metti {legno_extra} sullo spazio del costo dell'Arma. D'ora in poi dovete spendere 2 {legno} invece di 1 per aumentare {arma}. Pesca un'altra carta."
+  }
+ },
+ {
+  "id": 821,
+  "titolo_en": "Nasty Wound",
+  "titolo_it": "Brutta ferita",
+  "angolo": "martello",
+  "flavor_en": "You have badly cut your hand.",
+  "flavor_it": "Vi siete tagliati gravemente la mano.",
+  "testo_en": "Put {ferita_braccio} on your Character's arm. Shuffle into the Event deck.",
+  "testo_it": "Metti {ferita_braccio} sul braccio del tuo Personaggio. Mescola nel mazzo Eventi.",
+  "parte2": {
+   "titolo_en": "Infection",
+   "titolo_it": "Infezione",
+   "angolo": "?",
+   "flavor_en": "Without medicine, it won't heal.",
+   "flavor_it": "Senza medicine non guarirà.",
+   "testo_en": "If you don't have {inv:Cure}, the Character with {ferita_braccio} on his arm gets 2 {ferita}. Discard {ferita_braccio}. Draw another card.",
+   "testo_it": "Se non avete {inv:Medicina}, il Personaggio con {ferita_braccio} sul braccio subisce 2 {ferita}. Scarta {ferita_braccio}. Pesca un'altra carta."
+  },
+  "note": "Icona mortaio e pestello = Invenzione Cure (Medicina), trascritta {inv:Cure}/{inv:Medicina}."
+ },
+ {
+  "id": 822,
+  "titolo_en": "Broken Lever",
+  "titolo_it": "Leva spezzata",
+  "angolo": "martello",
+  "flavor_en": "The stick you used as a lever breaks.",
+  "flavor_it": "Il bastone che usavate come leva si spezza.",
+  "testo_en": "-1 {arma}.",
+  "testo_it": "-1 {arma}."
+ },
+ {
+  "id": 823,
+  "titolo_en": "Dark Clouds in the Sky",
+  "titolo_it": "Nuvole scure in cielo",
+  "angolo": "martello",
+  "flavor_en": "It's going to be a hard day. It's pouring.",
+  "flavor_it": "Sarà una giornata dura. Piove a dirotto.",
+  "testo_en": "Put {pioggia} in the Weather space. Shuffle into the Event deck.",
+  "testo_it": "Metti {pioggia} nello spazio Meteo. Mescola nel mazzo Eventi.",
+  "parte2": {
+   "titolo_en": "After the Rain",
+   "titolo_it": "Dopo la pioggia",
+   "angolo": "?",
+   "flavor_en": "Your shelter was strong enough to protect you from the heavy rain.",
+   "flavor_it": "Il vostro rifugio era abbastanza solido da proteggervi dalla pioggia battente.",
+   "testo_en": "+1 {palizzata} (if you have a Shelter). Draw another card.",
+   "testo_it": "+1 {palizzata} (se avete un Rifugio). Pesca un'altra carta."
+  },
+  "note": "Parte 1: icona = gettone rotondo giallo con nuvola di pioggia; letta come segnalino nuvola di pioggia {pioggia} (non un dado). Parte 2: Il disco dorato appeso a un cordino è stato letto come {palizzata} (coincide con l'ultima colonna delle tabelle «Fight a Beast»); è diverso dal segnalino Determinazione (disco scuro con rosa dei venti). Tematicamente strano (palizzata dopo la pioggia) ma l'icona è identica."
+ },
+ {
+  "id": 824,
+  "titolo_en": "“Gonna Need a Bigger Camp”",
+  "titolo_it": "«Ci servirà un campo più grande»",
+  "angolo": "martello",
+  "flavor_en": "You have so many belongings that the camp has become too small for you. Soon you will need a bigger camp.",
+  "flavor_it": "Avete così tante cose che il campo è diventato troppo piccolo. Presto vi servirà un campo più grande.",
+  "testo_en": "Shuffle into the Event deck.",
+  "testo_it": "Mescola nel mazzo Eventi.",
+  "parte2": {
+   "titolo_en": "Enlarging the Camp",
+   "titolo_it": "Ampliare il campo",
+   "angolo": "?",
+   "flavor_en": "Now is the right time to make your camp bigger.",
+   "flavor_it": "Ora è il momento giusto per ingrandire il campo.",
+   "testo_en": "Put {legno_extra} on the Shelter, Roof and Palisade Cost fields. From now on, you have to spend one {legno} more to build them. Draw another card.",
+   "testo_it": "Metti {legno_extra} sugli spazi del costo di Rifugio, Tetto e Palizzata. D'ora in poi dovete spendere un {legno} in più per costruirli. Pesca un'altra carta."
+  }
+ },
+ {
+  "id": 825,
+  "titolo_en": "Accident",
+  "titolo_it": "Incidente",
+  "angolo": "martello",
+  "flavor_en": "Through inattention you cut your leg with a tool. It may get worse.",
+  "flavor_it": "Per disattenzione vi tagliate la gamba con un attrezzo. Potrebbe peggiorare.",
+  "testo_en": "Put {ferita_gamba} on your character's leg. Shuffle into the Event deck.",
+  "testo_it": "Metti {ferita_gamba} sulla gamba del tuo Personaggio. Mescola nel mazzo Eventi.",
+  "parte2": {
+   "titolo_en": "Gangrene",
+   "titolo_it": "Cancrena",
+   "angolo": "?",
+   "flavor_en": "It's not healing, Do you have a cure, or is it too late?",
+   "flavor_it": "Non sta guarendo. Avete una cura, o è troppo tardi?",
+   "testo_en": "The character with {ferita_gamba} on his leg gets 3 {ferita} or {ferita} if you have {inv:Cure}. Discard {ferita_gamba}. Draw another card.",
+   "testo_it": "Il Personaggio con {ferita_gamba} sulla gamba subisce 3 {ferita}, oppure 1 {ferita} se avete {inv:Medicina}. Scarta {ferita_gamba}. Pesca un'altra carta."
+  },
+  "note": "Icona mortaio e pestello = Invenzione Cure (Medicina), trascritta {inv:Cure}/{inv:Medicina}."
+ },
+ {
+  "id": 826,
+  "titolo_en": "Monkey See",
+  "titolo_it": "Scimmia vede",
+  "angolo": "martello",
+  "flavor_en": "You chase the monkeys away, but deep down, you know they will come back.",
+  "flavor_it": "Cacciate via le scimmie, ma in fondo sapete che torneranno.",
+  "testo_en": "Shuffle into the Event deck.",
+  "testo_it": "Mescola nel mazzo Eventi.",
+  "parte2": {
+   "titolo_en": "Monkey Do",
+   "titolo_it": "Scimmia fa",
+   "angolo": "?",
+   "flavor_en": "Monkeys come to your camp and trash it to the ground.",
+   "flavor_it": "Le scimmie arrivano al campo e lo mettono a soqquadro.",
+   "testo_en": "-1/2 {tetto} or {palizzata} (rounded down). Draw another card.",
+   "testo_it": "-1/2 {tetto} o {palizzata} (arrotondato per difetto). Pesca un'altra carta."
+  },
+  "note": "Il disco dorato appeso a un cordino è stato letto come {palizzata} (coincide con l'ultima colonna delle tabelle «Fight a Beast»); è diverso dal segnalino Determinazione (disco scuro con rosa dei venti)."
+ },
+ {
+  "id": 827,
+  "titolo_en": "Unmotivated",
+  "titolo_it": "Demotivati",
+  "angolo": "martello",
+  "flavor_en": "Due to your being hurt, tired and irritated, construction is going very slowly.",
+  "flavor_it": "Poiché siete feriti, stanchi e irritati, la costruzione procede molto lentamente.",
+  "testo_en": "Discard {det} or get {ferita}. Shuffle into the Event deck.",
+  "testo_it": "Scarta {det} oppure subisci {ferita}. Mescola nel mazzo Eventi.",
+  "parte2": {
+   "titolo_en": "Tools Are Breaking",
+   "titolo_it": "Gli attrezzi si rompono",
+   "angolo": "?",
+   "flavor_en": "You're disappointed with the condition of your tools.",
+   "flavor_it": "Siete delusi dalle condizioni dei vostri attrezzi.",
+   "testo_en": "Each player has to discard {det}. Draw another card.",
+   "testo_it": "Ogni giocatore deve scartare {det}. Pesca un'altra carta."
+  }
+ },
+ {
+  "id": 828,
+  "titolo_en": "Coming to Terms",
+  "titolo_it": "Fare i conti",
+  "angolo": "martello",
+  "flavor_en": "You debate about your future and come to realize that some of your ideas will be impossible to create under these conditions.",
+  "flavor_it": "Discutete del vostro futuro e capite che alcune delle vostre idee saranno impossibili da realizzare in queste condizioni.",
+  "testo_en": "Discard 3 Invention cards. Shuffle into the Event deck.",
+  "testo_it": "Scarta 3 carte Invenzione. Mescola nel mazzo Eventi.",
+  "parte2": {
+   "titolo_en": "Lack of Ideas",
+   "titolo_it": "Mancanza di idee",
+   "angolo": "?",
+   "flavor_en": "You see a dark future for yourself...",
+   "flavor_it": "Vedete un futuro cupo davanti a voi...",
+   "testo_en": "{morale-} Draw another card.",
+   "testo_it": "{morale-} Pesca un'altra carta."
+  },
+  "note": "Freccia del morale: estremità a punta/riccioli a sinistra, impennaggio a destra; letta come {morale-} (coerente col testo narrativo)."
+ },
+ {
+  "id": 829,
+  "titolo_en": "Predator in the Camp!",
+  "titolo_it": "Predatore nel campo!",
+  "angolo": "martello",
+  "flavor_en": "A predator visits your camp and attacks you.",
+  "flavor_it": "Un predatore fa visita al vostro campo e vi attacca.",
+  "testo_en": "Fight a Beast: (see dati). Regardless of your {arma}, shuffle into the Event deck.",
+  "testo_it": "Combatti una Belva: (vedi dati). Indipendentemente dal vostro {arma}, mescola nel mazzo Eventi.",
+  "dati": {
+   "forza": 4
+  },
+  "parte2": {
+   "titolo_en": "What Goes Around, Comes Around",
+   "titolo_it": "Chi la fa l'aspetti",
+   "angolo": "?",
+   "flavor_en": "In the morning, you find the dead body of the predator that previously attacked you.",
+   "flavor_it": "Al mattino trovate il cadavere del predatore che vi aveva attaccato.",
+   "testo_en": "Get 2 {cibo} and {pelliccia}. Draw another card.",
+   "testo_it": "Ottieni 2 {cibo} e {pelliccia}. Pesca un'altra carta."
+  },
+  "note": "Tabella «Fight a Beast» con solo la forza (4), nessun'altra colonna."
+ },
+ {
+  "id": 900,
+  "titolo_en": "Nestlings",
+  "titolo_it": "Nidiacei",
+  "angolo": "ciotola",
+  "flavor_en": "You have found a nest with baby birds.",
+  "flavor_it": "Avete trovato un nido con dei piccoli uccelli.",
+  "testo_en": "DECIDE: Discard this card OR get one {cibo} per player and shuffle into the Event deck.",
+  "testo_it": "DECIDI: scarta questa carta OPPURE ottieni un {cibo} per giocatore e mescolala nel mazzo Eventi.",
+  "parte2": {
+   "titolo_en": "Angry Bird!",
+   "titolo_it": "Uccello arrabbiato!",
+   "angolo": "?",
+   "flavor_en": "The mother of the nestlings finds your camp and hurls itself towards it.",
+   "flavor_it": "La madre dei nidiacei trova il vostro campo e gli si scaglia contro.",
+   "testo_en": "-1 {tetto}. Draw another card.",
+   "testo_it": "-1 {tetto}. Pesca un'altra carta."
+  }
+ },
+ {
+  "id": 901,
+  "titolo_en": "Unexpected Troubles",
+  "titolo_it": "Guai inattesi",
+  "angolo": "ciotola",
+  "flavor_en": "You went to bring some resources but you also brought something else: bad news.",
+  "flavor_it": "Siete andati a prendere risorse ma avete portato anche qualcos'altro: cattive notizie.",
+  "testo_en": "Cover the terrain type (mountains, hills, river etc.) on the tile where you are gathering resources with {segno_nero}. Treat this terrain type as unexplored on this tile.",
+  "testo_it": "Copri con {segno_nero} il tipo di terreno (montagne, colline, fiume ecc.) sulla tessera Isola dove state raccogliendo risorse. Considera questo tipo di terreno come inesplorato su questa tessera."
+ },
+ {
+  "id": 902,
+  "titolo_en": "Winter Freezing",
+  "titolo_it": "Gelo invernale",
+  "angolo": "ciotola",
+  "flavor_en": "Winter is reducing the amount of sources on the Island.",
+  "flavor_it": "L'inverno sta riducendo la quantità di fonti sull'Isola.",
+  "testo_en": "Choose one source on the tile where you are gathering resources. Cover this source with {segno_nero} to indicate that it's exhausted.",
+  "testo_it": "Scegli una fonte sulla tessera Isola dove state raccogliendo risorse. Copri questa fonte con {segno_nero} per indicare che è esaurita."
+ },
+ {
+  "id": 903,
+  "titolo_en": "End of Source",
+  "titolo_it": "Fonte esaurita",
+  "angolo": "ciotola",
+  "flavor_en": "The resource you want to gather is the last in this source.",
+  "flavor_it": "La risorsa che volete raccogliere è l'ultima di questa fonte.",
+  "testo_en": "Cover the source you are gathering from with {segno_nero} to indicate that it's exhausted.",
+  "testo_it": "Copri con {segno_nero} la fonte da cui state raccogliendo per indicare che è esaurita."
+ },
+ {
+  "id": 904,
+  "titolo_en": "Twisted Ankle",
+  "titolo_it": "Caviglia slogata",
+  "angolo": "ciotola",
+  "flavor_en": "Suddenly, you have fallen into a burrow.",
+  "flavor_it": "All'improvviso siete caduti in una tana.",
+  "testo_en": "Put {ferita_gamba} on your Character's leg. Shuffle into the Event deck.",
+  "testo_it": "Metti {ferita_gamba} sulla gamba del tuo Personaggio. Mescola nel mazzo Eventi.",
+  "parte2": {
+   "titolo_en": "Swollen Ankle",
+   "titolo_it": "Caviglia gonfia",
+   "angolo": "?",
+   "flavor_en": "Your ankle hurts so bad that you can't go outside the camp.",
+   "flavor_it": "La caviglia vi fa così male che non potete uscire dal campo.",
+   "testo_en": "This round, the Character with {ferita_gamba} on his leg can only {sistemare} {costruire} {riposo}. Discard {ferita_gamba}. Draw another card.",
+   "testo_it": "In questo round, il Personaggio con {ferita_gamba} sulla gamba può solo {sistemare} {costruire} {riposo}. Scarta {ferita_gamba}. Pesca un'altra carta."
+  },
+  "note": "Parte 2: tre icone azione affiancate senza separatori (Sistemare il campo, Costruire, Riposo)."
+ },
+ {
+  "id": 905,
+  "titolo_en": "Signs of a Predator",
+  "titolo_it": "Segni di un predatore",
+  "angolo": "ciotola",
+  "flavor_en": "Leaving the camp, you spot signs of a predator nearby.",
+  "flavor_it": "Lasciando il campo, notate segni di un predatore nei paraggi.",
+  "testo_en": "Shuffle into the Event deck.",
+  "testo_it": "Mescola nel mazzo Eventi.",
+  "parte2": {
+   "titolo_en": "Hungry Predator Attacks!",
+   "titolo_it": "Il predatore affamato attacca!",
+   "angolo": "?",
+   "flavor_en": "You're scared.",
+   "flavor_it": "Siete spaventati.",
+   "testo_en": "If you have 3 {arma}, nothing happens. Otherwise, cover Food source on the tile where you camp with {segno_nero} to indicate that it's exhausted. If there's no Food source, each player gets {ferita}. Draw another card.",
+   "testo_it": "Se avete 3 {arma}, non succede nulla. Altrimenti copri con {segno_nero} la fonte di cibo sulla tessera dove si trova il campo per indicare che è esaurita. Se non c'è una fonte di cibo, ogni giocatore subisce {ferita}. Pesca un'altra carta."
+  }
+ },
+ {
+  "id": 906,
+  "titolo_en": "Winter Is Coming",
+  "titolo_it": "L'inverno sta arrivando",
+  "angolo": "ciotola",
+  "flavor_en": "While gathering resources, you can clearly see that the animals on the island are preparing for a cold winter.",
+  "flavor_it": "Mentre raccogliete risorse, vedete chiaramente che gli animali dell'isola si preparano a un inverno rigido.",
+  "testo_en": "Shuffle into the Event deck.",
+  "testo_it": "Mescola nel mazzo Eventi.",
+  "parte2": {
+   "titolo_en": "Ground-Frost",
+   "titolo_it": "Gelata",
+   "angolo": "?",
+   "flavor_en": "The night is going to be extremely cold.",
+   "flavor_it": "La notte sarà estremamente fredda.",
+   "testo_en": "Put {neve} in the Weather space. Draw another card.",
+   "testo_it": "Metti {neve} nello spazio Meteo. Pesca un'altra carta."
+  },
+  "note": "Parte 2: gettone rotondo bianco/azzurro con nuvola e fiocco; letto come segnalino nuvola invernale {neve} (non un dado)."
+ },
+ {
+  "id": 907,
+  "titolo_en": "Mushrooms",
+  "titolo_it": "Funghi",
+  "angolo": "ciotola",
+  "flavor_en": "You have found some mushrooms on your way back to the camp.",
+  "flavor_it": "Sulla via del ritorno al campo avete trovato dei funghi.",
+  "testo_en": "DECIDE: Discard this card OR get one {cibo} per player and shuffle into the Event deck.",
+  "testo_it": "DECIDI: scarta questa carta OPPURE ottieni un {cibo} per giocatore e mescolala nel mazzo Eventi.",
+  "parte2": {
+   "titolo_en": "Illness",
+   "titolo_it": "Malattia",
+   "angolo": "?",
+   "flavor_en": "All night, you were suffering from these mushrooms.",
+   "flavor_it": "Per tutta la notte avete sofferto per quei funghi.",
+   "testo_en": "If you don't have {inv:Cure}, each player gets {ferita}. Draw another card.",
+   "testo_it": "Se non avete {inv:Medicina}, ogni giocatore subisce {ferita}. Pesca un'altra carta."
+  },
+  "note": "Icona mortaio e pestello = Invenzione Cure (Medicina), trascritta {inv:Cure}/{inv:Medicina}."
+ },
+ {
+  "id": 908,
+  "titolo_en": "Gold Coin!",
+  "titolo_it": "Moneta d'oro!",
+  "angolo": "ciotola",
+  "flavor_en": "You have found a Spanish gold coin! You take it.",
+  "flavor_it": "Avete trovato una moneta d'oro spagnola! La prendete.",
+  "testo_en": "Shuffle into the Event deck.",
+  "testo_it": "Mescola nel mazzo Eventi.",
+  "parte2": {
+   "titolo_en": "Curse",
+   "titolo_it": "Maledizione",
+   "angolo": "?",
+   "flavor_en": "The gold was cursed.",
+   "flavor_it": "L'oro era maledetto.",
+   "testo_en": "Put {successo_negato} on the Building, Gathering Resources, and Exploration Action fields. During the next Action of each of these types, you have to reroll one {succ} result. Draw another card.",
+   "testo_it": "Metti {successo_negato} sugli spazi delle Azioni Costruire, Raccogliere risorse ed Esplorare. Durante la prossima Azione di ciascuno di questi tipi, dovete ritirare un risultato {succ}. Pesca un'altra carta."
+  }
+ },
+ {
+  "id": 909,
+  "titolo_en": "Shortage",
+  "titolo_it": "Scarsità",
+  "angolo": "ciotola",
+  "flavor_en": "It looks like it's the last time you will be here.",
+  "flavor_it": "Sembra che sia l'ultima volta che verrete qui.",
+  "testo_en": "Take 1 additional cube of the resource you are gathering (even if action is unsuccessful) and cover its source with {segno_nero} to indicate that it's exhausted.",
+  "testo_it": "Prendi 1 cubetto aggiuntivo della risorsa che state raccogliendo (anche se l'azione non ha successo) e copri la sua fonte con {segno_nero} per indicare che è esaurita."
+ },
+ {
+  "id": 910,
+  "titolo_en": "End of Source",
+  "titolo_it": "Fonte esaurita",
+  "angolo": "ciotola",
+  "flavor_en": "The resource you want to gather is the last in this source.",
+  "flavor_it": "La risorsa che volete raccogliere è l'ultima di questa fonte.",
+  "testo_en": "Cover the source you are gathering from with {segno_nero} to indicate that it's exhausted.",
+  "testo_it": "Copri con {segno_nero} la fonte da cui state raccogliendo per indicare che è esaurita."
+ },
+ {
+  "id": 911,
+  "titolo_en": "Tracks of a Predator",
+  "titolo_it": "Tracce di un predatore",
+  "angolo": "ciotola",
+  "flavor_en": "It appears that you are not the only one to explore this part of the island",
+  "flavor_it": "Sembra che non siate gli unici a esplorare questa parte dell'isola",
+  "testo_en": "Put {pericolo} on the tile where you are gathering resources. Starting next round, each time you take an Action on this tile, your {arma} should be at least 1 (or the player performing the Action gets {ferita}).",
+  "testo_it": "Metti {pericolo} sulla tessera Isola dove state raccogliendo risorse. Dal prossimo round, ogni volta che svolgete un'Azione su questa tessera, il vostro {arma} deve essere almeno 1 (altrimenti il giocatore che svolge l'Azione subisce {ferita}).",
+  "note": "Gettone rosso rotondo con teschio/belva, letto come segnalino Pericolo maggiore (effetto coerente con il regolamento)."
+ },
+ {
+  "id": 912,
+  "titolo_en": "Nice Surprise",
+  "titolo_it": "Bella sorpresa",
+  "angolo": "ciotola",
+  "flavor_en": "You have found a pile of wood, probably left here after some storm.",
+  "flavor_it": "Avete trovato una catasta di legna, probabilmente lasciata lì da qualche tempesta.",
+  "testo_en": "DECIDE: Discard this card OR get 3 {legno} and shuffle into the Event deck.",
+  "testo_it": "DECIDI: scarta questa carta OPPURE ottieni 3 {legno} e mescolala nel mazzo Eventi.",
+  "parte2": {
+   "titolo_en": "Collapse",
+   "titolo_it": "Crollo",
+   "angolo": "?",
+   "flavor_en": "The wood was too dry and the roof collapsed.",
+   "flavor_it": "Il legno era troppo secco e il tetto è crollato.",
+   "testo_en": "-1/2 {tetto} (rounded down). Draw another card.",
+   "testo_it": "-1/2 {tetto} (arrotondato per difetto). Pesca un'altra carta."
+  }
+ },
+ {
+  "id": 913,
+  "titolo_en": "Surprise in the Bushes",
+  "titolo_it": "Sorpresa tra i cespugli",
+  "angolo": "ciotola",
+  "flavor_en": "It's your lucky day! You have found a very useful item in the bushes.",
+  "flavor_it": "È il vostro giorno fortunato! Tra i cespugli avete trovato un oggetto molto utile.",
+  "testo_en": "DECIDE: Discard this card OR draw 1 Starting Item card and shuffle this Adventure card into the Event deck.",
+  "testo_it": "DECIDI: scarta questa carta OPPURE pesca 1 carta Oggetto iniziale e mescola questa carta Avventura nel mazzo Eventi.",
+  "parte2": {
+   "titolo_en": "Reflections",
+   "titolo_it": "Riflessioni",
+   "angolo": "?",
+   "flavor_en": "You look at the item and you wonder what happened to its owner.",
+   "flavor_it": "Guardate l'oggetto e vi chiedete che fine abbia fatto il suo proprietario.",
+   "testo_en": "{morale-} Draw another card.",
+   "testo_it": "{morale-} Pesca un'altra carta."
+  },
+  "note": "Freccia del morale: estremità a punta/riccioli a sinistra, impennaggio a destra; letta come {morale-} (coerente col testo narrativo)."
+ },
+ {
+  "id": 914,
+  "titolo_en": "Furs",
+  "titolo_it": "Pellicce",
+  "angolo": "ciotola",
+  "flavor_en": "You have found furs in a cave.",
+  "flavor_it": "Avete trovato delle pellicce in una grotta.",
+  "testo_en": "DECIDE: Discard this card OR get 2 {pelliccia} and shuffle into the Event deck.",
+  "testo_it": "DECIDI: scarta questa carta OPPURE ottieni 2 {pelliccia} e mescolala nel mazzo Eventi.",
+  "parte2": {
+   "titolo_en": "Insects",
+   "titolo_it": "Insetti",
+   "angolo": "?",
+   "flavor_en": "There were ants hidden in the furs. All your food is wasted!",
+   "flavor_it": "Nelle pellicce si nascondevano delle formiche. Tutto il vostro cibo è andato perso!",
+   "testo_en": "IF POSSIBLE: During the Production phase of this round, you get one {cibo} less. Draw another card.",
+   "testo_it": "SE POSSIBILE: durante la fase Produzione di questo round ottenete un {cibo} in meno. Pesca un'altra carta."
+  }
+ },
+ {
+  "id": 915,
+  "titolo_en": "End of Source",
+  "titolo_it": "Fonte esaurita",
+  "angolo": "ciotola",
+  "flavor_en": "The resource you want to gather is the last in this source.",
+  "flavor_it": "La risorsa che volete raccogliere è l'ultima di questa fonte.",
+  "testo_en": "Cover the source you are gathering from with {segno_nero} to indicate that it's exhausted.",
+  "testo_it": "Copri con {segno_nero} la fonte da cui state raccogliendo per indicare che è esaurita."
+ },
+ {
+  "id": 916,
+  "titolo_en": "End of Source",
+  "titolo_it": "Fonte esaurita",
+  "angolo": "ciotola",
+  "flavor_en": "The resource you want to gather is the last in this source.",
+  "flavor_it": "La risorsa che volete raccogliere è l'ultima di questa fonte.",
+  "testo_en": "Cover the source you are gathering from with {segno_nero} to indicate that it's exhausted.",
+  "testo_it": "Copri con {segno_nero} la fonte da cui state raccogliendo per indicare che è esaurita."
+ },
+ {
+  "id": 917,
+  "titolo_en": "Fruit",
+  "titolo_it": "Frutta",
+  "angolo": "ciotola",
+  "flavor_en": "You have eaten some fruit on your way back to the camp.",
+  "flavor_it": "Sulla via del ritorno al campo avete mangiato della frutta.",
+  "testo_en": "Put {ferita_pancia} on your character's belly. Shuffle into the Event deck.",
+  "testo_it": "Metti {ferita_pancia} sulla pancia del tuo Personaggio. Mescola nel mazzo Eventi.",
+  "parte2": {
+   "titolo_en": "Stomach Ache",
+   "titolo_it": "Mal di pancia",
+   "angolo": "?",
+   "flavor_en": "You feel terrible. You can't even get out of bed.",
+   "flavor_it": "Vi sentite malissimo. Non riuscite nemmeno ad alzarvi.",
+   "testo_en": "If you don't have {inv:Cure}, the character with {ferita_pancia} on his belly can only {riposo} this round. Discard {ferita_pancia}. Draw another card.",
+   "testo_it": "Se non avete {inv:Medicina}, il Personaggio con {ferita_pancia} sulla pancia può solo {riposo} in questo round. Scarta {ferita_pancia}. Pesca un'altra carta."
+  },
+  "note": "Icona mortaio e pestello = Invenzione Cure (Medicina), trascritta {inv:Cure}/{inv:Medicina}."
+ },
+ {
+  "id": 918,
+  "titolo_en": "Unexpected Discovery",
+  "titolo_it": "Scoperta inattesa",
+  "angolo": "ciotola",
+  "flavor_en": "You can't believe it. You have found something.",
+  "flavor_it": "Non ci potete credere. Avete trovato qualcosa.",
+  "testo_en": "Draw {scoperta}.",
+  "testo_it": "Pesca {scoperta}.",
+  "note": "Gettone rotondo bruno letto come segnalino Scoperta."
+ },
+ {
+  "id": 919,
+  "titolo_en": "Unbelievable Effort",
+  "titolo_it": "Sforzo incredibile",
+  "angolo": "ciotola",
+  "flavor_en": "You wanted to impress your fellows. You have gathered more wood than you can carry.",
+  "flavor_it": "Volevate impressionare i compagni. Avete raccolto più legna di quanta riusciate a trasportare.",
+  "testo_en": "DECIDE: Discard this card OR get 2 {legno} but also put {ferita_braccio} on your Character's arm and shuffle into the Event deck.",
+  "testo_it": "DECIDI: scarta questa carta OPPURE ottieni 2 {legno}, ma metti anche {ferita_braccio} sul braccio del tuo Personaggio, e mescolala nel mazzo Eventi.",
+  "parte2": {
+   "titolo_en": "Aching Arms",
+   "titolo_it": "Braccia doloranti",
+   "angolo": "?",
+   "flavor_en": "It hurts a lot!",
+   "flavor_it": "Fa molto male!",
+   "testo_en": "The Character with {ferita_braccio} on his arm gets {ferita}. Discard {ferita_braccio}. Draw another card.",
+   "testo_it": "Il Personaggio con {ferita_braccio} sul braccio subisce {ferita}. Scarta {ferita_braccio}. Pesca un'altra carta."
+  }
+ },
+ {
+  "id": 920,
+  "titolo_en": "End of Source",
+  "titolo_it": "Fonte esaurita",
+  "angolo": "ciotola",
+  "flavor_en": "The resource you want to gather is the last in this source.",
+  "flavor_it": "La risorsa che volete raccogliere è l'ultima di questa fonte.",
+  "testo_en": "Cover the source you are gathering from with {segno_nero} to indicate that it's exhausted.",
+  "testo_it": "Copri con {segno_nero} la fonte da cui state raccogliendo per indicare che è esaurita."
+ },
+ {
+  "id": 921,
+  "titolo_en": "Path of a Predator",
+  "titolo_it": "Il sentiero di un predatore",
+  "angolo": "ciotola",
+  "flavor_en": "You spot the tracks of a big animal.",
+  "flavor_it": "Notate le tracce di un grosso animale.",
+  "testo_en": "Shuffle into the Event deck.",
+  "testo_it": "Mescola nel mazzo Eventi.",
+  "parte2": {
+   "titolo_en": "Predator Attacks!",
+   "titolo_it": "Il predatore attacca!",
+   "angolo": "?",
+   "flavor_en": "In the evening, the camp is invaded by a big predator.",
+   "flavor_it": "Di sera il campo viene invaso da un grosso predatore.",
+   "testo_en": "Put {dado_belve} in the Weather space. During the Weather phase of this round, roll {dado_belve} and resolve its effect. Draw another card.",
+   "testo_it": "Metti {dado_belve} nello spazio Meteo. Durante la fase Meteo di questo round, tira {dado_belve} e risolvine l'effetto. Pesca un'altra carta."
+  }
+ },
+ {
+  "id": 922,
+  "titolo_en": "Viper",
+  "titolo_it": "Vipera",
+  "angolo": "ciotola",
+  "flavor_en": "A viper hides in your clothes and you unknowingly bring it into your camp...",
+  "flavor_it": "Una vipera si nasconde nei vostri vestiti e senza saperlo la portate al campo...",
+  "testo_en": "Shuffle into the Event deck.",
+  "testo_it": "Mescola nel mazzo Eventi.",
+  "parte2": {
+   "titolo_en": "Snakebite",
+   "titolo_it": "Morso di serpente",
+   "angolo": "?",
+   "flavor_en": "While making breakfast, suddenly, something bites you in the neck.",
+   "flavor_it": "Mentre preparate la colazione, all'improvviso qualcosa vi morde sul collo.",
+   "testo_en": "The First player gets 3 {ferita} or {ferita} if you have {inv:Cure}. Draw another card.",
+   "testo_it": "Il Primo giocatore subisce 3 {ferita}, oppure 1 {ferita} se avete {inv:Medicina}. Pesca un'altra carta."
+  },
+  "note": "Icona mortaio e pestello = Invenzione Cure (Medicina), trascritta {inv:Cure}/{inv:Medicina}."
+ },
+ {
+  "id": 923,
+  "titolo_en": "Pirate's Chest!",
+  "titolo_it": "Lo scrigno del pirata!",
+  "angolo": "ciotola",
+  "flavor_en": "After a windy night, you find a new path on the island. It leads you to a pirate's hideout.",
+  "flavor_it": "Dopo una notte ventosa trovate un nuovo sentiero sull'isola. Vi conduce al nascondiglio di un pirata.",
+  "testo_en": "DECIDE: Discard this card OR draw 2 Mystery cards (only resolve {?:scrigno, Tesoro}) and shuffle into the Event deck.",
+  "testo_it": "DECIDI: scarta questa carta OPPURE pesca 2 carte Mistero (risolvi solo {?:scrigno, Tesoro}) e mescolala nel mazzo Eventi.",
+  "parte2": {
+   "titolo_en": "Bad Luck!",
+   "titolo_it": "Sfortuna!",
+   "angolo": "?",
+   "flavor_en": "This pirate's chest was cursed.",
+   "flavor_it": "Lo scrigno del pirata era maledetto.",
+   "testo_en": "This round, each player has only one {pedina} available. Draw another card.",
+   "testo_it": "In questo round, ogni giocatore ha solo una {pedina} disponibile. Pesca un'altra carta."
+  },
+  "note": "Icona scrigno = carte Mistero di tipo Tesoro."
+ },
+ {
+  "id": 924,
+  "titolo_en": "Eyes in the Bushes",
+  "titolo_it": "Occhi tra i cespugli",
+  "angolo": "ciotola",
+  "flavor_en": "You feel that something is watching you.",
+  "flavor_it": "Sentite che qualcosa vi sta osservando.",
+  "testo_en": "Shuffle into the Event deck.",
+  "testo_it": "Mescola nel mazzo Eventi.",
+  "parte2": {
+   "titolo_en": "Unexpected Visit",
+   "titolo_it": "Visita inattesa",
+   "angolo": "?",
+   "flavor_en": "The predator came after you.",
+   "flavor_it": "Il predatore vi ha seguiti.",
+   "testo_en": "Put {dado_belve} in the Weather space. During the Weather phase of this round, roll {dado_belve} and resolve its effect. Draw another card.",
+   "testo_it": "Metti {dado_belve} nello spazio Meteo. Durante la fase Meteo di questo round, tira {dado_belve} e risolvine l'effetto. Pesca un'altra carta."
+  }
+ },
+ {
+  "id": 925,
+  "titolo_en": "New Flock",
+  "titolo_it": "Un nuovo stormo",
+  "angolo": "ciotola",
+  "flavor_en": "When you get to the place, you see a new flock.",
+  "flavor_it": "Arrivati sul posto, vedete un nuovo stormo.",
+  "testo_en": "Put {cibo_extra} on the tile where you are gathering resources. Starting next round, each time you gather or produce food from this tile, you get one more {cibo}. Shuffle into the Event deck.",
+  "testo_it": "Metti {cibo_extra} sulla tessera Isola dove state raccogliendo risorse. Dal prossimo round, ogni volta che raccogliete o producete cibo da questa tessera, ottenete un {cibo} in più. Mescola nel mazzo Eventi.",
+  "parte2": {
+   "titolo_en": "It's All Gone",
+   "titolo_it": "È finito tutto",
+   "angolo": "?",
+   "flavor_en": "Predators have found new prey. The area becomes dangerous..",
+   "flavor_it": "I predatori hanno trovato nuove prede. La zona diventa pericolosa..",
+   "testo_en": "Cover all sources on the tile with {cibo_extra} with {segno_nero} to indicate that they are exhausted. Draw another card.",
+   "testo_it": "Copri con {segno_nero} tutte le fonti sulla tessera con {cibo_extra} per indicare che sono esaurite. Pesca un'altra carta."
+  },
+  "note": "Flavor parte 2 stampato con due punti finali «..»."
+ },
+ {
+  "id": 926,
+  "titolo_en": "Spider",
+  "titolo_it": "Ragno",
+  "angolo": "ciotola",
+  "flavor_en": "Suddenly, a spider drops onto your head.",
+  "flavor_it": "All'improvviso un ragno vi cade in testa.",
+  "testo_en": "Put {ferita_testa} on your Character's head. Shuffle into the Event deck.",
+  "testo_it": "Metti {ferita_testa} sulla testa del tuo Personaggio. Mescola nel mazzo Eventi.",
+  "parte2": {
+   "titolo_en": "A Bite in the Neck",
+   "titolo_it": "Un morso sul collo",
+   "angolo": "?",
+   "flavor_en": "Terrible pain penetrates your body.",
+   "flavor_it": "Un dolore terribile vi attraversa il corpo.",
+   "testo_en": "This round, the character with {ferita_testa} on his head has only one {pedina} available. Discard {ferita_testa}. Draw another card.",
+   "testo_it": "In questo round, il Personaggio con {ferita_testa} sulla testa ha solo una {pedina} disponibile. Scarta {ferita_testa}. Pesca un'altra carta."
+  }
+ },
+ {
+  "id": 927,
+  "titolo_en": "After the Hurricane",
+  "titolo_it": "Dopo l'uragano",
+  "angolo": "ciotola",
+  "flavor_en": "This area is devastated and the trees are demolished.",
+  "flavor_it": "Questa zona è devastata e gli alberi sono abbattuti.",
+  "testo_en": "Get 2 {legno}. Put {lento} on the tile where you are gathering resources. Shuffle into the Event deck.",
+  "testo_it": "Ottieni 2 {legno}. Metti {lento} sulla tessera Isola dove state raccogliendo risorse. Mescola nel mazzo Eventi.",
+  "parte2": {
+   "titolo_en": "It Was Stormy Again",
+   "titolo_it": "Di nuovo tempesta",
+   "angolo": "?",
+   "flavor_en": "A dreadful storm destroyed this whole area.",
+   "flavor_it": "Una terribile tempesta ha distrutto tutta questa zona.",
+   "testo_en": "The tile with {lento} becomes inaccessible. Turn it face down (discard all tokens or markers). Draw another card.",
+   "testo_it": "La tessera con {lento} diventa inaccessibile. Girala a faccia in giù (scarta tutti i segnalini e i marcatori). Pesca un'altra carta."
+  },
+  "note": "Icona: pedina con segno meno = segnalino Azione che richiede tempo."
+ },
+ {
+  "id": 928,
+  "titolo_en": "Weather Breakdown",
+  "titolo_it": "Il tempo si guasta",
+  "angolo": "ciotola",
+  "flavor_en": "You see a storm coming towards the island.",
+  "flavor_it": "Vedete una tempesta avvicinarsi all'isola.",
+  "testo_en": "Shuffle into the Event deck.",
+  "testo_it": "Mescola nel mazzo Eventi.",
+  "parte2": {
+   "titolo_en": "Storm",
+   "titolo_it": "Tempesta",
+   "angolo": "?",
+   "flavor_en": "It is best to have a place to hide.",
+   "flavor_it": "È meglio avere un posto dove ripararsi.",
+   "testo_en": "Put {tempesta} in the Weather space. Draw another card.",
+   "testo_it": "Metti {tempesta} nello spazio Meteo. Pesca un'altra carta."
+  }
+ },
+ {
+  "id": 929,
+  "titolo_en": "Skeleton",
+  "titolo_it": "Scheletro",
+  "angolo": "ciotola",
+  "flavor_en": "While walking throught the forest, you find a skeleton holding an old book and you take it.",
+  "flavor_it": "Camminando nella foresta trovate uno scheletro che stringe un vecchio libro e lo prendete.",
+  "testo_en": "Shuffle into the Event deck.",
+  "testo_it": "Mescola nel mazzo Eventi.",
+  "parte2": {
+   "titolo_en": "Dead Explorer's Memoirs",
+   "titolo_it": "Memorie di un esploratore morto",
+   "angolo": "?",
+   "flavor_en": "It was a sad read.",
+   "flavor_it": "È stata una lettura triste.",
+   "testo_en": "{morale-} Draw 1 Invention card. Draw another card.",
+   "testo_it": "{morale-} Pesca 1 carta Invenzione. Pesca un'altra carta."
+  },
+  "note": "Flavor stampato con refuso «throught». Freccia del morale: estremità a punta/riccioli a sinistra, impennaggio a destra; letta come {morale-} (coerente col testo narrativo)."
+ }
+]

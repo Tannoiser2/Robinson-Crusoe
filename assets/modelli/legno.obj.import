@@ -1,0 +1,25 @@
+[remap]
+
+importer="wavefront_obj"
+importer_version=1
+type="Mesh"
+uid="uid://dqtmdukd5lvg8"
+path="res://.godot/imported/legno.obj-958321eb2b167088b8116e7a0ad302ec.mesh"
+
+[deps]
+
+files=["res://.godot/imported/legno.obj-958321eb2b167088b8116e7a0ad302ec.mesh"]
+
+source_file="res://assets/modelli/legno.obj"
+dest_files=["res://.godot/imported/legno.obj-958321eb2b167088b8116e7a0ad302ec.mesh", "res://.godot/imported/legno.obj-958321eb2b167088b8116e7a0ad302ec.mesh"]
+
+[params]
+
+generate_tangents=true
+generate_lods=true
+generate_shadow_mesh=true
+generate_lightmap_uv2=false
+generate_lightmap_uv2_texel_size=0.2
+scale_mesh=Vector3(1, 1, 1)
+offset_mesh=Vector3(0, 0, 0)
+force_disable_mesh_compression=false

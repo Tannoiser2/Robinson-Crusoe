@@ -1,0 +1,8045 @@
+[
+{
+"id": 100,
+"tipo": "compagno",
+"nome": "Cane",
+"nome_en": "Dog",
+"testo": "pedina aggiuntiva / pedina aggiuntiva"
+},
+{
+"id": 101,
+"tipo": "compagno",
+"nome": "Venerdì",
+"nome_en": "Friday",
+"testo": "Può scartare 2 Determinazione per rilanciare una volta un qualsiasi dado Azione."
+},
+{
+"id": 200,
+"tipo": "relitto",
+"nome": "Il forziere del capitano",
+"nome_en": "Captain's Chest",
+"tr_nome": "Spedizione per il tesoro",
+"tr_testo": "pedina -> legno / 2 pedina -> legno carta incorniciata (medaglione/sacchetto) Scarta questa carta.",
+"varianti": [
+[
+[
+"ris",
+"legno",
+1
+]
+],
+[
+[
+"ris",
+"legno",
+1
+],
+[
+"oggetto_iniziale"
+]
+]
+]
+},
+{
+"id": 201,
+"tipo": "relitto",
+"nome": "Casse di cibo",
+"nome_en": "Food Crates",
+"tr_nome": "Spedizione per il cibo",
+"tr_testo": "pedina -> cibo / 2 pedina -> cibo cibo non deperibile Scarta questa carta.",
+"varianti": [
+[
+[
+"ris",
+"cibo",
+1
+]
+],
+[
+[
+"ris",
+"cibo",
+1
+],
+[
+"ris",
+"cibo_np",
+1
+]
+]
+]
+},
+{
+"id": 202,
+"tipo": "relitto",
+"nome": "Scialuppa naufragata",
+"nome_en": "Wrecked Lifeboat",
+"tr_nome": "Spedizione per il legno",
+"tr_testo": "pedina -> legno / 2 pedina -> 2 legno Scarta questa carta.",
+"varianti": [
+[
+[
+"ris",
+"legno",
+1
+]
+],
+[
+[
+"ris",
+"legno",
+2
+]
+]
+]
+},
+{
+"id": 300,
+"tipo": "evento",
+"nome": "Tempo orribile",
+"nome_en": "Awful Weather",
+"simbolo": "esplorare",
+"flavor": "Vi svegliate bagnati e infreddoliti. Sarà una giornata lunga e difficile...",
+"testo": "Metti nuvola di pioggia nello spazio Meteo.",
+"tr_nome": "Frangivento",
+"tr_testo": "Scarta questa carta e ottieni Determinazione.",
+"tr_req": "pedina legno",
+"mn_testo": "Metti nuvola di neve nello spazio Meteo.",
+"ev": [
+[
+"meteo",
+"pioggia"
+]
+],
+"req": {
+"pedine": 1,
+"ris": {
+"legno": 1
+}
+},
+"tr": [
+[
+"det",
+1,
+"chi"
+]
+],
+"mn": [
+[
+"meteo",
+"neve"
+]
+],
+"doppia": false
+},
+{
+"id": 301,
+"tipo": "evento",
+"nome": "Cattiva sorte",
+"nome_en": "Bad Fate",
+"simbolo": "raccogliere",
+"flavor": "Non può essere vero...",
+"testo": "Scarta tutte le carte dallo spazio Azione di minaccia e risolvi i loro Effetti minaccia.",
+"tr_nome": "Riposo rassicurante",
+"tr_testo": "Scarta questa carta e ottieni 3 Determinazione.",
+"tr_req": "pedina",
+"mn_testo": "Ogni giocatore scarta Determinazione.",
+"ev": [
+[
+"scarta_minacce"
+]
+],
+"req": {
+"pedine": 1
+},
+"tr": [
+[
+"det",
+3,
+"chi"
+]
+],
+"mn": [
+[
+"det",
+-1,
+"tutti"
+]
+],
+"doppia": false
+},
+{
+"id": 302,
+"tipo": "evento",
+"nome": "Albero spezzato",
+"nome_en": "Broken Tree",
+"simbolo": "costruire",
+"flavor": "Un albero cade sul vostro riparo",
+"testo": "Ogni giocatore subisce ferita.",
+"tr_nome": "Rimuovere l'albero",
+"tr_testo": "Scarta questa carta e ottieni Determinazione e legno.",
+"tr_req": "pedina Rope",
+"mn_testo": "-1 morale",
+"ev": [
+[
+"ferita",
+1,
+"tutti"
+]
+],
+"req": {
+"pedine": 1,
+"inv": [
+"corda"
+]
+},
+"tr": [
+[
+"det",
+1,
+"chi"
+],
+[
+"ris",
+"legno",
+1
+]
+],
+"mn": [
+[
+"morale",
+-1
+]
+],
+"doppia": false
+},
+{
+"id": 303,
+"tipo": "evento",
+"nome": "Cataclisma",
+"nome_en": "Cataclysm",
+"simbolo": "costruire",
+"flavor": "Nella notte un uragano si è abbattuto sull'isola...",
+"testo": "Metti tutti gli Oggetti nello spazio Risorse future. Non sono disponibili in questo round. Rimettili sul tabellone dopo la fase Azione.",
+"tr_nome": "Riparare gli attrezzi",
+"tr_testo": "Scarta questa carta e ottieni Determinazione.",
+"tr_req": "pedina",
+"mn_testo": "Scarta 1 Oggetto e annulla il suo effetto (se possibile).",
+"ev": [
+[
+"oggetti_futuro"
+]
+],
+"req": {
+"pedine": 1
+},
+"tr": [
+[
+"det",
+1,
+"chi"
+]
+],
+"mn": [
+[
+"rovescia_inv",
+1,
+"scarta"
+]
+],
+"doppia": false
+},
+{
+"id": 304,
+"tipo": "evento",
+"nome": "Stanchezza cronica",
+"nome_en": "Chronic Tiredness",
+"simbolo": "esplorare",
+"flavor": "Non riuscite più a lavorare a stomaco vuoto.",
+"testo": "Durante la fase Notte di questo round, ogni giocatore deve mangiare 1 cibo aggiuntivo o subisce ferita. Metti gettone cibo extra nello spazio Notte come promemoria.",
+"tr_nome": "Rigenerazione",
+"tr_testo": "Scarta questa carta e ottieni 2 Determinazione.",
+"tr_req": "2 pedina",
+"mn_testo": "Ogni giocatore subisce ferita.",
+"ev": [
+[
+"gettone",
+"notte",
+"cibo_extra"
+]
+],
+"req": {
+"pedine": 2
+},
+"tr": [
+[
+"det",
+2,
+"chi"
+]
+],
+"mn": [
+[
+"ferita",
+1,
+"tutti"
+]
+],
+"doppia": false
+},
+{
+"id": 305,
+"tipo": "evento",
+"nome": "Nubifragio",
+"nome_en": "Cloud-Burst",
+"simbolo": "raccogliere",
+"flavor": "Fuggite!",
+"testo": "Sposta il tuo accampamento su una tessera Isola adiacente a tua scelta.",
+"tr_nome": "Trasloco",
+"tr_testo": "Scarta questa carta e ottieni +1 Tetto e Palizzata (solo se li hai persi spostando l'accampamento).",
+"tr_req": "pedina",
+"mn_testo": "Non succede nulla.",
+"ev": [
+[
+"sposta_campo"
+]
+],
+"req": {
+"pedine": 1
+},
+"tr": [
+[
+"recupera_campo"
+]
+],
+"mn": [],
+"doppia": false
+},
+{
+"id": 306,
+"tipo": "evento",
+"nome": "Pioggia fredda",
+"nome_en": "Cold Rain",
+"simbolo": "esplorare",
+"flavor": "Tutto è bagnato e freddo. Vi manca il sole...",
+"testo": "Metti nuvola di pioggia nello spazio Meteo.",
+"tr_nome": "Irrigazione",
+"tr_testo": "Scarta questa carta e ottieni Determinazione.",
+"tr_req": "pedina Shovel",
+"mn_testo": "Metti nuvola di pioggia nello spazio Meteo.",
+"ev": [
+[
+"meteo",
+"pioggia"
+]
+],
+"req": {
+"pedine": 1,
+"inv": [
+"pala"
+]
+},
+"tr": [
+[
+"det",
+1,
+"chi"
+]
+],
+"mn": [
+[
+"meteo",
+"pioggia"
+]
+],
+"doppia": true
+},
+{
+"id": 307,
+"tipo": "evento",
+"nome": "Zona depredata",
+"nome_en": "Culled Area",
+"simbolo": "raccogliere",
+"flavor": "I predatori hanno ripulito la zona. Oggi sarà difficile trovare cibo...",
+"testo": "Durante la fase di Produzione di questo round non ottieni cibo.",
+"tr_nome": "Caccia abbondante",
+"tr_testo": "Scarta questa carta e ottieni 2 cibo.",
+"tr_req": "2 Arma pedina",
+"mn_testo": "Non succede nulla.",
+"ev": [
+[
+"prod",
+"no_cibo"
+]
+],
+"req": {
+"pedine": 1,
+"arma": 2
+},
+"tr": [
+[
+"ris",
+"cibo",
+2
+]
+],
+"mn": [],
+"doppia": false
+},
+{
+"id": 308,
+"tipo": "evento",
+"nome": "Uragano devastante",
+"nome_en": "Devastating Hurricane",
+"simbolo": "raccogliere",
+"flavor": "Il vento soffia con furia. Il vostro accampamento è fatto a pezzi...",
+"testo": "-1/2 Tetto o Palizzata, arrotondato per difetto.",
+"tr_nome": "Riparazione",
+"tr_testo": "Scarta questa carta e ottieni +1 Tetto o Palizzata (solo se hai un Rifugio).",
+"tr_req": "pedina legno",
+"mn_testo": "-1 Tetto o Palizzata.",
+"ev": [
+[
+"liv_meta"
+]
+],
+"req": {
+"pedine": 1,
+"ris": {
+"legno": 1
+}
+},
+"tr": [
+[
+"liv_scelta",
+1
+]
+],
+"mn": [
+[
+"liv_scelta",
+-1
+]
+],
+"doppia": false
+},
+{
+"id": 309,
+"tipo": "evento",
+"nome": "Disastro",
+"nome_en": "Disaster",
+"simbolo": "raccogliere",
+"flavor": "Il vento soffia con furia. Il vostro accampamento è fatto a pezzi...",
+"testo": "-1 Tetto o Palizzata",
+"tr_nome": "Rattoppare",
+"tr_testo": "Scarta questa carta e ottieni +1 Tetto o Palizzata (solo se hai un Rifugio).",
+"tr_req": "pedina legno",
+"mn_testo": "-1/2 Tetto o Palizzata (arrotondato per difetto)",
+"ev": [
+[
+"liv_scelta",
+-1
+]
+],
+"req": {
+"pedine": 1,
+"ris": {
+"legno": 1
+}
+},
+"tr": [
+[
+"liv_scelta",
+1
+]
+],
+"mn": [
+[
+"liv_meta"
+]
+],
+"doppia": false
+},
+{
+"id": 310,
+"tipo": "evento",
+"nome": "Lite",
+"nome_en": "Fight",
+"simbolo": "costruire",
+"flavor": "Quando siete stanchi, non agite in modo ragionevole.",
+"testo": "Ogni giocatore subisce ferita.",
+"tr_nome": "Discorso",
+"tr_testo": "Scarta questa carta e ottieni Determinazione.",
+"tr_req": "pedina",
+"mn_testo": "Ogni giocatore scarta 2 Determinazione.",
+"ev": [
+[
+"ferita",
+1,
+"tutti"
+]
+],
+"req": {
+"pedine": 1
+},
+"tr": [
+[
+"det",
+1,
+"chi"
+]
+],
+"mn": [
+[
+"det",
+-2,
+"tutti"
+]
+],
+"doppia": false
+},
+{
+"id": 311,
+"tipo": "evento",
+"nome": "Incendio",
+"nome_en": "Fire",
+"simbolo": "esplorare",
+"flavor": "A notte fonda, è scoppiato un incendio nel bosco.",
+"testo": "Durante la fase di Produzione di questo round non ottieni legno.",
+"tr_nome": "Spegnere l'incendio",
+"tr_testo": "Scarta questa carta e ottieni Determinazione.",
+"tr_req": "pedina Shovel",
+"mn_testo": "Durante la fase di Produzione di questo round non ottieni legno.",
+"ev": [
+[
+"prod",
+"no_legno"
+]
+],
+"req": {
+"pedine": 1,
+"inv": [
+"pala"
+]
+},
+"tr": [
+[
+"det",
+1,
+"chi"
+]
+],
+"mn": [
+[
+"prod",
+"no_legno"
+]
+],
+"doppia": false
+},
+{
+"id": 312,
+"tipo": "evento",
+"nome": "Inondazione",
+"nome_en": "Flood",
+"simbolo": "esplorare",
+"flavor": "L'acqua entra nell'accampamento e porta via le cose.",
+"testo": "Gira 1 Oggetto sul lato Invenzione, oppure -1 Arma, oppure -1 Palizzata, oppure ogni giocatore subisce ferita.",
+"tr_nome": "Costruire uno scolo",
+"tr_testo": "Scarta questa carta e ottieni Determinazione.",
+"tr_req": "pedina Shovel",
+"mn_testo": "-1 Palizzata",
+"ev": [
+[
+"decidi",
+[
+[
+"Un Oggetto torna Invenzione",
+[
+[
+"rovescia_inv",
+1
+]
+]
+],
+[
+"-1 Arma",
+[
+[
+"liv",
+"arma",
+-1
+]
+]
+],
+[
+"-1 Palizzata",
+[
+[
+"liv",
+"palizzata",
+-1
+]
+]
+],
+[
+"Ogni personaggio subisce 1 ferita",
+[
+[
+"ferita",
+1,
+"tutti"
+]
+]
+]
+]
+]
+],
+"req": {
+"pedine": 1,
+"inv": [
+"pala"
+]
+},
+"tr": [
+[
+"det",
+1,
+"chi"
+]
+],
+"mn": [
+[
+"liv",
+"palizzata",
+-1
+]
+],
+"doppia": false
+},
+{
+"id": 313,
+"tipo": "evento",
+"nome": "Sorpresa volante",
+"nome_en": "Flying Surprise",
+"simbolo": "costruire",
+"flavor": "Nel cuore della notte un enorme ramo colpisce l'accampamento.",
+"testo": "-1 Tetto o Palizzata.",
+"tr_nome": "Ripulire dopo l'incidente",
+"tr_testo": "Scarta questa carta e ottieni Determinazione.",
+"tr_req": "pedina legno",
+"mn_testo": "-1 Tetto o Palizzata.",
+"ev": [
+[
+"liv_scelta",
+-1
+]
+],
+"req": {
+"pedine": 1,
+"ris": {
+"legno": 1
+}
+},
+"tr": [
+[
+"det",
+1,
+"chi"
+]
+],
+"mn": [
+[
+"liv_scelta",
+-1
+]
+],
+"doppia": false
+},
+{
+"id": 314,
+"tipo": "evento",
+"nome": "Gelo",
+"nome_en": "Frost",
+"simbolo": "raccogliere",
+"flavor": "Ciò che temevate di più è appena accaduto...",
+"testo": "Metti nuvola di neve nello spazio Meteo.",
+"tr_nome": "Riscaldare l'accampamento",
+"tr_testo": "Scarta questa carta e ottieni 2 Determinazione.",
+"tr_req": "pedina legno / pelliccia",
+"mn_testo": "Metti nuvola di neve nello spazio Meteo.",
+"ev": [
+[
+"meteo",
+"neve"
+]
+],
+"req": {
+"pedine": 1,
+"alt": [
+{
+"ris": {
+"legno": 1
+}
+},
+{
+"ris": {
+"pelliccia": 1
+}
+}
+]
+},
+"tr": [
+[
+"det",
+2,
+"chi"
+]
+],
+"mn": [
+[
+"meteo",
+"neve"
+]
+],
+"doppia": false
+},
+{
+"id": 315,
+"tipo": "evento",
+"nome": "Nuvole pesanti",
+"nome_en": "Heavy Clouds",
+"simbolo": "costruire",
+"flavor": "La pioggia vi sveglia e sembra che pioverà tutto il giorno...",
+"testo": "Metti nuvola di pioggia nello spazio Meteo.",
+"tr_nome": "Rinforzare il tetto",
+"tr_testo": "Scarta questa carta e ottieni Determinazione.",
+"tr_req": "pedina pelliccia",
+"mn_testo": "Metti nuvola di pioggia nello spazio Meteo.",
+"ev": [
+[
+"meteo",
+"pioggia"
+]
+],
+"req": {
+"pedine": 1,
+"ris": {
+"pelliccia": 1
+}
+},
+"tr": [
+[
+"det",
+1,
+"chi"
+]
+],
+"mn": [
+[
+"meteo",
+"pioggia"
+]
+],
+"doppia": false
+},
+{
+"id": 316,
+"tipo": "evento",
+"nome": "Sta arrivando un acquazzone",
+"nome_en": "Heavy Rain Is Coming",
+"simbolo": "raccogliere",
+"flavor": "Nuvole scure si addensano. Pioverà. E sarà un acquazzone.",
+"testo": "Metti nuvola di pioggia nello spazio Meteo.",
+"tr_nome": "Irrigazione",
+"tr_testo": "Scarta questa carta e ottieni Determinazione.",
+"tr_req": "pedina Shovel",
+"mn_testo": "Metti nuvola di pioggia nello spazio Meteo.",
+"ev": [
+[
+"meteo",
+"pioggia"
+]
+],
+"req": {
+"pedine": 1,
+"inv": [
+"pala"
+]
+},
+"tr": [
+[
+"det",
+1,
+"chi"
+]
+],
+"mn": [
+[
+"meteo",
+"pioggia"
+]
+],
+"doppia": false
+},
+{
+"id": 317,
+"tipo": "evento",
+"nome": "Acquazzone",
+"nome_en": "Heavy Rain",
+"simbolo": "costruire",
+"flavor": "Nuvole pesanti coprono il cielo. Il tempo non vi aiuta.",
+"testo": "Metti nuvola di pioggia nello spazio Meteo.",
+"tr_nome": "Prepararsi alla pioggia",
+"tr_testo": "Scarta questa carta e ottieni Determinazione.",
+"tr_req": "pedina legno",
+"mn_testo": "Metti nuvola di pioggia nello spazio Meteo.",
+"ev": [
+[
+"meteo",
+"pioggia"
+]
+],
+"req": {
+"pedine": 1,
+"ris": {
+"legno": 1
+}
+},
+"tr": [
+[
+"det",
+1,
+"chi"
+]
+],
+"mn": [
+[
+"meteo",
+"pioggia"
+]
+],
+"doppia": false
+},
+{
+"id": 318,
+"tipo": "evento",
+"nome": "Piena",
+"nome_en": "High Water",
+"simbolo": "raccogliere",
+"flavor": "Il fiume è straripato qui vicino. È pericoloso per l'accampamento.",
+"testo": "Metti segnalino Avventura (Esplorare) sullo spazio Azione Esplorare.",
+"tr_nome": "Drenaggio",
+"tr_testo": "Scarta questa carta e ottieni 2 Determinazione.",
+"tr_req": "pedina legno / Shovel",
+"mn_testo": "Scarta tutte le Risorse. In questo round non c'è la fase di Produzione.",
+"ev": [
+[
+"avv",
+"esplorare"
+]
+],
+"req": {
+"pedine": 1,
+"alt": [
+{
+"ris": {
+"legno": 1
+}
+},
+{
+"inv": [
+"pala"
+]
+}
+]
+},
+"tr": [
+[
+"det",
+2,
+"chi"
+]
+],
+"mn": [
+[
+"scarta_risorse"
+],
+[
+"prod",
+"nulla"
+]
+],
+"doppia": false
+},
+{
+"id": 319,
+"tipo": "evento",
+"nome": "Giaguaro",
+"nome_en": "Jaguar",
+"simbolo": "costruire",
+"flavor": "Un giaguaro si aggira intorno all'accampamento.",
+"testo": "Ogni giocatore subisce ferita.",
+"tr_nome": "Sorveglianza",
+"tr_testo": "Scarta questa carta.",
+"tr_req": "2 Arma pedina",
+"mn_testo": "Ogni giocatore subisce ferita.",
+"ev": [
+[
+"ferita",
+1,
+"tutti"
+]
+],
+"req": {
+"pedine": 1,
+"arma": 2
+},
+"tr": [],
+"mn": [
+[
+"ferita",
+1,
+"tutti"
+]
+],
+"doppia": false
+},
+{
+"id": 320,
+"tipo": "evento",
+"nome": "Frana",
+"nome_en": "Landslide",
+"simbolo": "costruire",
+"flavor": "Dovete fuggire!",
+"testo": "Sposta il tuo accampamento su una tessera Isola adiacente a tua scelta.",
+"tr_nome": "Mettere al sicuro l'accampamento",
+"tr_testo": "Scarta questa carta e ottieni Determinazione.",
+"tr_req": "pedina Shovel",
+"mn_testo": "In questo round non c'è la fase di Produzione.",
+"ev": [
+[
+"sposta_campo"
+]
+],
+"req": {
+"pedine": 1,
+"inv": [
+"pala"
+]
+},
+"tr": [
+[
+"det",
+1,
+"chi"
+]
+],
+"mn": [
+[
+"prod",
+"nulla"
+]
+],
+"doppia": false
+},
+{
+"id": 321,
+"tipo": "evento",
+"nome": "Ricordi della traversata",
+"nome_en": "Memories of the Cruise",
+"simbolo": "costruire",
+"flavor": "Avete passato la notte a parlare della vostra nave, dei vostri compagni e del vostro futuro su quest'isola pericolosa...",
+"testo": "-1 morale",
+"tr_nome": "Canto marinaresco",
+"tr_testo": "Scarta questa carta e ottieni 2 Determinazione, +1 morale.",
+"tr_req": "2 pedina",
+"mn_testo": "Ogni giocatore scarta Determinazione.",
+"ev": [
+[
+"morale",
+-1
+]
+],
+"req": {
+"pedine": 2
+},
+"tr": [
+[
+"det",
+2,
+"chi"
+],
+[
+"morale",
+1
+]
+],
+"mn": [
+[
+"det",
+-1,
+"tutti"
+]
+],
+"doppia": false
+},
+{
+"id": 322,
+"tipo": "evento",
+"nome": "Attacco notturno",
+"nome_en": "Night Attack",
+"simbolo": "esplorare",
+"flavor": "Un ruggito spaventoso vi sveglia...",
+"testo": "Ogni giocatore subisce ferita. SE POSSIBILE: guarda la prima carta del mazzo Caccia.",
+"tr_nome": "In cerca di una Belva",
+"tr_testo": "Pesca la prima carta del mazzo Caccia, combatti la Belva ma ignora la sua forza. Scarta questa carta.",
+"tr_req": "3 Arma pedina",
+"mn_testo": "SE POSSIBILE: scarta la prima carta del mazzo Caccia.",
+"ev": [
+[
+"ferita",
+1,
+"tutti"
+],
+[
+"caccia_guarda"
+]
+],
+"req": {
+"pedine": 1,
+"arma": 3
+},
+"tr": [
+[
+"combatti_caccia",
+"noforza"
+]
+],
+"mn": [
+[
+"caccia_scarta"
+]
+],
+"doppia": false
+},
+{
+"id": 323,
+"tipo": "evento",
+"nome": "Precipizio",
+"nome_en": "Precipice",
+"simbolo": "esplorare",
+"flavor": "Durante l'uragano c'è stata una frana. Il vostro accampamento è sull'orlo di un precipizio.",
+"testo": "SE POSSIBILE: scegli una tessera Isola adiacente al tuo accampamento e girala a faccia in giù. Diventa inaccessibile.",
+"tr_nome": "Costruire un ponte",
+"tr_testo": "Gira a faccia in su la tessera capovolta, ottieni 3 Determinazione. Scarta questa carta.",
+"tr_req": "2 legno pedina",
+"mn_testo": "La tessera Isola resta a faccia in giù fino alla fine della partita.",
+"ev": [
+[
+"capovolgi_adiacente"
+]
+],
+"req": {
+"pedine": 1,
+"ris": {
+"legno": 2
+}
+},
+"tr": [
+[
+"raddrizza"
+],
+[
+"det",
+3,
+"chi"
+]
+],
+"mn": [],
+"doppia": false
+},
+{
+"id": 324,
+"tipo": "evento",
+"nome": "Predatori nei paraggi",
+"nome_en": "Predators in the Vicinity",
+"simbolo": "esplorare",
+"flavor": "Hanno trovato il vostro accampamento. D'ora in poi le notti saranno dure...",
+"testo": "Metti dado delle belve nello spazio Meteo. Durante la fase Meteo di questo round, tira dado delle belve e risolvine l'effetto.",
+"tr_nome": "Scacciare il predatore",
+"tr_testo": "Scarta questa carta e ottieni Determinazione.",
+"tr_req": "2 Arma pedina",
+"mn_testo": "Metti dado delle belve nello spazio Meteo. Durante la fase Meteo di questo round, tira dado delle belve e risolvine l'effetto.",
+"ev": [
+[
+"meteo",
+"dado_belve"
+]
+],
+"req": {
+"pedine": 1,
+"arma": 2
+},
+"tr": [
+[
+"det",
+1,
+"chi"
+]
+],
+"mn": [
+[
+"meteo",
+"dado_belve"
+]
+],
+"doppia": false
+},
+{
+"id": 325,
+"tipo": "evento",
+"nome": "Predatori nei boschi",
+"nome_en": "Predators in the Woods",
+"simbolo": "esplorare",
+"flavor": "Uscire dall'accampamento diventa ogni giorno più pericoloso...",
+"testo": "Metti gettone pericolo sullo spazio Azione Esplorare. Durante la prossima Esplorare, il tuo livello dell'Arma Arma deve essere almeno 1 (altrimenti subisci ferita).",
+"tr_nome": "Cercare un predatore",
+"tr_testo": "Ottieni Determinazione e scarta il gettone pericolo. Scarta questa carta.",
+"tr_req": "pedina Arma",
+"mn_testo": "Ogni giocatore subisce ferita; scarta il gettone pericolo.",
+"ev": [
+[
+"gettone",
+"esplorare",
+"pericolo"
+]
+],
+"req": {
+"pedine": 1,
+"arma": 1
+},
+"tr": [
+[
+"det",
+1,
+"chi"
+],
+[
+"togli_gettone",
+"esplorare",
+"pericolo"
+]
+],
+"mn": [
+[
+"ferita",
+1,
+"tutti"
+],
+[
+"togli_gettone",
+"esplorare",
+"pericolo"
+]
+],
+"doppia": false
+},
+{
+"id": 326,
+"tipo": "evento",
+"nome": "Predatori",
+"nome_en": "Predators",
+"simbolo": "esplorare",
+"flavor": "Senza fonti di cibo. I predatori hanno le loro prede...",
+"testo": "La fonte di cibo / fonte di cibo più vicina (preferibilmente sulla tessera dell'accampamento) è esaurita. Coprila con segnalino nero. Se non c'è nessuna fonte di cibo / fonte di cibo, ogni giocatore subisce ferita.",
+"tr_nome": "Lotta",
+"tr_testo": "Scopri la fonte di cibo / fonte di cibo esaurita. Scarta questa carta e ottieni Determinazione.",
+"tr_req": "2 pedina 2 Arma",
+"mn_testo": "Risolvi di nuovo l'effetto di questo Evento.",
+"ev": [
+[
+"esaurisci",
+"cibo"
+]
+],
+"req": {
+"pedine": 2,
+"arma": 2
+},
+"tr": [
+[
+"ripristina",
+"cibo"
+],
+[
+"det",
+1,
+"chi"
+]
+],
+"mn": [
+[
+"esaurisci",
+"cibo"
+]
+],
+"doppia": false
+},
+{
+"id": 327,
+"tipo": "evento",
+"nome": "Fiume in piena",
+"nome_en": "Raging River",
+"simbolo": "raccogliere",
+"flavor": "L'isola non è un bel posto per voi.",
+"testo": "Durante la fase di Produzione di questo round ottieni solo metà delle risorse prodotte (arrotondato per difetto).",
+"tr_nome": "Scavare un fossato",
+"tr_testo": "Scarta questa carta e ottieni Determinazione.",
+"tr_req": "pedina Shovel",
+"mn_testo": "In questo round non c'è la fase di Produzione.",
+"ev": [
+[
+"prod",
+"meta"
+]
+],
+"req": {
+"pedine": 1,
+"inv": [
+"pala"
+]
+},
+"tr": [
+[
+"det",
+1,
+"chi"
+]
+],
+"mn": [
+[
+"prod",
+"nulla"
+]
+],
+"doppia": false
+},
+{
+"id": 328,
+"tipo": "evento",
+"nome": "Pioggia",
+"nome_en": "Rain",
+"simbolo": "raccogliere",
+"flavor": "Vi sembra di essere tornati a Londra...",
+"testo": "Metti nuvola di pioggia nello spazio Meteo.",
+"tr_nome": "Tetto più robusto",
+"tr_testo": "Scarta questa carta e ottieni Determinazione.",
+"tr_req": "pedina pelliccia",
+"mn_testo": "Metti nuvola di pioggia nello spazio Meteo.",
+"ev": [
+[
+"meteo",
+"pioggia"
+]
+],
+"req": {
+"pedine": 1,
+"ris": {
+"pelliccia": 1
+}
+},
+"tr": [
+[
+"det",
+1,
+"chi"
+]
+],
+"mn": [
+[
+"meteo",
+"pioggia"
+]
+],
+"doppia": false
+},
+{
+"id": 329,
+"tipo": "evento",
+"nome": "Tempesta di vento devastante",
+"nome_en": "Ravishing Windstorm",
+"simbolo": "esplorare",
+"flavor": "Al mattino, una tempesta sparpaglia oggetti e armi per tutto l'accampamento, rompendone molti!",
+"testo": "SE POSSIBILE: fino a -2 Arma.",
+"tr_nome": "Nuova arma",
+"tr_testo": "Scarta questa carta e ottieni +1 Arma e Determinazione.",
+"tr_req": "pedina",
+"mn_testo": "Non succede nulla.",
+"ev": [
+[
+"liv_sp",
+"arma",
+-2
+]
+],
+"req": {
+"pedine": 1
+},
+"tr": [
+[
+"liv",
+"arma",
+1
+],
+[
+"det",
+1,
+"chi"
+]
+],
+"mn": [],
+"doppia": false
+},
+{
+"id": 330,
+"tipo": "evento",
+"nome": "Tempesta",
+"nome_en": "Storm",
+"simbolo": "raccogliere",
+"flavor": "Oggi l'oceano è di cattivo umore.",
+"testo": "Metti tempesta nello spazio Meteo.",
+"tr_nome": "Rinforzare l'accampamento",
+"tr_testo": "Scarta questa carta e ottieni Determinazione.",
+"tr_req": "pedina and Shovel / legno",
+"mn_testo": "-1 Palizzata",
+"ev": [
+[
+"meteo",
+"tempesta"
+]
+],
+"req": {
+"pedine": 1,
+"alt": [
+{
+"inv": [
+"pala"
+]
+},
+{
+"ris": {
+"legno": 1
+}
+}
+]
+},
+"tr": [
+[
+"det",
+1,
+"chi"
+]
+],
+"mn": [
+[
+"liv",
+"palizzata",
+-1
+]
+],
+"doppia": true
+},
+{
+"id": 331,
+"tipo": "evento",
+"nome": "Temporale",
+"nome_en": "Thunderstorm",
+"simbolo": "raccogliere",
+"flavor": "Un fulmine colpisce un albero e appicca un incendio.",
+"testo": "La fonte di legno più vicina (preferibilmente sulla tessera dell'accampamento) è esaurita. Coprila con segnalino nero. Se non c'è nessuna fonte di legno, ogni giocatore subisce ferita.",
+"tr_nome": "Isolare l'incendio",
+"tr_testo": "Scopri la fonte di legno esaurita e scarta questa carta.",
+"tr_req": "pedina Shovel",
+"mn_testo": "Risolvi di nuovo l'effetto di questo Evento.",
+"ev": [
+[
+"esaurisci",
+"legno"
+]
+],
+"req": {
+"pedine": 1,
+"inv": [
+"pala"
+]
+},
+"tr": [
+[
+"ripristina",
+"legno"
+]
+],
+"mn": [
+[
+"esaurisci",
+"legno"
+]
+],
+"doppia": false
+},
+{
+"id": 400,
+"tipo": "evento",
+"nome": "Litigio",
+"nome_en": "Argument",
+"simbolo": "libro",
+"flavor": "Siete tutti stanchi e sfiniti. A notte fonda avete avuto uno stupido litigio. Non va bene...",
+"testo": "In questo round nessuna Azione può essere svolta con pedina di due giocatori diversi.",
+"tr_nome": "Accordo",
+"tr_testo": "Scarta questa carta, +1 morale e ottieni Determinazione.",
+"tr_req": "2 pedina (of different players)",
+"mn_testo": "Ogni giocatore scarta Determinazione e -1 morale.",
+"ev": [
+[
+"no_insieme"
+]
+],
+"req": {
+"pedine": 2,
+"diversi": true
+},
+"tr": [
+[
+"morale",
+1
+],
+[
+"det",
+1,
+"chi"
+]
+],
+"mn": [
+[
+"det",
+-1,
+"tutti"
+],
+[
+"morale",
+-1
+]
+],
+"doppia": false
+},
+{
+"id": 401,
+"tipo": "evento",
+"nome": "Brutte sensazioni",
+"nome_en": "Bad Feelings",
+"simbolo": "libro",
+"flavor": "Ho un brutto presentimento...",
+"testo": "Metti gettone «rilancia il successo» sullo spazio Azione Raccogliere risorse. Durante la prossima azione Raccogliere devi rilanciare un risultato successo.",
+"tr_nome": "Raccolta prudente",
+"tr_testo": "Scarta questa carta e ottieni Determinazione.",
+"tr_req": "pedina",
+"mn_testo": "Metti segnalino Avventura (Raccogliere) e gettone «rilancia il successo» sullo spazio Azione Raccogliere risorse.",
+"ev": [
+[
+"gettone",
+"raccogliere",
+"rilancio"
+]
+],
+"req": {
+"pedine": 1
+},
+"tr": [
+[
+"det",
+1,
+"chi"
+]
+],
+"mn": [
+[
+"avv",
+"raccogliere"
+],
+[
+"gettone",
+"raccogliere",
+"rilancio"
+]
+],
+"doppia": false
+},
+{
+"id": 402,
+"tipo": "evento",
+"nome": "Orso",
+"nome_en": "Bear",
+"simbolo": "libro",
+"flavor": "Un orso trova il vostro campo e lo distrugge.",
+"testo": "Metti segnalino nero sullo spazio Azione Sistemare il campo. Durante la prossima azione Sistemare il campo scarti quel segnalino nero invece di ottenere 2 Determinazione e +1 morale.",
+"tr_nome": "Riparazione",
+"tr_testo": "Scarta questa carta e ottieni Determinazione.",
+"tr_req": "pedina Shovel",
+"mn_testo": "Ogni giocatore scarta Determinazione e -1 morale.",
+"ev": [
+[
+"gettone",
+"sistemare",
+"nero"
+]
+],
+"req": {
+"pedine": 1,
+"inv": [
+"pala"
+]
+},
+"tr": [
+[
+"det",
+1,
+"chi"
+]
+],
+"mn": [
+[
+"det",
+-1,
+"tutti"
+],
+[
+"morale",
+-1
+]
+],
+"doppia": false
+},
+{
+"id": 403,
+"tipo": "evento",
+"nome": "Cadavere sulla spiaggia",
+"nome_en": "Body on the Beach",
+"simbolo": "libro",
+"flavor": "Al mattino trovate un cadavere sulla spiaggia. È uno dei vostri compagni di nave. Non è una bella cosa da vedere di prima mattina...",
+"testo": "-1 morale",
+"tr_nome": "Sepoltura",
+"tr_testo": "Scarta questa carta e ottieni 2 Determinazione.",
+"tr_req": "pedina Shovel",
+"mn_testo": "-1 morale -1 morale",
+"ev": [
+[
+"morale",
+-1
+]
+],
+"req": {
+"pedine": 1,
+"inv": [
+"pala"
+]
+},
+"tr": [
+[
+"det",
+2,
+"chi"
+]
+],
+"mn": [
+[
+"morale",
+-2
+]
+],
+"doppia": false
+},
+{
+"id": 404,
+"tipo": "evento",
+"nome": "Richiamo della natura",
+"nome_en": "Call of the Wild",
+"simbolo": "libro",
+"flavor": "Ruggiti e urla... Oggi i boschi non sono sicuri.",
+"testo": "Metti gettone pericolo accanto al mazzo Caccia.",
+"tr_nome": "Caccia feroce",
+"tr_testo": "Scarta questa carta e ottieni cibo.",
+"tr_req": "2 Arma pedina",
+"mn_testo": "Metti gettone pericolo accanto al mazzo Caccia.",
+"ev": [
+[
+"gettone",
+"caccia",
+"pericolo"
+]
+],
+"req": {
+"pedine": 1,
+"arma": 2
+},
+"tr": [
+[
+"ris",
+"cibo",
+1
+]
+],
+"mn": [
+[
+"gettone",
+"caccia",
+"pericolo"
+]
+],
+"doppia": false
+},
+{
+"id": 405,
+"tipo": "evento",
+"nome": "Consiglio",
+"nome_en": "Council",
+"simbolo": "libro",
+"flavor": "Per tutta la notte avete parlato del vostro futuro sull'isola. Le idee iniziali non funzioneranno e i piani devono cambiare. Non riuscirete a creare tutti gli oggetti che volete.",
+"testo": "Scarta 3 carte Invenzione.",
+"tr_nome": "Brainstorming",
+"tr_testo": "Ottieni 1 carta Invenzione a tua scelta e Determinazione, scarta questa carta.",
+"tr_req": "pedina",
+"mn_testo": "Scarta 2 carte Invenzione.",
+"ev": [
+[
+"scarta_inv",
+3
+]
+],
+"req": {
+"pedine": 1
+},
+"tr": [
+[
+"scegli_inv"
+],
+[
+"det",
+1,
+"chi"
+]
+],
+"mn": [
+[
+"scarta_inv",
+2
+]
+],
+"doppia": false
+},
+{
+"id": 406,
+"tipo": "evento",
+"nome": "Notte pericolosa",
+"nome_en": "Dangerous Night",
+"simbolo": "libro",
+"flavor": "Sentite rumori tra i cespugli vicino al campo. Un predatore si prepara ad attaccarvi presto!",
+"testo": "Prendi 1 carta Belva dal mazzo Belve e mettila in cima al mazzo Eventi. Resta in cima fino all'inizio del round successivo, quando combatterai la Belva prima di pescare una carta Evento.",
+"tr_nome": "Costruire difese",
+"tr_testo": "Prendi la carta Belva dal mazzo Eventi, mescolala nel mazzo Caccia e scarta questa carta.",
+"tr_req": "2 Arma pedina",
+"mn_testo": "Non succede nulla.",
+"ev": [
+[
+"belva_su_eventi"
+]
+],
+"req": {
+"pedine": 1,
+"arma": 2
+},
+"tr": [
+[
+"belva_eventi_in_caccia"
+]
+],
+"mn": [],
+"doppia": false
+},
+{
+"id": 407,
+"tipo": "evento",
+"nome": "Depressione",
+"nome_en": "Depression",
+"simbolo": "libro",
+"flavor": "Siete molto pessimisti sul vostro futuro.",
+"testo": "Scarta 2 carte Invenzione. Ogni giocatore scarta Determinazione.",
+"tr_nome": "Consolazione",
+"tr_testo": "Scarta questa carta e ottieni 2 Determinazione.",
+"tr_req": "pedina cibo",
+"mn_testo": "-1 morale e scarta 2 carte Invenzione.",
+"ev": [
+[
+"scarta_inv",
+2
+],
+[
+"det",
+-1,
+"tutti"
+]
+],
+"req": {
+"pedine": 1,
+"ris": {
+"cibo": 1
+}
+},
+"tr": [
+[
+"det",
+2,
+"chi"
+]
+],
+"mn": [
+[
+"morale",
+-1
+],
+[
+"scarta_inv",
+2
+]
+],
+"doppia": false
+},
+{
+"id": 408,
+"tipo": "evento",
+"nome": "Raffiche devastanti",
+"nome_en": "Devastating Blows",
+"simbolo": "libro",
+"flavor": "Il vento ha soffiato tutta la notte; le vostre fonti sono devastate.",
+"testo": "Scegli 2 fonti qualsiasi sulle tessere Isola adiacenti al campo e coprile con segnalino nero. Sono esaurite.",
+"tr_nome": "Nuova fonte",
+"tr_testo": "Scarta questa carta e ottieni Determinazione.",
+"tr_req": "pedina Shovel",
+"mn_testo": "Scegli 1 fonte su una tessera Isola adiacente al campo e coprila con segnalino nero. È esaurita.",
+"ev": [
+[
+"esaurisci_adiacenti",
+2
+]
+],
+"req": {
+"pedine": 1,
+"inv": [
+"pala"
+]
+},
+"tr": [
+[
+"det",
+1,
+"chi"
+]
+],
+"mn": [
+[
+"esaurisci_adiacenti",
+1
+]
+],
+"doppia": false
+},
+{
+"id": 409,
+"tipo": "evento",
+"nome": "Siccità",
+"nome_en": "Drought",
+"simbolo": "libro",
+"flavor": "Siete stati fortunati a trovare il letto del fiume, ma è devastante scoprirlo asciutto.",
+"testo": "SE POSSIBILE: copri fiume su una tessera qualsiasi con segnalino nero. Considera il tipo di terreno di questa tessera come inesplorato.",
+"tr_nome": "Nuovo letto del fiume",
+"tr_testo": "Ottieni Determinazione, scopri il fiume e scarta questa carta.",
+"tr_req": "pedina Shovel",
+"mn_testo": "SE POSSIBILE: copri fiume su una tessera qualsiasi con segnalino nero. Considera il tipo di terreno di questa tessera come inesplorato.",
+"ev": [
+[
+"copri_terreno",
+"fiume"
+]
+],
+"req": {
+"pedine": 1,
+"inv": [
+"pala"
+]
+},
+"tr": [
+[
+"det",
+1,
+"chi"
+],
+[
+"scopri_terreno",
+"fiume"
+]
+],
+"mn": [
+[
+"copri_terreno",
+"fiume"
+]
+],
+"doppia": false
+},
+{
+"id": 410,
+"tipo": "evento",
+"nome": "Terremoto",
+"nome_en": "Earthquake",
+"simbolo": "libro",
+"flavor": "Cosa potrebbe andare peggio?",
+"testo": "SE POSSIBILE: scegli una tessera Isola adiacente al campo e girala a faccia in giù. Diventa inaccessibile.",
+"tr_nome": "Costruire un passaggio",
+"tr_testo": "Gira a faccia in su la tessera capovolta e scarta questa carta.",
+"tr_req": "pedina Shovel",
+"mn_testo": "La tessera resta a faccia in giù fino alla fine della partita.",
+"ev": [
+[
+"capovolgi_adiacente"
+]
+],
+"req": {
+"pedine": 1,
+"inv": [
+"pala"
+]
+},
+"tr": [
+[
+"raddrizza"
+]
+],
+"mn": [],
+"doppia": false
+},
+{
+"id": 411,
+"tipo": "evento",
+"nome": "Notte sfiancante",
+"nome_en": "Exhausting Night",
+"simbolo": "libro",
+"flavor": "Non avete dormito bene. Alcuni di voi non hanno chiuso occhio. Avete avuto tutti incubi spaventosi. Vi sentite terribilmente stanchi...",
+"testo": "Metti gettone «rilancia il successo» sullo spazio Azione Costruire. Durante la prossima azione Costruire devi rilanciare un risultato successo.",
+"tr_nome": "Riposo",
+"tr_testo": "Scarta questa carta e ottieni Determinazione.",
+"tr_req": "pedina",
+"mn_testo": "-1 morale -1 morale",
+"ev": [
+[
+"gettone",
+"costruire",
+"rilancio"
+]
+],
+"req": {
+"pedine": 1
+},
+"tr": [
+[
+"det",
+1,
+"chi"
+]
+],
+"mn": [
+[
+"morale",
+-2
+]
+],
+"doppia": false
+},
+{
+"id": 412,
+"tipo": "evento",
+"nome": "Lotta nel buio",
+"nome_en": "Fight in the Dark",
+"simbolo": "libro",
+"flavor": "Un predatore ne ha ucciso un altro. Buon per voi, che avete passato la notte al sicuro nel campo...",
+"testo": "SE POSSIBILE: scarta 1 carta Belva dal mazzo Caccia.",
+"tr_nome": "Sulle tracce di un predatore",
+"tr_testo": "Scarta questa carta e ottieni Determinazione.",
+"tr_req": "2 Arma pedina",
+"mn_testo": "Metti dado delle belve nello spazio Meteo. Durante la fase Meteo di questo round, tira dado delle belve e risolvine l'effetto.",
+"ev": [
+[
+"caccia_scarta"
+]
+],
+"req": {
+"pedine": 1,
+"arma": 2
+},
+"tr": [
+[
+"det",
+1,
+"chi"
+]
+],
+"mn": [
+[
+"meteo",
+"dado_belve"
+]
+],
+"doppia": false
+},
+{
+"id": 413,
+"tipo": "evento",
+"nome": "Tempo inclemente",
+"nome_en": "Foul Weather",
+"simbolo": "libro",
+"flavor": "Oggi non avete nessuna voglia di uscire dal campo!",
+"testo": "Metti gettone azione lenta sullo spazio Azione Raccogliere risorse.",
+"tr_nome": "Proteggere le fonti",
+"tr_testo": "Scarta questa carta e ottieni Determinazione.",
+"tr_req": "pedina Shovel",
+"mn_testo": "Scegli 2 fonti sulle tessere adiacenti al campo e coprile con segnalino nero. Sono esaurite.",
+"ev": [
+[
+"gettone",
+"raccogliere",
+"lento"
+]
+],
+"req": {
+"pedine": 1,
+"inv": [
+"pala"
+]
+},
+"tr": [
+[
+"det",
+1,
+"chi"
+]
+],
+"mn": [
+[
+"esaurisci_adiacenti",
+2
+]
+],
+"doppia": false
+},
+{
+"id": 414,
+"tipo": "evento",
+"nome": "Ululati dai boschi",
+"nome_en": "Howling from the Woods",
+"simbolo": "libro",
+"flavor": "Il ruggito che avete sentito nella notte promette guai...",
+"testo": "Pesca 3 carte Belva dal mazzo Belve, scegli quella con la forza maggiore e mettila in cima al mazzo Caccia.",
+"tr_nome": "Spedizione",
+"tr_testo": "Metti in fondo al mazzo Caccia la prima carta e ottieni Determinazione. Scarta questa carta.",
+"tr_req": "pedina Fire",
+"mn_testo": "Pesca la prima carta del mazzo Caccia e combatti la Belva.",
+"ev": [
+[
+"ululato"
+]
+],
+"req": {
+"pedine": 1,
+"inv": [
+"fuoco"
+]
+},
+"tr": [
+[
+"caccia_fondo"
+],
+[
+"det",
+1,
+"chi"
+]
+],
+"mn": [
+[
+"combatti_caccia"
+]
+],
+"doppia": false
+},
+{
+"id": 415,
+"tipo": "evento",
+"nome": "Insetti",
+"nome_en": "Insects",
+"simbolo": "libro",
+"flavor": "Il legno che avete raccolto è inutilizzabile.",
+"testo": "SE POSSIBILE: scarta legno.",
+"tr_nome": "Disinfestazione",
+"tr_testo": "Scarta questa carta e ottieni Determinazione.",
+"tr_req": "pedina Fire",
+"mn_testo": "SE POSSIBILE: scarta legno.",
+"ev": [
+[
+"ris_sp",
+"legno",
+-1
+]
+],
+"req": {
+"pedine": 1,
+"inv": [
+"fuoco"
+]
+},
+"tr": [
+[
+"det",
+1,
+"chi"
+]
+],
+"mn": [
+[
+"ris_sp",
+"legno",
+-1
+]
+],
+"doppia": false
+},
+{
+"id": 416,
+"tipo": "evento",
+"nome": "Mancanza di speranza",
+"nome_en": "Lack of Hope",
+"simbolo": "libro",
+"flavor": "Quando siete stanchi, affamati e spaventati, tutto sembra andare in pezzi.",
+"testo": "Passa il segnalino Primo giocatore al giocatore successivo.",
+"tr_nome": "Mobilitazione",
+"tr_testo": "Scarta questa carta e ottieni Determinazione.",
+"tr_req": "pedina cibo",
+"mn_testo": "-1 morale -1 morale",
+"ev": [
+[
+"primo_passa"
+]
+],
+"req": {
+"pedine": 1,
+"ris": {
+"cibo": 1
+}
+},
+"tr": [
+[
+"det",
+1,
+"chi"
+]
+],
+"mn": [
+[
+"morale",
+-2
+]
+],
+"doppia": false
+},
+{
+"id": 417,
+"tipo": "evento",
+"nome": "Perdita della speranza",
+"nome_en": "Loss of Hope",
+"simbolo": "libro",
+"flavor": "Perdere la speranza è la fine...",
+"testo": "In questo round il Primo giocatore può solo Costruire, Sistemare il campo e Riposo.",
+"tr_nome": "Riposo",
+"tr_testo": "Scarta questa carta e ottieni Determinazione.",
+"tr_req": "pedina",
+"mn_testo": "-1 morale -1 morale",
+"ev": [
+[
+"solo_azioni",
+[
+"costruire",
+"sistemare",
+"riposo"
+],
+"primo"
+]
+],
+"req": {
+"pedine": 1
+},
+"tr": [
+[
+"det",
+1,
+"chi"
+]
+],
+"mn": [
+[
+"morale",
+-2
+]
+],
+"doppia": false
+},
+{
+"id": 418,
+"tipo": "evento",
+"nome": "Disordine al campo",
+"nome_en": "Mess in the Camp",
+"simbolo": "libro",
+"flavor": "Ci vuole tempo per ripulire quel disordine...",
+"testo": "Metti gettone azione lenta sullo spazio Azione Sistemare il campo.",
+"tr_nome": "Mettere in ordine",
+"tr_testo": "Scarta questa carta e ottieni Determinazione.",
+"tr_req": "pedina",
+"mn_testo": "Ogni giocatore scarta Determinazione.",
+"ev": [
+[
+"gettone",
+"sistemare",
+"lento"
+]
+],
+"req": {
+"pedine": 1
+},
+"tr": [
+[
+"det",
+1,
+"chi"
+]
+],
+"mn": [
+[
+"det",
+-1,
+"tutti"
+]
+],
+"doppia": false
+},
+{
+"id": 419,
+"tipo": "evento",
+"nome": "Foschia",
+"nome_en": "Mist",
+"simbolo": "libro",
+"flavor": "Uscite dal campo e cominciate a pregare...",
+"testo": "Metti gettone azione lenta sullo spazio Azione Esplorare.",
+"tr_nome": "Alla ricerca del vecchio sentiero",
+"tr_testo": "Scarta questa carta e ottieni Determinazione.",
+"tr_req": "pedina",
+"mn_testo": "Metti gettone azione lenta e segnalino Avventura (Esplorare) sullo spazio Azione Esplorare.",
+"ev": [
+[
+"gettone",
+"esplorare",
+"lento"
+]
+],
+"req": {
+"pedine": 1
+},
+"tr": [
+[
+"det",
+1,
+"chi"
+]
+],
+"mn": [
+[
+"gettone",
+"esplorare",
+"lento"
+],
+[
+"avv",
+"esplorare"
+]
+],
+"doppia": false
+},
+{
+"id": 420,
+"tipo": "evento",
+"nome": "Crollo della diga naturale",
+"nome_en": "Natural Dam Breaks",
+"simbolo": "libro",
+"flavor": "Un'inondazione improvvisa distrugge tutto ciò che trova sul suo cammino.",
+"testo": "Durante la fase Produzione di questo round ottieni +1 legno e nessun cibo. Metti segnalino Avventura (Esplorare) sullo spazio Azione Esplorare.",
+"tr_nome": "Protezione",
+"tr_testo": "Scarta questa carta e ottieni Determinazione.",
+"tr_req": "pedina Shovel",
+"mn_testo": "SE POSSIBILE: gira fino a 2 Oggetti sul lato Invenzione e annullane gli effetti.",
+"ev": [
+[
+"prod",
+"piu_legno"
+],
+[
+"prod",
+"no_cibo"
+],
+[
+"avv",
+"esplorare"
+]
+],
+"req": {
+"pedine": 1,
+"inv": [
+"pala"
+]
+},
+"tr": [
+[
+"det",
+1,
+"chi"
+]
+],
+"mn": [
+[
+"rovescia_inv",
+2
+]
+],
+"doppia": false
+},
+{
+"id": 421,
+"tipo": "evento",
+"nome": "Ululati notturni",
+"nome_en": "Night Howling",
+"simbolo": "libro",
+"flavor": "Un ululato terrificante è arrivato dalla giungla per tutta la notte.",
+"testo": "Metti gettone pericolo accanto al mazzo Caccia.",
+"tr_nome": "Caccia alla belva",
+"tr_testo": "Scarta questa carta e ottieni Determinazione.",
+"tr_req": "2 Arma pedina",
+"mn_testo": "-1 Palizzata",
+"ev": [
+[
+"gettone",
+"caccia",
+"pericolo"
+]
+],
+"req": {
+"pedine": 1,
+"arma": 2
+},
+"tr": [
+[
+"det",
+1,
+"chi"
+]
+],
+"mn": [
+[
+"liv",
+"palizzata",
+-1
+]
+],
+"doppia": false
+},
+{
+"id": 422,
+"tipo": "evento",
+"nome": "Lontre",
+"nome_en": "Otters",
+"simbolo": "libro",
+"flavor": "Avete perso la lotta per una fonte di cibo.",
+"testo": "La fonte di cibo più vicina (la tessera del campo se possibile) è esaurita. Coprila con segnalino nero. Se non c'è nessuna fonte di cibo, ogni giocatore subisce ferita.",
+"tr_nome": "Caccia riuscita",
+"tr_testo": "Scopri la fonte di cibo esaurita e scarta questa carta.",
+"tr_req": "pedina Arma",
+"mn_testo": "Risolvi di nuovo l'effetto di questo Evento.",
+"ev": [
+[
+"esaurisci",
+"pesce"
+]
+],
+"req": {
+"pedine": 1,
+"arma": 1
+},
+"tr": [
+[
+"ripristina",
+"pesce"
+]
+],
+"mn": [
+[
+"esaurisci",
+"pesce"
+]
+],
+"doppia": false
+},
+{
+"id": 423,
+"tipo": "evento",
+"nome": "Avvelenamento",
+"nome_en": "Poisoning",
+"simbolo": "libro",
+"flavor": "Mangiate frutti velenosi. State tutti male. Forse potreste usare questi frutti velenosi...",
+"testo": "Ogni giocatore subisce ferita.",
+"tr_nome": "Estrarre il veleno",
+"tr_testo": "Scarta questa carta e ottieni Determinazione e +1 Arma.",
+"tr_req": "pedina Knife",
+"mn_testo": "Ogni giocatore subisce ferita.",
+"ev": [
+[
+"ferita",
+1,
+"tutti"
+]
+],
+"req": {
+"pedine": 1,
+"inv": [
+"coltello"
+]
+},
+"tr": [
+[
+"det",
+1,
+"chi"
+],
+[
+"liv",
+"arma",
+1
+]
+],
+"mn": [
+[
+"ferita",
+1,
+"tutti"
+]
+],
+"doppia": false
+},
+{
+"id": 424,
+"tipo": "evento",
+"nome": "Un predatore nei paraggi",
+"nome_en": "Predator Is Near",
+"simbolo": "libro",
+"flavor": "O dividete le vostre fonti di cibo con il predatore o combattete per esse. Non c'è altra via.",
+"testo": "La fonte di cibo più vicina (la tessera del campo se possibile) è esaurita. Coprila con segnalino nero. Se non c'è nessuna fonte di cibo, ogni giocatore subisce ferita.",
+"tr_nome": "Lotta per il cibo",
+"tr_testo": "Scopri la fonte di cibo esaurita. Scarta questa carta e ottieni Determinazione.",
+"tr_req": "2 Arma pedina",
+"mn_testo": "Metti segnalino Avventura (Esplorare) sullo spazio Azione Esplorare e segnalino Avventura (Raccogliere) sullo spazio Azione Raccogliere risorse.",
+"ev": [
+[
+"esaurisci",
+"pappagallo"
+]
+],
+"req": {
+"pedine": 1,
+"arma": 2
+},
+"tr": [
+[
+"ripristina",
+"pappagallo"
+],
+[
+"det",
+1,
+"chi"
+]
+],
+"mn": [
+[
+"avv",
+"esplorare"
+],
+[
+"avv",
+"raccogliere"
+]
+],
+"doppia": false
+},
+{
+"id": 425,
+"tipo": "evento",
+"nome": "Predatori famelici",
+"nome_en": "Ravenous Predators",
+"simbolo": "libro",
+"flavor": "L'inverno arriva e i predatori diventano sempre più pericolosi...",
+"testo": "Metti gettone pericolo accanto al mazzo Caccia.",
+"tr_nome": "Scacciare gli animali",
+"tr_testo": "Scarta questa carta e ottieni Determinazione.",
+"tr_req": "pedina Fire",
+"mn_testo": "-1 Palizzata",
+"ev": [
+[
+"gettone",
+"caccia",
+"pericolo"
+]
+],
+"req": {
+"pedine": 1,
+"inv": [
+"fuoco"
+]
+},
+"tr": [
+[
+"det",
+1,
+"chi"
+]
+],
+"mn": [
+[
+"liv",
+"palizzata",
+-1
+]
+],
+"doppia": false
+},
+{
+"id": 426,
+"tipo": "evento",
+"nome": "Uragano devastante",
+"nome_en": "Ravishing Hurricane",
+"simbolo": "libro",
+"flavor": "Nella notte un uragano ha colpito l'isola...",
+"testo": "SE POSSIBILE: scegli una tessera Isola adiacente al campo e coprine tutte le fonti con segnalino nero. Sono esaurite.",
+"tr_nome": "Riscoprire le fonti",
+"tr_testo": "Scopri 2 fonti esaurite qualsiasi. Scarta questa carta e ottieni Determinazione.",
+"tr_req": "pedina Shovel",
+"mn_testo": "Le fonti restano esaurite.",
+"ev": [
+[
+"esaurisci_tessera_adiacente"
+]
+],
+"req": {
+"pedine": 1,
+"inv": [
+"pala"
+]
+},
+"tr": [
+[
+"ripristina",
+"qualsiasi"
+],
+[
+"ripristina",
+"qualsiasi"
+],
+[
+"det",
+1,
+"chi"
+]
+],
+"mn": [],
+"doppia": false
+},
+{
+"id": 427,
+"tipo": "evento",
+"nome": "Passaggio impervio",
+"nome_en": "Rough Passage",
+"simbolo": "libro",
+"flavor": "Non è un viaggio facile come pensavate...",
+"testo": "SE POSSIBILE: copri colline su una tessera qualsiasi con segnalino nero. Considera il tipo di terreno di questa tessera come inesplorato.",
+"tr_nome": "Aprire un nuovo sentiero",
+"tr_testo": "Ottieni Determinazione, scopri la colline e scarta questa carta.",
+"tr_req": "pedina",
+"mn_testo": "SE POSSIBILE: copri colline su una tessera qualsiasi con segnalino nero. Considera il tipo di terreno di questa tessera come inesplorato.",
+"ev": [
+[
+"copri_terreno",
+"collina"
+]
+],
+"req": {
+"pedine": 1
+},
+"tr": [
+[
+"det",
+1,
+"chi"
+],
+[
+"scopri_terreno",
+"collina"
+]
+],
+"mn": [
+[
+"copri_terreno",
+"collina"
+]
+],
+"doppia": false
+},
+{
+"id": 428,
+"tipo": "evento",
+"nome": "In cerca di un nuovo sentiero",
+"nome_en": "Searching for a New Path",
+"simbolo": "libro",
+"flavor": "Dopo l'uragano, camminare nei boschi è estremamente pericoloso.",
+"testo": "Metti gettone «rilancia il successo» sullo spazio Azione Esplorare. Durante la prossima azione Esplorare devi rilanciare un risultato successo.",
+"tr_nome": "Esplorare nuove radici",
+"tr_testo": "Scarta questa carta e ottieni Determinazione.",
+"tr_req": "pedina",
+"mn_testo": "Metti segnalino Avventura (Esplorare) sullo spazio Azione Esplorare e segnalino Avventura (Raccogliere) sullo spazio Azione Raccogliere risorse.",
+"ev": [
+[
+"gettone",
+"esplorare",
+"rilancio"
+]
+],
+"req": {
+"pedine": 1
+},
+"tr": [
+[
+"det",
+1,
+"chi"
+]
+],
+"mn": [
+[
+"avv",
+"esplorare"
+],
+[
+"avv",
+"raccogliere"
+]
+],
+"doppia": false
+},
+{
+"id": 429,
+"tipo": "evento",
+"nome": "Notte insonne",
+"nome_en": "Sleepless Night",
+"simbolo": "libro",
+"flavor": "Insonnia.",
+"testo": "Metti gettone «rilancia il successo» sugli spazi Azione Costruire, Raccogliere risorse ed Esplorare. Durante la prossima Azione di ciascun tipo devi rilanciare un risultato successo.",
+"tr_nome": "Riposo",
+"tr_testo": "Scarta questa carta e ottieni Determinazione.",
+"tr_req": "pedina",
+"mn_testo": "Metti segnalino Avventura (Esplorare) sullo spazio Azione Esplorare e segnalino Avventura (Raccogliere) sullo spazio Azione Raccogliere risorse.",
+"ev": [
+[
+"gettone",
+"costruire",
+"rilancio"
+],
+[
+"gettone",
+"raccogliere",
+"rilancio"
+],
+[
+"gettone",
+"esplorare",
+"rilancio"
+]
+],
+"req": {
+"pedine": 1
+},
+"tr": [
+[
+"det",
+1,
+"chi"
+]
+],
+"mn": [
+[
+"avv",
+"esplorare"
+],
+[
+"avv",
+"raccogliere"
+]
+],
+"doppia": false
+},
+{
+"id": 430,
+"tipo": "evento",
+"nome": "Lavoro lento",
+"nome_en": "Slow Work",
+"simbolo": "libro",
+"flavor": "Tutto procede più lentamente del previsto...",
+"testo": "Metti gettone legno extra sullo spazio Azione Costruire. Durante la prossima azione Costruire che richiede legno, devi spendere 1 legno in più.",
+"tr_nome": "Riposo",
+"tr_testo": "Scarta questa carta e ottieni Determinazione.",
+"tr_req": "pedina",
+"mn_testo": "Metti gettone legno extra sullo spazio Azione Costruire.",
+"ev": [
+[
+"gettone",
+"costruire",
+"legno_extra"
+]
+],
+"req": {
+"pedine": 1
+},
+"tr": [
+[
+"det",
+1,
+"chi"
+]
+],
+"mn": [
+[
+"gettone",
+"costruire",
+"legno_extra"
+]
+],
+"doppia": false
+},
+{
+"id": 431,
+"tipo": "evento",
+"nome": "Fumo all'orizzonte",
+"nome_en": "Smoke on the Horizon",
+"simbolo": "libro",
+"flavor": "Gran parte dell'isola è in fiamme...",
+"testo": "SE POSSIBILE: copri pianura su una tessera qualsiasi con segnalino nero. Considera il tipo di terreno di questa tessera come inesplorato.",
+"tr_nome": "Spegnere l'incendio",
+"tr_testo": "Ottieni Determinazione, scopri la pianura e scarta questa carta.",
+"tr_req": "pedina",
+"mn_testo": "SE POSSIBILE: copri pianura su una tessera qualsiasi con segnalino nero. Considera il tipo di terreno di questa tessera come inesplorato.",
+"ev": [
+[
+"copri_terreno",
+"pianura"
+]
+],
+"req": {
+"pedine": 1
+},
+"tr": [
+[
+"det",
+1,
+"chi"
+],
+[
+"scopri_terreno",
+"pianura"
+]
+],
+"mn": [
+[
+"copri_terreno",
+"pianura"
+]
+],
+"doppia": false
+},
+{
+"id": 432,
+"tipo": "evento",
+"nome": "Vento forte",
+"nome_en": "Strong Wind",
+"simbolo": "libro",
+"flavor": "Il vento sferza il campo senza sosta. Oggi lavorare non sarà facile.",
+"testo": "Metti gettone azione lenta sullo spazio Azione Costruire.",
+"tr_nome": "Manutenzione degli attrezzi",
+"tr_testo": "Scarta questa carta e ottieni Determinazione.",
+"tr_req": "pedina",
+"mn_testo": "SE POSSIBILE: gira un Oggetto sul lato Invenzione e annullane l'effetto.",
+"ev": [
+[
+"gettone",
+"costruire",
+"lento"
+]
+],
+"req": {
+"pedine": 1
+},
+"tr": [
+[
+"det",
+1,
+"chi"
+]
+],
+"mn": [
+[
+"rovescia_inv",
+1
+]
+],
+"doppia": false
+},
+{
+"id": 433,
+"tipo": "evento",
+"nome": "L'isola si ribella",
+"nome_en": "The Island Rebels Against You",
+"simbolo": "libro",
+"flavor": "Isola maledetta? Nessun dubbio.",
+"testo": "libro",
+"tr_nome": "Soccorso",
+"tr_testo": "Scarta questa carta e ottieni Determinazione.",
+"tr_req": "pedina",
+"mn_testo": "libro",
+"ev": [
+[
+"libro"
+],
+[
+"libro"
+]
+],
+"req": {
+"pedine": 1
+},
+"tr": [
+[
+"det",
+1,
+"chi"
+]
+],
+"mn": [
+[
+"libro"
+]
+],
+"doppia": false
+},
+{
+"id": 434,
+"tipo": "evento",
+"nome": "Notte insolitamente fredda",
+"nome_en": "Unusually Cold Night",
+"simbolo": "libro",
+"flavor": "È stata una notte gelida. Avete dovuto scaldare il campo per sopravvivere.",
+"testo": "Scarta 2 legno, oppure ogni giocatore subisce ferita.",
+"tr_nome": "Riscaldarsi",
+"tr_testo": "Scarta questa carta e ottieni Determinazione.",
+"tr_req": "pedina legno / pelliccia",
+"mn_testo": "Ogni giocatore subisce ferita.",
+"ev": [
+[
+"decidi",
+[
+[
+"Scarta 2 legno",
+[
+[
+"ris",
+"legno",
+-2
+]
+]
+],
+[
+"Ogni personaggio subisce 1 ferita",
+[
+[
+"ferita",
+1,
+"tutti"
+]
+]
+]
+]
+]
+],
+"req": {
+"pedine": 1,
+"alt": [
+{
+"ris": {
+"legno": 1
+}
+},
+{
+"ris": {
+"pelliccia": 1
+}
+}
+]
+},
+"tr": [
+[
+"det",
+1,
+"chi"
+]
+],
+"mn": [
+[
+"ferita",
+1,
+"tutti"
+]
+],
+"doppia": false
+},
+{
+"id": 435,
+"tipo": "evento",
+"nome": "Vertigine",
+"nome_en": "Vertigo",
+"simbolo": "libro",
+"flavor": "Vi gira la testa e crollate a terra. Vi risvegliate più tardi, con tantissimo da fare...",
+"testo": "In questo round il Primo giocatore ha a disposizione solo pedina.",
+"tr_nome": "Riposo",
+"tr_testo": "Scarta questa carta e ottieni Determinazione.",
+"tr_req": "pedina",
+"mn_testo": "Ogni giocatore scarta Determinazione.",
+"ev": [
+[
+"una_pedina",
+"primo"
+]
+],
+"req": {
+"pedine": 1
+},
+"tr": [
+[
+"det",
+1,
+"chi"
+]
+],
+"mn": [
+[
+"det",
+-1,
+"tutti"
+]
+],
+"doppia": false
+},
+{
+"id": 436,
+"tipo": "evento",
+"nome": "Debolezza",
+"nome_en": "Weakness",
+"simbolo": "libro",
+"flavor": "Sperate tutti che sia solo una debolezza passeggera e non qualcosa di grave. Riposerete, mangerete e, si spera, starete meglio...",
+"testo": "In questo round il Primo giocatore non può usare le sue abilità speciali di Determinazione. Metti segnalino nero sulla carta Personaggio del Primo giocatore.",
+"tr_nome": "Riposo",
+"tr_testo": "Scarta questa carta e ottieni Determinazione.",
+"tr_req": "pedina",
+"mn_testo": "In questo round il Primo giocatore non può usare le sue abilità speciali di Determinazione.",
+"ev": [
+[
+"no_abilita",
+"primo"
+]
+],
+"req": {
+"pedine": 1
+},
+"tr": [
+[
+"det",
+1,
+"chi"
+]
+],
+"mn": [
+[
+"no_abilita",
+"primo"
+]
+],
+"doppia": false
+},
+{
+"id": 437,
+"tipo": "evento",
+"nome": "Depressione invernale",
+"nome_en": "Winter Depression",
+"simbolo": "libro",
+"flavor": "Non avete vestiti adatti, né un buon riparo, e siete stanchi, affamati, infreddoliti...",
+"testo": "-1 morale",
+"tr_nome": "Riscaldarsi",
+"tr_testo": "Scarta questa carta e ottieni Determinazione.",
+"tr_req": "pedina cibo",
+"mn_testo": "Ogni giocatore scarta Determinazione.",
+"ev": [
+[
+"morale",
+-1
+]
+],
+"req": {
+"pedine": 1,
+"ris": {
+"cibo": 1
+}
+},
+"tr": [
+[
+"det",
+1,
+"chi"
+]
+],
+"mn": [
+[
+"det",
+-1,
+"tutti"
+]
+],
+"doppia": false
+},
+{
+"id": 438,
+"tipo": "evento",
+"nome": "Pallone schiantato",
+"nome_en": "Wrecked Balloon",
+"simbolo": "libro",
+"flavor": "Nella notte avete sentito urla e un forte tonfo. Al mattino trovate un pallone aerostatico distrutto e 2 cadaveri.",
+"testo": "-1 morale",
+"tr_nome": "Perquisizione",
+"tr_testo": "Pesca 1 carta Mistero e risolvila se è tesori. Scarta questa carta.",
+"tr_req": "pedina",
+"mn_testo": "Non succede nulla.",
+"ev": [
+[
+"morale",
+-1
+]
+],
+"req": {
+"pedine": 1
+},
+"tr": [
+[
+"mistero",
+{
+"tesoro": 1
+},
+"max"
+]
+],
+"mn": [],
+"doppia": false
+},
+{
+"id": 500,
+"tipo": "mistero",
+"sottotipo": "trappola",
+"nome": "Lancia spuntata",
+"nome_en": "Blunt Spear",
+"flavor": "Vecchia e coperta di ragnatele, una lancia ti colpisce al petto.",
+"testo": "Subisci 2 ferita.",
+"ev_nome": "",
+"ev_testo": "",
+"top": [
+[
+"ferita",
+2,
+"chi"
+]
+],
+"ev": [],
+"usi": 0
+},
+{
+"id": 501,
+"tipo": "mistero",
+"sottotipo": "tesoro",
+"nome": "Ciotola cerimoniale",
+"nome_en": "Ceremonial Bowl",
+"flavor": "Un manufatto di antiche tribù.",
+"testo": "Metti gettone «rilancia il successo» sulla tua carta Personaggio. A partire dal prossimo round, dovrai rilanciare un risultato successo per Azione. Mescola nel mazzo Eventi.",
+"ev_nome": "Superare la maledizione",
+"ev_testo": "Rimuovi gettone «rilancia il successo» dalla carta Personaggio. Pesca un'altra carta.",
+"top": [
+[
+"succ_negato_pg",
+"permanente"
+],
+[
+"mescola"
+]
+],
+"ev": [
+[
+"togli_succ_negato",
+"vittima"
+]
+],
+"usi": 0
+},
+{
+"id": 502,
+"tipo": "mistero",
+"sottotipo": "trappola",
+"nome": "Crollo",
+"nome_en": "Collapse",
+"flavor": "Non puoi proseguire oltre.",
+"testo": "Smetti di pescare carte Mistero.",
+"ev_nome": "",
+"ev_testo": "",
+"top": [
+[
+"stop_misteri"
+]
+],
+"ev": [],
+"usi": 0
+},
+{
+"id": 503,
+"tipo": "mistero",
+"sottotipo": "tesoro",
+"nome": "Elmo",
+"nome_en": "Helmet",
+"flavor": "Trovi un elmo da conquistador marcio e rovinato, ma ancora utilizzabile.",
+"testo": "Tieni questa carta. A partire dal prossimo round, ogni volta che un giocatore combatte una Belva, può ignorare 1 ferita.",
+"ev_nome": "",
+"ev_testo": "",
+"top": [
+[
+"tieni"
+]
+],
+"ev": [],
+"usi": 0
+},
+{
+"id": 504,
+"tipo": "mistero",
+"sottotipo": "creatura",
+"nome": "Ragni",
+"nome_en": "Spiders",
+"flavor": "Centinaia di ragni zampettanti ti circondano.",
+"testo": "Scarta 2 Determinazione.",
+"ev_nome": "",
+"ev_testo": "",
+"top": [
+[
+"det",
+-2,
+"chi"
+]
+],
+"ev": [],
+"usi": 0
+},
+{
+"id": 505,
+"tipo": "mistero",
+"sottotipo": "tesoro",
+"nome": "Grotta con pellicce",
+"nome_en": "Cave with Furs",
+"flavor": "Le pareti sono coperte di pellicce di lupo e di orso. Porti quelle pellicce al tuo accampamento.",
+"testo": "Ottieni 2 pelliccia.",
+"ev_nome": "",
+"ev_testo": "",
+"top": [
+[
+"ris",
+"pelliccia",
+2
+]
+],
+"ev": [],
+"usi": 0
+},
+{
+"id": 506,
+"tipo": "mistero",
+"sottotipo": "tesoro",
+"nome": "Vecchio fucile",
+"nome_en": "Old Rifle",
+"flavor": "Trovi un vecchio fucile e un po' di polvere da sparo.",
+"testo": "Tieni questa carta. Qualsiasi giocatore può usarla una volta per ottenere temporaneamente +3 Arma. Scartala dopo l'uso.",
+"ev_nome": "",
+"ev_testo": "",
+"top": [
+[
+"tieni"
+]
+],
+"ev": [],
+"usi": 0
+},
+{
+"id": 507,
+"tipo": "mistero",
+"sottotipo": "tesoro",
+"nome": "Miscela di erbe",
+"nome_en": "Herbal Mixture",
+"flavor": "Strano sapore - strano effetto.",
+"testo": "Tieni questa carta. Puoi usarla una volta. Puoi guardare la prima carta del mazzo Eventi. Scartala dopo l'uso.",
+"ev_nome": "",
+"ev_testo": "",
+"top": [
+[
+"tieni"
+]
+],
+"ev": [],
+"usi": 0
+},
+{
+"id": 508,
+"tipo": "mistero",
+"sottotipo": "tesoro",
+"nome": "Casse",
+"nome_en": "Boxes",
+"flavor": "Robuste casse di legno - molto utili nella vostra situazione!",
+"testo": "Tieni questa carta. D'ora in poi, il tuo cibo non deperisce durante la Fase Notte. cibo = cibo non deperibile",
+"ev_nome": "",
+"ev_testo": "",
+"top": [
+[
+"tieni"
+]
+],
+"ev": [],
+"usi": 0
+},
+{
+"id": 509,
+"tipo": "mistero",
+"sottotipo": "tesoro",
+"nome": "Zaino",
+"nome_en": "Backpack",
+"flavor": "Trovi un vecchio zaino. Pieno di speranza, guardi dentro. Purtroppo è vuoto.",
+"testo": "Tieni questa carta. A partire dal prossimo round, quando un giocatore compie un'azione Esplorare, pesca in aggiunta 2 segnalino Scoperta, ne sceglie uno e scarta l'altro.",
+"ev_nome": "",
+"ev_testo": "",
+"top": [
+[
+"tieni"
+]
+],
+"ev": [],
+"usi": 0
+},
+{
+"id": 510,
+"tipo": "mistero",
+"sottotipo": "tesoro",
+"nome": "Oro!",
+"nome_en": "Gold!",
+"flavor": "Noti un forziere poco appariscente nascosto nell'ombra. Ti avvicini e lo apri: è pieno di monete d'oro!",
+"testo": "Purtroppo l'oro non serve a nulla sull'isola.",
+"ev_nome": "",
+"ev_testo": "",
+"top": [],
+"ev": [],
+"usi": 0
+},
+{
+"id": 511,
+"tipo": "mistero",
+"sottotipo": "creatura",
+"nome": "Belva scatenata",
+"nome_en": "Unleashed Beast",
+"flavor": "Senti un ruggito spaventoso e un grosso animale ti passa accanto di corsa.",
+"testo": "SE POSSIBILE: scarta 1 carta Belva dal mazzo Caccia.",
+"ev_nome": "",
+"ev_testo": "",
+"top": [
+[
+"caccia_scarta"
+]
+],
+"ev": [],
+"usi": 0
+},
+{
+"id": 512,
+"tipo": "mistero",
+"sottotipo": "creatura",
+"nome": "Gremlins",
+"nome_en": "Gremlins",
+"flavor": "Che razza di creature sono?",
+"testo": "Combatti la Belva: 2 di forza. Indipendentemente dal tuo Arma, mescola nel mazzo Eventi.",
+"ev_nome": "I Gremlins ti hanno scovato",
+"ev_testo": "Combatti la Belva: 3 di forza. Mescola nel mazzo Eventi e pesca un'altra carta.",
+"top": [
+[
+"combatti",
+{
+"forza": 2,
+"arma": 0,
+"cibo": 0,
+"pelliccia": 0,
+"palizzata": 0
+}
+],
+[
+"mescola"
+]
+],
+"ev": [
+[
+"combatti",
+{
+"forza": 3,
+"arma": 0,
+"cibo": 0,
+"pelliccia": 0,
+"palizzata": 0
+}
+],
+[
+"mescola"
+]
+],
+"usi": 0
+},
+{
+"id": 513,
+"tipo": "mistero",
+"sottotipo": "trappola",
+"nome": "Strana malattia",
+"nome_en": "Strange Disease",
+"flavor": "Contraete una strana malattia e vi ammalate tutti.",
+"testo": "Prendi il doppio di segnalino bianco rispetto al numero di giocatori e dividili come preferite tra i giocatori. Durante la prossima Fase Notte, ogni giocatore subisce tante ferita quanti segnalino bianco possiede. Poi scarta i segnalino bianco.",
+"ev_nome": "",
+"ev_testo": "",
+"top": [
+[
+"malattia"
+]
+],
+"ev": [],
+"usi": 0
+},
+{
+"id": 514,
+"tipo": "mistero",
+"sottotipo": "creatura",
+"nome": "Tigre furiosa",
+"nome_en": "Furious Tiger",
+"flavor": "Ringhia, con le zanne che luccicano, poi all'improvviso ti salta alla gola!",
+"testo": "Combatti una Belva: 4 di forza",
+"ev_nome": "",
+"ev_testo": "",
+"top": [
+[
+"combatti",
+{
+"forza": 4,
+"arma": 0,
+"cibo": 0,
+"pelliccia": 0,
+"palizzata": 0
+}
+]
+],
+"ev": [],
+"usi": 0
+},
+{
+"id": 515,
+"tipo": "mistero",
+"sottotipo": "creatura",
+"nome": "Scorpione",
+"nome_en": "Scorpion",
+"flavor": "Uno scorpione ti punge all'improvviso.",
+"testo": "Se non hai la Medicina, subisci 3 ferita.",
+"ev_nome": "",
+"ev_testo": "",
+"top": [
+[
+"se_non_inv",
+"medicina",
+[
+[
+"ferita",
+3,
+"chi"
+]
+]
+]
+],
+"ev": [],
+"usi": 0
+},
+{
+"id": 516,
+"tipo": "mistero",
+"sottotipo": "tesoro",
+"nome": "Antico stocco",
+"nome_en": "Antique Rapier",
+"flavor": "A quanto pare quest'isola è già stata visitata. Cominci a chiederti... quest'arma apparteneva a un soldato o a un pirata?",
+"testo": "+2 Arma",
+"ev_nome": "",
+"ev_testo": "",
+"top": [
+[
+"liv",
+"arma",
+2
+]
+],
+"ev": [],
+"usi": 0
+},
+{
+"id": 517,
+"tipo": "mistero",
+"sottotipo": "trappola",
+"nome": "Avventura sfortunata",
+"nome_en": "Unfortunate Adventure",
+"flavor": "Ancora una volta, l'isola mostra il suo volto minaccioso.",
+"testo": "libro",
+"ev_nome": "",
+"ev_testo": "",
+"top": [
+[
+"libro"
+]
+],
+"ev": [],
+"usi": 0
+},
+{
+"id": 518,
+"tipo": "mistero",
+"sottotipo": "trappola",
+"nome": "Botola",
+"nome_en": "Trapdoor",
+"flavor": "Ti imbatti in una botola e riesci a saltare di lato. Purtroppo perdi tutto ciò che portavi con te.",
+"testo": "Se durante questa Azione hai pescato dei tesori, scartali tutti.",
+"ev_nome": "",
+"ev_testo": "",
+"top": [
+[
+"scarta_tesori_azione"
+]
+],
+"ev": [],
+"usi": 0
+},
+{
+"id": 519,
+"tipo": "mistero",
+"sottotipo": "creatura",
+"nome": "Gorilla",
+"nome_en": "Gorilla",
+"flavor": "Un gorilla balza fuori dall'oscurità! Ti colpisce, ti butta a terra e scappa nel bosco.",
+"testo": "Subisci 2 ferita. Mescola nel mazzo Eventi.",
+"ev_nome": "Gorilla nell'accampamento",
+"ev_testo": "-2 Arma. Pesca un'altra carta.",
+"top": [
+[
+"ferita",
+2,
+"chi"
+],
+[
+"mescola"
+]
+],
+"ev": [
+[
+"liv",
+"arma",
+-2
+]
+],
+"usi": 0
+},
+{
+"id": 520,
+"tipo": "mistero",
+"sottotipo": "trappola",
+"nome": "Lama affilata",
+"nome_en": "Sharp Blade",
+"flavor": "Una lama affilata ti taglia la pelle.",
+"testo": "Subisci 2 ferita.",
+"ev_nome": "",
+"ev_testo": "",
+"top": [
+[
+"ferita",
+2,
+"chi"
+]
+],
+"ev": [],
+"usi": 0
+},
+{
+"id": 521,
+"tipo": "mistero",
+"sottotipo": "trappola",
+"nome": "Urlo terribile",
+"nome_en": "Terrible Scream",
+"flavor": "Senti un urlo terribile alle tue spalle.",
+"testo": "Scarta tutti i tuoi Determinazione.",
+"ev_nome": "",
+"ev_testo": "",
+"top": [
+[
+"det_tutti_via",
+"chi"
+]
+],
+"ev": [],
+"usi": 0
+},
+{
+"id": 522,
+"tipo": "mistero",
+"sottotipo": "tesoro",
+"nome": "Bottiglia di vino",
+"nome_en": "Bottle of Wine",
+"flavor": "In vino veritas.",
+"testo": "Tieni questa carta. Puoi usarla una volta per guarire 2 vita. Scartala dopo l'uso.",
+"ev_nome": "",
+"ev_testo": "",
+"top": [
+[
+"tieni"
+]
+],
+"ev": [],
+"usi": 0
+},
+{
+"id": 523,
+"tipo": "mistero",
+"sottotipo": "tesoro",
+"nome": "Frusta",
+"nome_en": "Whip",
+"flavor": "Ti imbatti nello scheletro di un uomo con un cappello fedora. Ha qualcosa in mano...",
+"testo": "+1 Arma. Tieni questa carta. A partire dal prossimo round, ogni volta che un giocatore pesca carte Mistero e deve risolvere un qualsiasi numero di trappole, può ignorarne 1.",
+"ev_nome": "",
+"ev_testo": "",
+"top": [
+[
+"liv",
+"arma",
+1
+],
+[
+"tieni"
+]
+],
+"ev": [],
+"usi": 0
+},
+{
+"id": 524,
+"tipo": "mistero",
+"sottotipo": "tesoro",
+"nome": "Vecchia mappa",
+"nome_en": "Old Map",
+"flavor": "Trovi una mappa che porta a un forziere pieno dell'oro dei pirati.",
+"testo": "Ogni giocatore ottiene Determinazione.",
+"ev_nome": "",
+"ev_testo": "",
+"top": [
+[
+"det",
+1,
+"tutti_e_venerdi"
+]
+],
+"ev": [],
+"usi": 0
+},
+{
+"id": 525,
+"tipo": "mistero",
+"sottotipo": "creatura",
+"nome": "Pipistrelli",
+"nome_en": "Bats",
+"flavor": "Uno sciame di pipistrelli ti vola sopra la testa.",
+"testo": "Scarta Determinazione oppure subisci ferita.",
+"ev_nome": "",
+"ev_testo": "",
+"top": [
+[
+"det_o_ferita",
+"chi"
+]
+],
+"ev": [],
+"usi": 0
+},
+{
+"id": 526,
+"tipo": "mistero",
+"sottotipo": "tesoro",
+"nome": "Amuleto protettivo",
+"nome_en": "Protective Amulet",
+"flavor": "Il misterioso lascito di uno sciamano tribale.",
+"testo": "Tieni questa carta. Puoi usarla una volta per rimuovere un segnalino qualsiasi dal tabellone. Scartala dopo l'uso.",
+"ev_nome": "",
+"ev_testo": "",
+"top": [
+[
+"tieni"
+]
+],
+"ev": [],
+"usi": 0
+},
+{
+"id": 527,
+"tipo": "mistero",
+"sottotipo": "tesoro",
+"nome": "Accetta",
+"nome_en": "Hatchet",
+"flavor": "Nell'ombra vedi qualcosa che luccica.",
+"testo": "Metti gettone legno extra sulla tessera dove si trova il tuo accampamento. D'ora in poi, durante la Fase Produzione di ogni round, ottieni +1 legno, anche se sulla tessera non c'è fonte di legno.",
+"ev_nome": "",
+"ev_testo": "",
+"top": [
+[
+"gettone_campo",
+"legno_extra",
+"accetta"
+]
+],
+"ev": [],
+"usi": 0
+},
+{
+"id": 528,
+"tipo": "mistero",
+"sottotipo": "tesoro",
+"nome": "Il cannocchiale del capitano Stone",
+"nome_en": "Captain Stone's Spyglass",
+"flavor": "Il Santo Graal di ogni esploratore.",
+"testo": "Rivela le prime 3 tessere Isola e rimettile sulla pila, a faccia in su e nell'ordine che preferisci.",
+"ev_nome": "",
+"ev_testo": "",
+"top": [
+[
+"cannocchiale"
+]
+],
+"ev": [],
+"usi": 0
+},
+{
+"id": 529,
+"tipo": "mistero",
+"sottotipo": "tesoro",
+"nome": "Amaca",
+"nome_en": "Hammock",
+"flavor": "Riposa in pace.",
+"testo": "Tieni questa carta. A partire dal prossimo round, quando un giocatore compie Riposo, ottiene Determinazione oltre al normale +vita. Non può essere usata insieme alla carta Oggetto Letto.",
+"ev_nome": "",
+"ev_testo": "",
+"top": [
+[
+"tieni"
+]
+],
+"ev": [],
+"usi": 0
+},
+{
+"id": 530,
+"tipo": "mistero",
+"sottotipo": "tesoro",
+"nome": "Barile",
+"nome_en": "Barrel",
+"flavor": "Un barile? Non credi ai tuoi occhi... ed è ancora in buone condizioni. Cosa c'è dentro? Un miracolo! Vino di Borgogna!",
+"testo": "Tieni questa carta. Usala una volta durante una Fase Notte: ogni giocatore può guarire 1 vita. Dopo l'uso, puoi conservare fino a 2 cibo su questa carta. Questo cibo non deperisce durante la Fase Notte.",
+"ev_nome": "",
+"ev_testo": "",
+"top": [
+[
+"tieni"
+]
+],
+"ev": [],
+"usi": 0
+},
+{
+"id": 531,
+"tipo": "mistero",
+"sottotipo": "trappola",
+"nome": "Corda nascosta",
+"nome_en": "Hidden Rope",
+"flavor": "Una corda ti solleva in aria e perdi la tua arma.",
+"testo": "SE POSSIBILE: fino a -2 Arma.",
+"ev_nome": "",
+"ev_testo": "",
+"top": [
+[
+"liv_sp",
+"arma",
+-2
+]
+],
+"ev": [],
+"usi": 0
+},
+{
+"id": 532,
+"tipo": "mistero",
+"sottotipo": "tesoro",
+"nome": "Mappa del tesoro",
+"nome_en": "Treasure Map",
+"flavor": "Non credi ai tuoi occhi quando la trovi. Su quest'isola c'erano davvero dei pirati!",
+"testo": "Tieni questa carta. Puoi usarla una volta. Compi un'azione Esplorare su questa carta per pescare 2 carte Mistero: risolvi solo 2 tesori. Scartala dopo l'uso.",
+"ev_nome": "",
+"ev_testo": "",
+"top": [
+[
+"tieni"
+]
+],
+"ev": [],
+"usi": 0
+},
+{
+"id": 533,
+"tipo": "mistero",
+"sottotipo": "tesoro",
+"nome": "Sciabola",
+"nome_en": "Saber",
+"flavor": "Uno scheletro solitario steso in un angolo stringe tra le mani ossute una sciabola: la riconosci, è la sciabola del capitano Black Florian! Nelle tue condizioni attuali è difficile da usare...",
+"testo": "Tieni questa carta. Ogni volta che un giocatore combatte una Belva, può usarla per ottenere temporaneamente +3 Arma. Quando un giocatore usa la sciabola, quel giocatore subisce 1 ferita. Le carte Evento, Avventura o Caccia che riducono Arma non abbassano il valore della sciabola.",
+"ev_nome": "",
+"ev_testo": "",
+"top": [
+[
+"tieni"
+]
+],
+"ev": [],
+"usi": 0
+},
+{
+"id": 534,
+"tipo": "mistero",
+"sottotipo": "tesoro",
+"nome": "Orci",
+"nome_en": "Crocks",
+"flavor": "Trovi un vecchio cesto con dentro alcuni vasi di terracotta.",
+"testo": "Costruisci gratis l'Invenzione Pentola, senza usare un'Azione (gira la carta Pentola sul lato Oggetto).",
+"ev_nome": "",
+"ev_testo": "",
+"top": [
+[
+"costruisci_gratis",
+[
+"pentola"
+]
+]
+],
+"ev": [],
+"usi": 0
+},
+{
+"id": 535,
+"tipo": "mistero",
+"sottotipo": "tesoro",
+"nome": "Corde",
+"nome_en": "Ropes",
+"flavor": "Puoi usarle per rinforzare il tuo rifugio.",
+"testo": "+1 Palizzata oppure Tetto",
+"ev_nome": "",
+"ev_testo": "",
+"top": [
+[
+"liv_scelta",
+1
+]
+],
+"ev": [],
+"usi": 0
+},
+{
+"id": 536,
+"tipo": "mistero",
+"sottotipo": "tesoro",
+"nome": "Candele",
+"nome_en": "Candles",
+"flavor": "In un piccolo fagotto trovi 2 vecchie candele. Ti permettono di lavorare più a lungo.",
+"testo": "Prendi 2 pedina aggiuntiva e mettile su questa carta. Puoi usarle come pedine aggiuntive solo per Costruire. Ogni pedina può essere usata una sola volta e viene scartata dopo l'uso. Scarta la carta dopo l'uso.",
+"ev_nome": "",
+"ev_testo": "",
+"top": [
+[
+"neutre",
+"costruire",
+2,
+"una_volta"
+]
+],
+"ev": [],
+"usi": 0
+},
+{
+"id": 537,
+"tipo": "mistero",
+"sottotipo": "trappola",
+"nome": "Ragnatela",
+"nome_en": "Spider Web",
+"flavor": "Un ragno ti si arrampica sulla manica e ti morde.",
+"testo": "Subisci ferita. Se non hai l'oggetto Medicina, subisci ferita ogni round durante la Fase Notte. Tieni questa carta come promemoria.",
+"ev_nome": "",
+"ev_testo": "",
+"top": [
+[
+"ferita",
+1,
+"chi"
+],
+[
+"tieni"
+]
+],
+"ev": [],
+"usi": 0
+},
+{
+"id": 538,
+"tipo": "mistero",
+"sottotipo": "tesoro",
+"nome": "Bussola",
+"nome_en": "Compass",
+"flavor": "Che scoperta meravigliosa: una bussola!",
+"testo": "Prendi 1 pedina aggiuntiva e mettila su questa carta. Puoi usarla più volte come pedina aggiuntiva, ma solo per Esplorare.",
+"ev_nome": "",
+"ev_testo": "",
+"top": [
+[
+"tieni"
+]
+],
+"ev": [],
+"usi": 0
+},
+{
+"id": 539,
+"tipo": "mistero",
+"sottotipo": "creatura",
+"nome": "Selvaggio",
+"nome_en": "Savage",
+"flavor": "Un selvaggio balza fuori dall'oscurità. Ti butta a terra e ti prende l'arma.",
+"testo": "Arma = 0. Mescola nel mazzo Eventi.",
+"ev_nome": "Caccia infruttuosa",
+"ev_testo": "Pesca 1 carta Mistero: risolvila solo se è tesori. Pesca un'altra carta.",
+"top": [
+[
+"arma_zero"
+],
+[
+"mescola"
+]
+],
+"ev": [
+[
+"mistero",
+{
+"tesoro": 1
+},
+"max"
+]
+],
+"usi": 0
+},
+{
+"id": 540,
+"tipo": "mistero",
+"sottotipo": "creatura",
+"nome": "Grande scimmia",
+"nome_en": "Big Ape",
+"flavor": "Qualcosa balza fuori dall'oscurità... e scompare nella giungla.",
+"testo": "Mescola nel mazzo Eventi.",
+"ev_nome": "Demone della notte",
+"ev_testo": "Combatti la Belva: [tabella] Pesca un'altra carta.",
+"top": [
+[
+"mescola"
+]
+],
+"ev": [
+[
+"combatti",
+{
+"forza": 4,
+"arma": 0,
+"cibo": 0,
+"pelliccia": 2,
+"palizzata": 0
+}
+]
+],
+"usi": 0
+},
+{
+"id": 541,
+"tipo": "mistero",
+"sottotipo": "creatura",
+"nome": "Morso",
+"nome_en": "Bite",
+"flavor": "Qualcosa ti morde.",
+"testo": "Subisci ferita.",
+"ev_nome": "",
+"ev_testo": "",
+"top": [
+[
+"ferita",
+1,
+"chi"
+]
+],
+"ev": [],
+"usi": 0
+},
+{
+"id": 542,
+"tipo": "mistero",
+"sottotipo": "tesoro",
+"nome": "Amuleto con il ritratto di una bella dama",
+"nome_en": "Amulet with Portrait of a Beautiful Lady",
+"flavor": "Ti dà speranza in un momento di disperazione.",
+"testo": "Copri 2 -1 morale sulle carte Personaggio (2 su 1 Personaggio, oppure 1 su 2 Personaggi) con segnalino bianco per indicare che non vengono risolti.",
+"ev_nome": "",
+"ev_testo": "",
+"top": [
+[
+"amuleto"
+]
+],
+"ev": [],
+"usi": 0
+},
+{
+"id": 543,
+"tipo": "mistero",
+"sottotipo": "tesoro",
+"nome": "Vecchi vestiti",
+"nome_en": "Old Clothes",
+"flavor": "Un po' puzzolenti, ma fanno ancora il loro lavoro.",
+"testo": "Tieni questa carta. D'ora in poi, una nuvola di neve = nuvola di pioggia.",
+"ev_nome": "",
+"ev_testo": "",
+"top": [
+[
+"tieni"
+]
+],
+"ev": [],
+"usi": 0
+},
+{
+"id": 544,
+"tipo": "mistero",
+"sottotipo": "creatura",
+"nome": "Serpente",
+"nome_en": "Snake",
+"flavor": "Un serpente si avvinghia alla tua gamba e ti stritola le ossa.",
+"testo": "Subisci 2 ferita.",
+"ev_nome": "",
+"ev_testo": "",
+"top": [
+[
+"ferita",
+2,
+"chi"
+]
+],
+"ev": [],
+"usi": 0
+},
+{
+"id": 545,
+"tipo": "mistero",
+"sottotipo": "creatura",
+"nome": "Serpente gigante",
+"nome_en": "Giant Snake",
+"flavor": "Calpesti un orribile serpente gigante. Ti spaventi e scappi via.",
+"testo": "Scarta tutti i tuoi Determinazione. Smetti di pescare carte Mistero.",
+"ev_nome": "",
+"ev_testo": "",
+"top": [
+[
+"det_tutti_via",
+"chi"
+],
+[
+"stop_misteri"
+]
+],
+"ev": [],
+"usi": 0
+},
+{
+"id": 546,
+"tipo": "mistero",
+"sottotipo": "trappola",
+"nome": "Rete",
+"nome_en": "Net",
+"flavor": "Resti intrappolato in una rete. Ti solleva in aria e ti ci vuole tutta la notte per liberarti.",
+"testo": "Smetti di pescare carte Mistero. Risolvi la Fase Notte fuori dall'accampamento.",
+"ev_nome": "",
+"ev_testo": "",
+"top": [
+[
+"stop_misteri"
+],
+[
+"notte_fuori"
+]
+],
+"ev": [],
+"usi": 0
+},
+{
+"id": 547,
+"tipo": "mistero",
+"sottotipo": "trappola",
+"nome": "Veleno",
+"nome_en": "Poison",
+"flavor": "Hai inalato una strana polvere. Tutto comincia con un semplice starnuto...",
+"testo": "Subisci ferita. Se non hai l'oggetto Medicina, ogni giocatore subisce ferita nella Fase Notte. Scarta dopo la Fase Notte.",
+"ev_nome": "",
+"ev_testo": "",
+"top": [
+[
+"ferita",
+1,
+"chi"
+],
+[
+"tieni_notte"
+]
+],
+"ev": [],
+"usi": 0
+},
+{
+"id": 548,
+"tipo": "mistero",
+"sottotipo": "tesoro",
+"nome": "Coperte",
+"nome_en": "Blankets",
+"flavor": "Mezze rosicchiate dai topi, ma ancora utilizzabili.",
+"testo": "Tieni questa carta. Ogni uso ti permette di ignorare 1 nuvola di neve durante la Fase Meteo.",
+"ev_nome": "",
+"ev_testo": "",
+"top": [
+[
+"tieni"
+]
+],
+"ev": [],
+"usi": 3
+},
+{
+"id": 549,
+"tipo": "mistero",
+"sottotipo": "trappola",
+"nome": "Confuso",
+"nome_en": "Confused",
+"flavor": "Uno strano odore ti confonde i sensi: all'improvviso inizi a sentirti stordito.",
+"testo": "Metti un gettone «rilancia il successo» sulla tua carta Personaggio. Nel prossimo round, devi rilanciare un risultato successo. Se compi un'Azione con pedinapedina, devi tirare il dado Successo (ma non gli altri due dadi).",
+"ev_nome": "",
+"ev_testo": "",
+"top": [
+[
+"succ_negato_pg",
+"prossimo"
+]
+],
+"ev": [],
+"usi": 0
+},
+{
+"id": 550,
+"tipo": "mistero",
+"sottotipo": "trappola",
+"nome": "Cerbottana",
+"nome_en": "Blowgun",
+"flavor": "Senti una leggera puntura mentre un dardo ti penetra nella pelle.",
+"testo": "Nel prossimo round hai a disposizione una sola pedina. Tieni questa carta come promemoria. Scartala dopo il prossimo round.",
+"ev_nome": "",
+"ev_testo": "",
+"top": [
+[
+"una_pedina_prossimo",
+"chi"
+]
+],
+"ev": [],
+"usi": 0
+},
+{
+"id": 551,
+"tipo": "mistero",
+"sottotipo": "creatura",
+"nome": "Un gioiello scintillante",
+"nome_en": "A Shiny Jewel",
+"flavor": "Trovi un gioiello scintillante e lo porti all'accampamento. Più tardi ti accorgi che è un brutto scarafaggio.",
+"testo": "Metti questa carta nello spazio Notte. Durante la Fase Notte, ogni giocatore subisce ferita. Scartala dopo la Fase Notte.",
+"ev_nome": "",
+"ev_testo": "",
+"top": [
+[
+"tieni_notte"
+]
+],
+"ev": [],
+"usi": 0
+},
+{
+"id": 600,
+"tipo": "oggetto",
+"k": "bibbia",
+"nome": "Bibbia",
+"nome_en": "Bible",
+"testo": "Durante Sistemare il campo, il giocatore ottiene 3 Determinazione e +vita invece di soli 2 Determinazione.",
+"usi": 2
+},
+{
+"id": 601,
+"tipo": "oggetto",
+"k": "gallette",
+"nome": "Gallette",
+"nome_en": "Biscuits",
+"testo": "Ottieni 1 cibo.",
+"usi": 2
+},
+{
+"id": 602,
+"tipo": "oggetto",
+"k": "bottiglia",
+"nome": "Bottiglia vuota",
+"nome_en": "Empty Bottle",
+"testo": "+1 Arma",
+"usi": 2
+},
+{
+"id": 603,
+"tipo": "oggetto",
+"k": "rum",
+"nome": "Fiaschetta di rum",
+"nome_en": "Flask of Rum",
+"testo": "+vita",
+"usi": 2
+},
+{
+"id": 604,
+"tipo": "oggetto",
+"k": "martello",
+"nome": "Martello e chiodi",
+"nome_en": "Hammer & Nails",
+"testo": "pedina aggiuntiva",
+"usi": 2
+},
+{
+"id": 605,
+"tipo": "oggetto",
+"k": "pipa",
+"nome": "Pipa e tabacco",
+"nome_en": "Pipe & Tobacco",
+"testo": "Ottieni 2 Determinazione.",
+"usi": 2
+},
+{
+"id": 606,
+"tipo": "oggetto",
+"k": "pistola",
+"nome": "Pistola",
+"nome_en": "Pistol",
+"testo": "Ti dà temporaneamente +3 Arma.",
+"usi": 2
+},
+{
+"id": 607,
+"tipo": "oggetto",
+"k": "barometro",
+"nome": "Barometro",
+"nome_en": "Storm Glass",
+"testo": "Tira i dadi Meteo (come indicato dallo Scenario) prima della fase Azione, ma risolvi il risultato normalmente durante la fase Meteo.",
+"usi": 2
+},
+{
+"id": 700,
+"tipo": "belva",
+"nome": "Alligatore",
+"nome_en": "Alligator",
+"testo": "",
+"forza": 6,
+"perdita_arma": -2,
+"cibo": 3,
+"pelliccia": 0,
+"extra": []
+},
+{
+"id": 701,
+"tipo": "belva",
+"nome": "Orso",
+"nome_en": "Bear",
+"testo": "",
+"forza": 6,
+"perdita_arma": -1,
+"cibo": 5,
+"pelliccia": 2,
+"extra": []
+},
+{
+"id": 702,
+"tipo": "belva",
+"nome": "Uccelli",
+"nome_en": "Birds",
+"testo": "",
+"forza": 1,
+"perdita_arma": 0,
+"cibo": 2,
+"pelliccia": 0,
+"extra": []
+},
+{
+"id": 703,
+"tipo": "belva",
+"nome": "Boa",
+"nome_en": "Boa",
+"testo": "Dopo il combattimento ottieni moneta d'oro.",
+"forza": 2,
+"perdita_arma": -2,
+"cibo": 2,
+"pelliccia": 0,
+"extra": [
+[
+"scoperte",
+1
+]
+]
+},
+{
+"id": 704,
+"tipo": "belva",
+"nome": "Camoscio",
+"nome_en": "Chamois",
+"testo": "",
+"forza": 5,
+"perdita_arma": -1,
+"cibo": 3,
+"pelliccia": 2,
+"extra": []
+},
+{
+"id": 705,
+"tipo": "belva",
+"nome": "Ghepardo",
+"nome_en": "Cheetah",
+"testo": "",
+"forza": 4,
+"perdita_arma": -1,
+"cibo": 2,
+"pelliccia": 1,
+"extra": []
+},
+{
+"id": 706,
+"tipo": "belva",
+"nome": "Volpe",
+"nome_en": "Fox",
+"testo": "",
+"forza": 2,
+"perdita_arma": 0,
+"cibo": 2,
+"pelliccia": 1,
+"extra": []
+},
+{
+"id": 707,
+"tipo": "belva",
+"nome": "Capre",
+"nome_en": "Goats",
+"testo": "",
+"forza": 4,
+"perdita_arma": -1,
+"cibo": 3,
+"pelliccia": 1,
+"extra": []
+},
+{
+"id": 708,
+"tipo": "belva",
+"nome": "Gorilla",
+"nome_en": "Gorilla",
+"testo": "Dopo il combattimento ottieni moneta d'oro.",
+"forza": 6,
+"perdita_arma": -3,
+"cibo": 5,
+"pelliccia": 2,
+"extra": [
+[
+"scoperte",
+1
+]
+]
+},
+{
+"id": 709,
+"tipo": "belva",
+"nome": "Iguana",
+"nome_en": "Iguana",
+"testo": "Indipendentemente dal tuo livello dell'Arma Arma, subisci una ferita aggiuntiva.",
+"forza": 4,
+"perdita_arma": -1,
+"cibo": 3,
+"pelliccia": 1,
+"extra": [
+[
+"ferita",
+1,
+"chi"
+]
+]
+},
+{
+"id": 710,
+"tipo": "belva",
+"nome": "Giaguaro",
+"nome_en": "Jaguar",
+"testo": "Se non hai l'Oggetto Medicina, subisci 2 ferita.",
+"forza": 5,
+"perdita_arma": 0,
+"cibo": 4,
+"pelliccia": 1,
+"extra": [
+[
+"se_non_inv",
+"medicina",
+[
+[
+"ferita",
+2,
+"chi"
+]
+]
+]
+]
+},
+{
+"id": 711,
+"tipo": "belva",
+"nome": "Puma",
+"nome_en": "Puma",
+"testo": "Se non hai l'Oggetto Medicina, subisci 2 ferita.",
+"forza": 5,
+"perdita_arma": 0,
+"cibo": 2,
+"pelliccia": 1,
+"extra": [
+[
+"se_non_inv",
+"medicina",
+[
+[
+"ferita",
+2,
+"chi"
+]
+]
+]
+]
+},
+{
+"id": 712,
+"tipo": "belva",
+"nome": "Tapiro",
+"nome_en": "Tapir",
+"testo": "",
+"forza": 3,
+"perdita_arma": -1,
+"cibo": 2,
+"pelliccia": 1,
+"extra": []
+},
+{
+"id": 713,
+"tipo": "belva",
+"nome": "Tigre",
+"nome_en": "Tiger",
+"testo": "",
+"forza": 6,
+"perdita_arma": -2,
+"cibo": 5,
+"pelliccia": 2,
+"extra": []
+},
+{
+"id": 714,
+"tipo": "belva",
+"nome": "Cane selvatico",
+"nome_en": "Wild Dog",
+"testo": "Se non hai l'Oggetto Medicina, subisci 2 ferita.",
+"forza": 3,
+"perdita_arma": 0,
+"cibo": 2,
+"pelliccia": 1,
+"extra": [
+[
+"se_non_inv",
+"medicina",
+[
+[
+"ferita",
+2,
+"chi"
+]
+]
+]
+]
+},
+{
+"id": 715,
+"tipo": "belva",
+"nome": "Cinghiale",
+"nome_en": "Wild Pig",
+"testo": "",
+"forza": 3,
+"perdita_arma": -1,
+"cibo": 3,
+"pelliccia": 1,
+"extra": []
+},
+{
+"id": 800,
+"tipo": "avventura",
+"azione": "costruire",
+"nome": "Visita di un predatore",
+"nome_en": "Visit of a Predator",
+"flavor": "Mentre lavorate, il vostro campo riceve la visita di un predatore. Mangia il vostro cibo e scappa.",
+"testo": "Scarta cibo. Mescola nel mazzo Eventi.",
+"ev_nome": "Visita notturna",
+"ev_testo": "Metti dado delle belve nello spazio Meteo. Durante la fase Meteo di questo round, tira dado delle belve e risolvine l'effetto. Pesca un'altra carta.",
+"top": [
+[
+"ris",
+"cibo",
+-1
+],
+[
+"mescola"
+]
+],
+"ev": [
+[
+"meteo",
+"dado_belve"
+]
+]
+},
+{
+"id": 801,
+"tipo": "avventura",
+"azione": "costruire",
+"nome": "Puntura",
+"nome_en": "Sting",
+"flavor": "Sei stato punto da un'ape.",
+"testo": "Metti ferita alla pancia sulla pancia del tuo Personaggio. Mescola nel mazzo Eventi.",
+"ev_nome": "Brividi",
+"ev_testo": "Se non avete Medicina, il Personaggio con ferita alla pancia sulla pancia ha solo una pedina disponibile in questo round. Scarta ferita alla pancia. Pesca un'altra carta.",
+"top": [
+[
+"ferita_speciale",
+"pancia"
+],
+[
+"mescola"
+]
+],
+"ev": [
+[
+"se_non_inv",
+"medicina",
+[
+[
+"una_pedina",
+"vittima"
+]
+]
+],
+[
+"togli_speciale",
+"pancia"
+]
+]
+},
+{
+"id": 802,
+"tipo": "avventura",
+"azione": "costruire",
+"nome": "Risparmi",
+"nome_en": "Savings",
+"flavor": "Avete trovato alcuni rami deboli. Pensate di conservarli per usi futuri.",
+"testo": "DECIDI: scarta questa carta OPPURE ottieni 2 legno e mescolala nel mazzo Eventi.",
+"ev_nome": "Costruzione instabile",
+"ev_testo": "-1 morale Pesca un'altra carta.",
+"top": [
+[
+"decidi",
+[
+[
+"Scarta questa carta",
+[]
+],
+[
+"Prendi 2 legno e mescola nel mazzo Eventi",
+[
+[
+"ris",
+"legno",
+2
+],
+[
+"mescola"
+]
+]
+]
+]
+]
+],
+"ev": [
+[
+"morale",
+-1
+]
+]
+},
+{
+"id": 803,
+"tipo": "avventura",
+"azione": "costruire",
+"nome": "Mancanza di speranza!",
+"nome_en": "Lack of Hope!",
+"flavor": "Sentite che alcune delle vostre idee sono impossibili da realizzare.",
+"testo": "Scarta 3 carte Invenzione.",
+"ev_nome": "",
+"ev_testo": "",
+"top": [
+[
+"scarta_inv",
+3
+]
+],
+"ev": []
+},
+{
+"id": 804,
+"tipo": "avventura",
+"azione": "costruire",
+"nome": "Attrezzo rotto",
+"nome_en": "Broken Tool",
+"flavor": "Maledizione!",
+"testo": "SE POSSIBILE: gira 1 Oggetto a faccia in su (sul lato Invenzione) e annullane l'effetto.",
+"ev_nome": "",
+"ev_testo": "",
+"top": [
+[
+"rovescia_inv",
+1
+]
+],
+"ev": []
+},
+{
+"id": 805,
+"tipo": "avventura",
+"azione": "costruire",
+"nome": "Di fretta",
+"nome_en": "In a Hurry",
+"flavor": "Nella fretta diventate sbadati.",
+"testo": "DECIDI: scarta questa carta OPPURE pesca 2 segnalino Scoperta e mescolala nel mazzo Eventi.",
+"ev_nome": "Crac!",
+"ev_testo": "-1 Palizzata. Pesca un'altra carta.",
+"top": [
+[
+"decidi",
+[
+[
+"Scarta questa carta",
+[]
+],
+[
+"Pesca 2 segnalini Scoperta e mescola nel mazzo Eventi",
+[
+[
+"scoperte",
+2
+],
+[
+"mescola"
+]
+]
+]
+]
+]
+],
+"ev": [
+[
+"liv",
+"palizzata",
+-1
+]
+]
+},
+{
+"id": 806,
+"tipo": "avventura",
+"azione": "costruire",
+"nome": "Costruzione",
+"nome_en": "Construction",
+"flavor": "Fate una pausa per rinforzare il campo con la vegetazione. Quando sarà ricoperto d'erba, sarà ancora più solido.",
+"testo": "Mescola nel mazzo Eventi.",
+"ev_nome": "Costruzione più solida",
+"ev_testo": "+1 Palizzata (se avete un Rifugio). Pesca un'altra carta.",
+"top": [
+[
+"mescola"
+]
+],
+"ev": [
+[
+"liv",
+"palizzata",
+1
+]
+]
+},
+{
+"id": 807,
+"tipo": "avventura",
+"azione": "costruire",
+"nome": "Stanco",
+"nome_en": "Tired",
+"flavor": "Avete sonno. Decidete di fare un pisolino.",
+"testo": "DECIDI: scarta questa carta OPPURE guarisci 2 vita e mescolala nel mazzo Eventi.",
+"ev_nome": "Litigio",
+"ev_testo": "-1 morale Pesca un'altra carta.",
+"top": [
+[
+"decidi",
+[
+[
+"Scarta questa carta",
+[]
+],
+[
+"Cura 2 ferite e mescola nel mazzo Eventi",
+[
+[
+"cura_subito",
+2,
+"chi"
+],
+[
+"mescola"
+]
+]
+]
+]
+]
+],
+"ev": [
+[
+"morale",
+-1
+]
+]
+},
+{
+"id": 808,
+"tipo": "avventura",
+"azione": "costruire",
+"nome": "Costruzione fragile",
+"nome_en": "Weak Construction",
+"flavor": "Il vostro campo è fatto di avanzi e sta in piedi a malapena.",
+"testo": "Mescola nel mazzo Eventi.",
+"ev_nome": "Schianto!",
+"ev_testo": "-1/2 Tetto (arrotondato per difetto). Pesca un'altra carta.",
+"top": [
+[
+"mescola"
+]
+],
+"ev": [
+[
+"liv_meta",
+"tetto"
+]
+]
+},
+{
+"id": 809,
+"tipo": "avventura",
+"azione": "costruire",
+"nome": "Ispezione degli attrezzi",
+"nome_en": "Tools Inspection",
+"flavor": "Alcuni dei vostri attrezzi stanno lentamente andando in pezzi.",
+"testo": "SE POSSIBILE: metti segnalino nero su un massimo di 2 Oggetti. Mescola nel mazzo Eventi.",
+"ev_nome": "Attrezzi rotti",
+"ev_testo": "Gira a faccia in su gli Oggetti segnati (sul lato Invenzione) e annullane gli effetti (se possibile). Pesca un'altra carta.",
+"top": [
+[
+"segna_oggetti",
+2
+],
+[
+"mescola"
+]
+],
+"ev": [
+[
+"rovescia_segnati"
+]
+]
+},
+{
+"id": 810,
+"tipo": "avventura",
+"azione": "costruire",
+"nome": "Lavoro pericoloso",
+"nome_en": "Dangerous Work",
+"flavor": "Senza una buona officina, il lavoro è molto pericoloso.",
+"testo": "Metti gettone «rilancia il successo» e segnalino Avventura (Costruire) sullo spazio dell'Azione Costruire.",
+"ev_nome": "",
+"ev_testo": "",
+"top": [
+[
+"gettone",
+"costruire",
+"rilancio"
+],
+[
+"avv",
+"costruire"
+]
+],
+"ev": []
+},
+{
+"id": 811,
+"tipo": "avventura",
+"azione": "costruire",
+"nome": "Lavoro veloce",
+"nome_en": "Fast Work",
+"flavor": "Lavorate freneticamente, ignorando ciò che accade intorno.",
+"testo": "DECIDI: scarta questa carta OPPURE effettua 1 Azione Costruire in più (devi tirare tutti e 3 i dado azione Costruire, marrone) e mescolala nel mazzo Eventi.",
+"ev_nome": "La fretta è cattiva consigliera",
+"ev_testo": "-1 Tetto o Palizzata. Pesca un'altra carta.",
+"top": [
+[
+"decidi",
+[
+[
+"Scarta questa carta",
+[]
+],
+[
+"Un'altra azione Costruire (con i dadi) e mescola nel mazzo Eventi",
+[
+[
+"altra_costruzione"
+],
+[
+"mescola"
+]
+]
+]
+]
+]
+],
+"ev": [
+[
+"liv_scelta",
+-1
+]
+]
+},
+{
+"id": 812,
+"tipo": "avventura",
+"azione": "costruire",
+"nome": "Lavoro faticoso",
+"nome_en": "Laborious Work",
+"flavor": "Il lavoro è molto duro e richiede molto tempo.",
+"testo": "Metti gettone azione lenta sullo spazio dell'Azione Costruire.",
+"ev_nome": "",
+"ev_testo": "",
+"top": [
+[
+"gettone",
+"costruire",
+"lento"
+]
+],
+"ev": []
+},
+{
+"id": 813,
+"tipo": "avventura",
+"azione": "costruire",
+"nome": "Esaurimento",
+"nome_en": "Breakdown",
+"flavor": "Non siete abituati a lavorare con attrezzi fatti a mano.",
+"testo": "-1 morale Mescola nel mazzo Eventi.",
+"ev_nome": "Dopo un po'...",
+"ev_testo": "Il Primo giocatore ottiene 2 Determinazione. Pesca un'altra carta.",
+"top": [
+[
+"morale",
+-1
+],
+[
+"mescola"
+]
+],
+"ev": [
+[
+"det",
+2,
+"primo"
+]
+]
+},
+{
+"id": 814,
+"tipo": "avventura",
+"azione": "costruire",
+"nome": "Lavoro faticoso",
+"nome_en": "Laborious Work",
+"flavor": "Il lavoro è molto duro e richiede molto tempo.",
+"testo": "Metti gettone azione lenta sullo spazio dell'Azione Costruire.",
+"ev_nome": "",
+"ev_testo": "",
+"top": [
+[
+"gettone",
+"costruire",
+"lento"
+]
+],
+"ev": []
+},
+{
+"id": 815,
+"tipo": "avventura",
+"azione": "costruire",
+"nome": "Predatore affamato",
+"nome_en": "Hungry Predator",
+"flavor": "Mentre lavorate, una belva affamata fa visita al vostro campo.",
+"testo": "DECIDI: subisci 2 ferita, ottieni 2 cibo e pelliccia e scarta questa carta OPPURE scarta cibo e -1 Palizzata e mescolala nel mazzo Eventi.",
+"ev_nome": "Nuova visita",
+"ev_testo": "Combatti una Belva: (vedi dati). Pesca un'altra carta.",
+"top": [
+[
+"decidi",
+[
+[
+"2 ferite, prendi 2 cibo e 1 pelliccia e scarta questa carta",
+[
+[
+"ferita",
+2,
+"chi"
+],
+[
+"ris",
+"cibo",
+2
+],
+[
+"ris",
+"pelliccia",
+1
+]
+]
+],
+[
+"Scarta 1 cibo, -1 Palizzata e mescola nel mazzo Eventi",
+[
+[
+"ris",
+"cibo",
+-1
+],
+[
+"liv",
+"palizzata",
+-1
+],
+[
+"mescola"
+]
+]
+]
+]
+]
+],
+"ev": [
+[
+"combatti",
+{
+"forza": 3,
+"arma": 0,
+"cibo": 1,
+"pelliccia": 1,
+"palizzata": -1
+}
+]
+]
+},
+{
+"id": 816,
+"tipo": "avventura",
+"azione": "costruire",
+"nome": "Lavoro duro",
+"nome_en": "Hard Work",
+"flavor": "Lavorate così duramente che vi viene fame.",
+"testo": "SE POSSIBILE: scarta cibo.",
+"ev_nome": "",
+"ev_testo": "",
+"top": [
+[
+"ris_sp",
+"cibo",
+-1
+]
+],
+"ev": []
+},
+{
+"id": 817,
+"tipo": "avventura",
+"azione": "costruire",
+"nome": "Ululati tra i cespugli",
+"nome_en": "Howling in the Bushes",
+"flavor": "Mentre lavorate, sentite ululati spaventosi provenire dai cespugli. Dopo un po' il predatore se ne va.",
+"testo": "Mescola nel mazzo Eventi.",
+"ev_nome": "La belva è qui!",
+"ev_testo": "Combatti una Belva: (vedi dati). Pesca un'altra carta.",
+"top": [
+[
+"mescola"
+]
+],
+"ev": [
+[
+"combatti",
+{
+"forza": 3,
+"arma": -1,
+"cibo": 2,
+"pelliccia": 1,
+"palizzata": -1
+}
+]
+]
+},
+{
+"id": 818,
+"tipo": "avventura",
+"azione": "costruire",
+"nome": "Tempesta di vento",
+"nome_en": "Wind-Storm",
+"flavor": "Il vento infuria sul campo, sparpagliando ogni cosa.",
+"testo": "-1 Palizzata. Mescola nel mazzo Eventi.",
+"ev_nome": "Palizzata naturale",
+"ev_testo": "+1 Palizzata (se avete un Rifugio). Pesca un'altra carta.",
+"top": [
+[
+"liv",
+"palizzata",
+-1
+],
+[
+"mescola"
+]
+],
+"ev": [
+[
+"liv",
+"palizzata",
+1
+]
+]
+},
+{
+"id": 819,
+"tipo": "avventura",
+"azione": "costruire",
+"nome": "Testa tagliata",
+"nome_en": "Cut Head",
+"flavor": "Vi siete tagliati la testa e siete arrabbiati.",
+"testo": "Subisci ferita e ottieni 2 Determinazione. Metti ferita alla testa sulla testa del tuo Personaggio. Mescola nel mazzo Eventi.",
+"ev_nome": "Mal di testa",
+"ev_testo": "Se non avete Medicina, il Personaggio con ferita alla testa sulla testa subisce 2 ferita. Scarta ferita alla testa. Pesca un'altra carta.",
+"top": [
+[
+"ferita",
+1,
+"chi"
+],
+[
+"det",
+2,
+"chi"
+],
+[
+"ferita_speciale",
+"testa"
+],
+[
+"mescola"
+]
+],
+"ev": [
+[
+"se_non_inv",
+"medicina",
+[
+[
+"ferita",
+2,
+"vittima"
+]
+]
+],
+[
+"togli_speciale",
+"testa"
+]
+]
+},
+{
+"id": 820,
+"tipo": "avventura",
+"azione": "costruire",
+"nome": "Paura delle belve",
+"nome_en": "Fear of the Beasts",
+"flavor": "Prima o poi vi serviranno armi molto più potenti.",
+"testo": "Mescola nel mazzo Eventi.",
+"ev_nome": "Protezione estesa",
+"ev_testo": "Metti gettone legno extra sullo spazio del costo dell'Arma. D'ora in poi dovete spendere 2 legno invece di 1 per aumentare Arma. Pesca un'altra carta.",
+"top": [
+[
+"mescola"
+]
+],
+"ev": [
+[
+"gettone",
+"arma_costo",
+"legno_extra"
+]
+]
+},
+{
+"id": 821,
+"tipo": "avventura",
+"azione": "costruire",
+"nome": "Brutta ferita",
+"nome_en": "Nasty Wound",
+"flavor": "Vi siete tagliati gravemente la mano.",
+"testo": "Metti ferita al braccio sul braccio del tuo Personaggio. Mescola nel mazzo Eventi.",
+"ev_nome": "Infezione",
+"ev_testo": "Se non avete Medicina, il Personaggio con ferita al braccio sul braccio subisce 2 ferita. Scarta ferita al braccio. Pesca un'altra carta.",
+"top": [
+[
+"ferita_speciale",
+"braccio"
+],
+[
+"mescola"
+]
+],
+"ev": [
+[
+"se_non_inv",
+"medicina",
+[
+[
+"ferita",
+2,
+"vittima"
+]
+]
+],
+[
+"togli_speciale",
+"braccio"
+]
+]
+},
+{
+"id": 822,
+"tipo": "avventura",
+"azione": "costruire",
+"nome": "Leva spezzata",
+"nome_en": "Broken Lever",
+"flavor": "Il bastone che usavate come leva si spezza.",
+"testo": "-1 Arma.",
+"ev_nome": "",
+"ev_testo": "",
+"top": [
+[
+"liv",
+"arma",
+-1
+]
+],
+"ev": []
+},
+{
+"id": 823,
+"tipo": "avventura",
+"azione": "costruire",
+"nome": "Nuvole scure in cielo",
+"nome_en": "Dark Clouds in the Sky",
+"flavor": "Sarà una giornata dura. Piove a dirotto.",
+"testo": "Metti nuvola di pioggia nello spazio Meteo. Mescola nel mazzo Eventi.",
+"ev_nome": "Dopo la pioggia",
+"ev_testo": "+1 Palizzata (se avete un Rifugio). Pesca un'altra carta.",
+"top": [
+[
+"meteo",
+"pioggia"
+],
+[
+"mescola"
+]
+],
+"ev": [
+[
+"liv",
+"palizzata",
+1
+]
+]
+},
+{
+"id": 824,
+"tipo": "avventura",
+"azione": "costruire",
+"nome": "«Ci servirà un campo più grande»",
+"nome_en": "“Gonna Need a Bigger Camp”",
+"flavor": "Avete così tante cose che il campo è diventato troppo piccolo. Presto vi servirà un campo più grande.",
+"testo": "Mescola nel mazzo Eventi.",
+"ev_nome": "Ampliare il campo",
+"ev_testo": "Metti gettone legno extra sugli spazi del costo di Rifugio, Tetto e Palizzata. D'ora in poi dovete spendere un legno in più per costruirli. Pesca un'altra carta.",
+"top": [
+[
+"mescola"
+]
+],
+"ev": [
+[
+"gettone",
+"rifugio_costo",
+"legno_extra"
+]
+]
+},
+{
+"id": 825,
+"tipo": "avventura",
+"azione": "costruire",
+"nome": "Incidente",
+"nome_en": "Accident",
+"flavor": "Per disattenzione vi tagliate la gamba con un attrezzo. Potrebbe peggiorare.",
+"testo": "Metti ferita alla gamba sulla gamba del tuo Personaggio. Mescola nel mazzo Eventi.",
+"ev_nome": "Cancrena",
+"ev_testo": "Il Personaggio con ferita alla gamba sulla gamba subisce 3 ferita, oppure 1 ferita se avete Medicina. Scarta ferita alla gamba. Pesca un'altra carta.",
+"top": [
+[
+"ferita_speciale",
+"gamba"
+],
+[
+"mescola"
+]
+],
+"ev": [
+[
+"se_inv",
+"medicina",
+[
+[
+"ferita",
+1,
+"vittima"
+]
+],
+[
+[
+"ferita",
+3,
+"vittima"
+]
+]
+],
+[
+"togli_speciale",
+"gamba"
+]
+]
+},
+{
+"id": 826,
+"tipo": "avventura",
+"azione": "costruire",
+"nome": "Scimmia vede",
+"nome_en": "Monkey See",
+"flavor": "Cacciate via le scimmie, ma in fondo sapete che torneranno.",
+"testo": "Mescola nel mazzo Eventi.",
+"ev_nome": "Scimmia fa",
+"ev_testo": "-1/2 Tetto o Palizzata (arrotondato per difetto). Pesca un'altra carta.",
+"top": [
+[
+"mescola"
+]
+],
+"ev": [
+[
+"liv_meta"
+]
+]
+},
+{
+"id": 827,
+"tipo": "avventura",
+"azione": "costruire",
+"nome": "Demotivati",
+"nome_en": "Unmotivated",
+"flavor": "Poiché siete feriti, stanchi e irritati, la costruzione procede molto lentamente.",
+"testo": "Scarta Determinazione oppure subisci ferita. Mescola nel mazzo Eventi.",
+"ev_nome": "Gli attrezzi si rompono",
+"ev_testo": "Ogni giocatore deve scartare Determinazione. Pesca un'altra carta.",
+"top": [
+[
+"det_o_ferita",
+"chi"
+],
+[
+"mescola"
+]
+],
+"ev": [
+[
+"det",
+-1,
+"tutti"
+]
+]
+},
+{
+"id": 828,
+"tipo": "avventura",
+"azione": "costruire",
+"nome": "Fare i conti",
+"nome_en": "Coming to Terms",
+"flavor": "Discutete del vostro futuro e capite che alcune delle vostre idee saranno impossibili da realizzare in queste condizioni.",
+"testo": "Scarta 3 carte Invenzione. Mescola nel mazzo Eventi.",
+"ev_nome": "Mancanza di idee",
+"ev_testo": "-1 morale Pesca un'altra carta.",
+"top": [
+[
+"scarta_inv",
+3
+],
+[
+"mescola"
+]
+],
+"ev": [
+[
+"morale",
+-1
+]
+]
+},
+{
+"id": 829,
+"tipo": "avventura",
+"azione": "costruire",
+"nome": "Predatore nel campo!",
+"nome_en": "Predator in the Camp!",
+"flavor": "Un predatore fa visita al vostro campo e vi attacca.",
+"testo": "Combatti una Belva: (vedi dati). Indipendentemente dal vostro Arma, mescola nel mazzo Eventi.",
+"ev_nome": "Chi la fa l'aspetti",
+"ev_testo": "Ottieni 2 cibo e pelliccia. Pesca un'altra carta.",
+"top": [
+[
+"combatti",
+{
+"forza": 4,
+"arma": 0,
+"cibo": 0,
+"pelliccia": 0,
+"palizzata": 0
+}
+],
+[
+"mescola"
+]
+],
+"ev": [
+[
+"ris",
+"cibo",
+2
+],
+[
+"ris",
+"pelliccia",
+1
+]
+]
+},
+{
+"id": 900,
+"tipo": "avventura",
+"azione": "raccogliere",
+"nome": "Nidiacei",
+"nome_en": "Nestlings",
+"flavor": "Avete trovato un nido con dei piccoli uccelli.",
+"testo": "DECIDI: scarta questa carta OPPURE ottieni un cibo per giocatore e mescolala nel mazzo Eventi.",
+"ev_nome": "Uccello arrabbiato!",
+"ev_testo": "-1 Tetto. Pesca un'altra carta.",
+"top": [
+[
+"decidi",
+[
+[
+"Scarta questa carta",
+[]
+],
+[
+"1 cibo per giocatore e mescola nel mazzo Eventi",
+[
+[
+"ris_per_giocatore",
+"cibo",
+1
+],
+[
+"mescola"
+]
+]
+]
+]
+]
+],
+"ev": [
+[
+"liv",
+"tetto",
+-1
+]
+]
+},
+{
+"id": 901,
+"tipo": "avventura",
+"azione": "raccogliere",
+"nome": "Guai inattesi",
+"nome_en": "Unexpected Troubles",
+"flavor": "Siete andati a prendere risorse ma avete portato anche qualcos'altro: cattive notizie.",
+"testo": "Copri con segnalino nero il tipo di terreno (montagne, colline, fiume ecc.) sulla tessera Isola dove state raccogliendo risorse. Considera questo tipo di terreno come inesplorato su questa tessera.",
+"ev_nome": "",
+"ev_testo": "",
+"top": [
+[
+"copri_terreno_qui"
+]
+],
+"ev": []
+},
+{
+"id": 902,
+"tipo": "avventura",
+"azione": "raccogliere",
+"nome": "Gelo invernale",
+"nome_en": "Winter Freezing",
+"flavor": "L'inverno sta riducendo la quantità di fonti sull'Isola.",
+"testo": "Scegli una fonte sulla tessera Isola dove state raccogliendo risorse. Copri questa fonte con segnalino nero per indicare che è esaurita.",
+"ev_nome": "",
+"ev_testo": "",
+"top": [
+[
+"esaurisci_qui",
+"scelta"
+]
+],
+"ev": []
+},
+{
+"id": 903,
+"tipo": "avventura",
+"azione": "raccogliere",
+"nome": "Fonte esaurita",
+"nome_en": "End of Source",
+"flavor": "La risorsa che volete raccogliere è l'ultima di questa fonte.",
+"testo": "Copri con segnalino nero la fonte da cui state raccogliendo per indicare che è esaurita.",
+"ev_nome": "",
+"ev_testo": "",
+"top": [
+[
+"esaurisci_qui",
+"raccolta"
+]
+],
+"ev": []
+},
+{
+"id": 904,
+"tipo": "avventura",
+"azione": "raccogliere",
+"nome": "Caviglia slogata",
+"nome_en": "Twisted Ankle",
+"flavor": "All'improvviso siete caduti in una tana.",
+"testo": "Metti ferita alla gamba sulla gamba del tuo Personaggio. Mescola nel mazzo Eventi.",
+"ev_nome": "Caviglia gonfia",
+"ev_testo": "In questo round, il Personaggio con ferita alla gamba sulla gamba può solo Sistemare il campo Costruire Riposo. Scarta ferita alla gamba. Pesca un'altra carta.",
+"top": [
+[
+"ferita_speciale",
+"gamba"
+],
+[
+"mescola"
+]
+],
+"ev": [
+[
+"solo_azioni",
+[
+"sistemare",
+"costruire",
+"riposo"
+],
+"vittima"
+],
+[
+"togli_speciale",
+"gamba"
+]
+]
+},
+{
+"id": 905,
+"tipo": "avventura",
+"azione": "raccogliere",
+"nome": "Segni di un predatore",
+"nome_en": "Signs of a Predator",
+"flavor": "Lasciando il campo, notate segni di un predatore nei paraggi.",
+"testo": "Mescola nel mazzo Eventi.",
+"ev_nome": "Il predatore affamato attacca!",
+"ev_testo": "Se avete 3 Arma, non succede nulla. Altrimenti copri con segnalino nero la fonte di cibo sulla tessera dove si trova il campo per indicare che è esaurita. Se non c'è una fonte di cibo, ogni giocatore subisce ferita. Pesca un'altra carta.",
+"top": [
+[
+"mescola"
+]
+],
+"ev": [
+[
+"se_arma",
+3,
+[],
+[
+[
+"esaurisci_campo",
+"cibo"
+]
+]
+]
+]
+},
+{
+"id": 906,
+"tipo": "avventura",
+"azione": "raccogliere",
+"nome": "L'inverno sta arrivando",
+"nome_en": "Winter Is Coming",
+"flavor": "Mentre raccogliete risorse, vedete chiaramente che gli animali dell'isola si preparano a un inverno rigido.",
+"testo": "Mescola nel mazzo Eventi.",
+"ev_nome": "Gelata",
+"ev_testo": "Metti nuvola di neve nello spazio Meteo. Pesca un'altra carta.",
+"top": [
+[
+"mescola"
+]
+],
+"ev": [
+[
+"meteo",
+"neve"
+]
+]
+},
+{
+"id": 907,
+"tipo": "avventura",
+"azione": "raccogliere",
+"nome": "Funghi",
+"nome_en": "Mushrooms",
+"flavor": "Sulla via del ritorno al campo avete trovato dei funghi.",
+"testo": "DECIDI: scarta questa carta OPPURE ottieni un cibo per giocatore e mescolala nel mazzo Eventi.",
+"ev_nome": "Malattia",
+"ev_testo": "Se non avete Medicina, ogni giocatore subisce ferita. Pesca un'altra carta.",
+"top": [
+[
+"decidi",
+[
+[
+"Scarta questa carta",
+[]
+],
+[
+"1 cibo per giocatore e mescola nel mazzo Eventi",
+[
+[
+"ris_per_giocatore",
+"cibo",
+1
+],
+[
+"mescola"
+]
+]
+]
+]
+]
+],
+"ev": [
+[
+"se_non_inv",
+"medicina",
+[
+[
+"ferita",
+1,
+"tutti"
+]
+]
+]
+]
+},
+{
+"id": 908,
+"tipo": "avventura",
+"azione": "raccogliere",
+"nome": "Moneta d'oro!",
+"nome_en": "Gold Coin!",
+"flavor": "Avete trovato una moneta d'oro spagnola! La prendete.",
+"testo": "Mescola nel mazzo Eventi.",
+"ev_nome": "Maledizione",
+"ev_testo": "Metti gettone «rilancia il successo» sugli spazi delle Azioni Costruire, Raccogliere risorse ed Esplorare. Durante la prossima Azione di ciascuno di questi tipi, dovete ritirare un risultato successo. Pesca un'altra carta.",
+"top": [
+[
+"mescola"
+]
+],
+"ev": [
+[
+"gettone",
+"costruire",
+"rilancio"
+],
+[
+"gettone",
+"raccogliere",
+"rilancio"
+],
+[
+"gettone",
+"esplorare",
+"rilancio"
+]
+]
+},
+{
+"id": 909,
+"tipo": "avventura",
+"azione": "raccogliere",
+"nome": "Scarsità",
+"nome_en": "Shortage",
+"flavor": "Sembra che sia l'ultima volta che verrete qui.",
+"testo": "Prendi 1 cubetto aggiuntivo della risorsa che state raccogliendo (anche se l'azione non ha successo) e copri la sua fonte con segnalino nero per indicare che è esaurita.",
+"ev_nome": "",
+"ev_testo": "",
+"top": [
+[
+"raccolta_extra"
+],
+[
+"esaurisci_qui",
+"raccolta"
+]
+],
+"ev": []
+},
+{
+"id": 910,
+"tipo": "avventura",
+"azione": "raccogliere",
+"nome": "Fonte esaurita",
+"nome_en": "End of Source",
+"flavor": "La risorsa che volete raccogliere è l'ultima di questa fonte.",
+"testo": "Copri con segnalino nero la fonte da cui state raccogliendo per indicare che è esaurita.",
+"ev_nome": "",
+"ev_testo": "",
+"top": [
+[
+"esaurisci_qui",
+"raccolta"
+]
+],
+"ev": []
+},
+{
+"id": 911,
+"tipo": "avventura",
+"azione": "raccogliere",
+"nome": "Tracce di un predatore",
+"nome_en": "Tracks of a Predator",
+"flavor": "Sembra che non siate gli unici a esplorare questa parte dell'isola",
+"testo": "Metti gettone pericolo sulla tessera Isola dove state raccogliendo risorse. Dal prossimo round, ogni volta che svolgete un'Azione su questa tessera, il vostro Arma deve essere almeno 1 (altrimenti il giocatore che svolge l'Azione subisce ferita).",
+"ev_nome": "",
+"ev_testo": "",
+"top": [
+[
+"gettone_qui",
+"pericolo"
+]
+],
+"ev": []
+},
+{
+"id": 912,
+"tipo": "avventura",
+"azione": "raccogliere",
+"nome": "Bella sorpresa",
+"nome_en": "Nice Surprise",
+"flavor": "Avete trovato una catasta di legna, probabilmente lasciata lì da qualche tempesta.",
+"testo": "DECIDI: scarta questa carta OPPURE ottieni 3 legno e mescolala nel mazzo Eventi.",
+"ev_nome": "Crollo",
+"ev_testo": "-1/2 Tetto (arrotondato per difetto). Pesca un'altra carta.",
+"top": [
+[
+"decidi",
+[
+[
+"Scarta questa carta",
+[]
+],
+[
+"Prendi 3 legno e mescola nel mazzo Eventi",
+[
+[
+"ris",
+"legno",
+3
+],
+[
+"mescola"
+]
+]
+]
+]
+]
+],
+"ev": [
+[
+"liv_meta",
+"tetto"
+]
+]
+},
+{
+"id": 913,
+"tipo": "avventura",
+"azione": "raccogliere",
+"nome": "Sorpresa tra i cespugli",
+"nome_en": "Surprise in the Bushes",
+"flavor": "È il vostro giorno fortunato! Tra i cespugli avete trovato un oggetto molto utile.",
+"testo": "DECIDI: scarta questa carta OPPURE pesca 1 carta Oggetto iniziale e mescola questa carta Avventura nel mazzo Eventi.",
+"ev_nome": "Riflessioni",
+"ev_testo": "-1 morale Pesca un'altra carta.",
+"top": [
+[
+"decidi",
+[
+[
+"Scarta questa carta",
+[]
+],
+[
+"Pesca 1 Oggetto iniziale e mescola nel mazzo Eventi",
+[
+[
+"oggetto_iniziale"
+],
+[
+"mescola"
+]
+]
+]
+]
+]
+],
+"ev": [
+[
+"morale",
+-1
+]
+]
+},
+{
+"id": 914,
+"tipo": "avventura",
+"azione": "raccogliere",
+"nome": "Pellicce",
+"nome_en": "Furs",
+"flavor": "Avete trovato delle pellicce in una grotta.",
+"testo": "DECIDI: scarta questa carta OPPURE ottieni 2 pelliccia e mescolala nel mazzo Eventi.",
+"ev_nome": "Insetti",
+"ev_testo": "SE POSSIBILE: durante la fase Produzione di questo round ottenete un cibo in meno. Pesca un'altra carta.",
+"top": [
+[
+"decidi",
+[
+[
+"Scarta questa carta",
+[]
+],
+[
+"Prendi 2 pellicce e mescola nel mazzo Eventi",
+[
+[
+"ris",
+"pelliccia",
+2
+],
+[
+"mescola"
+]
+]
+]
+]
+]
+],
+"ev": [
+[
+"prod",
+"meno_cibo"
+]
+]
+},
+{
+"id": 915,
+"tipo": "avventura",
+"azione": "raccogliere",
+"nome": "Fonte esaurita",
+"nome_en": "End of Source",
+"flavor": "La risorsa che volete raccogliere è l'ultima di questa fonte.",
+"testo": "Copri con segnalino nero la fonte da cui state raccogliendo per indicare che è esaurita.",
+"ev_nome": "",
+"ev_testo": "",
+"top": [
+[
+"esaurisci_qui",
+"raccolta"
+]
+],
+"ev": []
+},
+{
+"id": 916,
+"tipo": "avventura",
+"azione": "raccogliere",
+"nome": "Fonte esaurita",
+"nome_en": "End of Source",
+"flavor": "La risorsa che volete raccogliere è l'ultima di questa fonte.",
+"testo": "Copri con segnalino nero la fonte da cui state raccogliendo per indicare che è esaurita.",
+"ev_nome": "",
+"ev_testo": "",
+"top": [
+[
+"esaurisci_qui",
+"raccolta"
+]
+],
+"ev": []
+},
+{
+"id": 917,
+"tipo": "avventura",
+"azione": "raccogliere",
+"nome": "Frutta",
+"nome_en": "Fruit",
+"flavor": "Sulla via del ritorno al campo avete mangiato della frutta.",
+"testo": "Metti ferita alla pancia sulla pancia del tuo Personaggio. Mescola nel mazzo Eventi.",
+"ev_nome": "Mal di pancia",
+"ev_testo": "Se non avete Medicina, il Personaggio con ferita alla pancia sulla pancia può solo Riposo in questo round. Scarta ferita alla pancia. Pesca un'altra carta.",
+"top": [
+[
+"ferita_speciale",
+"pancia"
+],
+[
+"mescola"
+]
+],
+"ev": [
+[
+"se_non_inv",
+"medicina",
+[
+[
+"solo_azioni",
+[
+"riposo"
+],
+"vittima"
+]
+]
+],
+[
+"togli_speciale",
+"pancia"
+]
+]
+},
+{
+"id": 918,
+"tipo": "avventura",
+"azione": "raccogliere",
+"nome": "Scoperta inattesa",
+"nome_en": "Unexpected Discovery",
+"flavor": "Non ci potete credere. Avete trovato qualcosa.",
+"testo": "Pesca segnalino Scoperta.",
+"ev_nome": "",
+"ev_testo": "",
+"top": [
+[
+"scoperte",
+1
+]
+],
+"ev": []
+},
+{
+"id": 919,
+"tipo": "avventura",
+"azione": "raccogliere",
+"nome": "Sforzo incredibile",
+"nome_en": "Unbelievable Effort",
+"flavor": "Volevate impressionare i compagni. Avete raccolto più legna di quanta riusciate a trasportare.",
+"testo": "DECIDI: scarta questa carta OPPURE ottieni 2 legno, ma metti anche ferita al braccio sul braccio del tuo Personaggio, e mescolala nel mazzo Eventi.",
+"ev_nome": "Braccia doloranti",
+"ev_testo": "Il Personaggio con ferita al braccio sul braccio subisce ferita. Scarta ferita al braccio. Pesca un'altra carta.",
+"top": [
+[
+"decidi",
+[
+[
+"Scarta questa carta",
+[]
+],
+[
+"Prendi 2 legno, ferita al braccio e mescola nel mazzo Eventi",
+[
+[
+"ris",
+"legno",
+2
+],
+[
+"ferita_speciale",
+"braccio"
+],
+[
+"mescola"
+]
+]
+]
+]
+]
+],
+"ev": [
+[
+"ferita",
+1,
+"vittima"
+],
+[
+"togli_speciale",
+"braccio"
+]
+]
+},
+{
+"id": 920,
+"tipo": "avventura",
+"azione": "raccogliere",
+"nome": "Fonte esaurita",
+"nome_en": "End of Source",
+"flavor": "La risorsa che volete raccogliere è l'ultima di questa fonte.",
+"testo": "Copri con segnalino nero la fonte da cui state raccogliendo per indicare che è esaurita.",
+"ev_nome": "",
+"ev_testo": "",
+"top": [
+[
+"esaurisci_qui",
+"raccolta"
+]
+],
+"ev": []
+},
+{
+"id": 921,
+"tipo": "avventura",
+"azione": "raccogliere",
+"nome": "Il sentiero di un predatore",
+"nome_en": "Path of a Predator",
+"flavor": "Notate le tracce di un grosso animale.",
+"testo": "Mescola nel mazzo Eventi.",
+"ev_nome": "Il predatore attacca!",
+"ev_testo": "Metti dado delle belve nello spazio Meteo. Durante la fase Meteo di questo round, tira dado delle belve e risolvine l'effetto. Pesca un'altra carta.",
+"top": [
+[
+"mescola"
+]
+],
+"ev": [
+[
+"meteo",
+"dado_belve"
+]
+]
+},
+{
+"id": 922,
+"tipo": "avventura",
+"azione": "raccogliere",
+"nome": "Vipera",
+"nome_en": "Viper",
+"flavor": "Una vipera si nasconde nei vostri vestiti e senza saperlo la portate al campo...",
+"testo": "Mescola nel mazzo Eventi.",
+"ev_nome": "Morso di serpente",
+"ev_testo": "Il Primo giocatore subisce 3 ferita, oppure 1 ferita se avete Medicina. Pesca un'altra carta.",
+"top": [
+[
+"mescola"
+]
+],
+"ev": [
+[
+"se_inv",
+"medicina",
+[
+[
+"ferita",
+1,
+"primo"
+]
+],
+[
+[
+"ferita",
+3,
+"primo"
+]
+]
+]
+]
+},
+{
+"id": 923,
+"tipo": "avventura",
+"azione": "raccogliere",
+"nome": "Lo scrigno del pirata!",
+"nome_en": "Pirate's Chest!",
+"flavor": "Dopo una notte ventosa trovate un nuovo sentiero sull'isola. Vi conduce al nascondiglio di un pirata.",
+"testo": "DECIDI: scarta questa carta OPPURE pesca 2 carte Mistero (risolvi solo tesori) e mescolala nel mazzo Eventi.",
+"ev_nome": "Sfortuna!",
+"ev_testo": "In questo round, ogni giocatore ha solo una pedina disponibile. Pesca un'altra carta.",
+"top": [
+[
+"decidi",
+[
+[
+"Scarta questa carta",
+[]
+],
+[
+"Pesca 2 carte Mistero (solo tesori) e mescola nel mazzo Eventi",
+[
+[
+"mistero",
+{
+"tesoro": 2
+},
+"max"
+],
+[
+"mescola"
+]
+]
+]
+]
+]
+],
+"ev": [
+[
+"una_pedina",
+"tutti"
+]
+]
+},
+{
+"id": 924,
+"tipo": "avventura",
+"azione": "raccogliere",
+"nome": "Occhi tra i cespugli",
+"nome_en": "Eyes in the Bushes",
+"flavor": "Sentite che qualcosa vi sta osservando.",
+"testo": "Mescola nel mazzo Eventi.",
+"ev_nome": "Visita inattesa",
+"ev_testo": "Metti dado delle belve nello spazio Meteo. Durante la fase Meteo di questo round, tira dado delle belve e risolvine l'effetto. Pesca un'altra carta.",
+"top": [
+[
+"mescola"
+]
+],
+"ev": [
+[
+"meteo",
+"dado_belve"
+]
+]
+},
+{
+"id": 925,
+"tipo": "avventura",
+"azione": "raccogliere",
+"nome": "Un nuovo stormo",
+"nome_en": "New Flock",
+"flavor": "Arrivati sul posto, vedete un nuovo stormo.",
+"testo": "Metti gettone cibo extra sulla tessera Isola dove state raccogliendo risorse. Dal prossimo round, ogni volta che raccogliete o producete cibo da questa tessera, ottenete un cibo in più. Mescola nel mazzo Eventi.",
+"ev_nome": "È finito tutto",
+"ev_testo": "Copri con segnalino nero tutte le fonti sulla tessera con gettone cibo extra per indicare che sono esaurite. Pesca un'altra carta.",
+"top": [
+[
+"gettone_qui",
+"cibo_extra"
+],
+[
+"mescola"
+]
+],
+"ev": [
+[
+"esaurisci_tessera_gettone",
+"cibo_extra"
+]
+]
+},
+{
+"id": 926,
+"tipo": "avventura",
+"azione": "raccogliere",
+"nome": "Ragno",
+"nome_en": "Spider",
+"flavor": "All'improvviso un ragno vi cade in testa.",
+"testo": "Metti ferita alla testa sulla testa del tuo Personaggio. Mescola nel mazzo Eventi.",
+"ev_nome": "Un morso sul collo",
+"ev_testo": "In questo round, il Personaggio con ferita alla testa sulla testa ha solo una pedina disponibile. Scarta ferita alla testa. Pesca un'altra carta.",
+"top": [
+[
+"ferita_speciale",
+"testa"
+],
+[
+"mescola"
+]
+],
+"ev": [
+[
+"una_pedina",
+"vittima"
+],
+[
+"togli_speciale",
+"testa"
+]
+]
+},
+{
+"id": 927,
+"tipo": "avventura",
+"azione": "raccogliere",
+"nome": "Dopo l'uragano",
+"nome_en": "After the Hurricane",
+"flavor": "Questa zona è devastata e gli alberi sono abbattuti.",
+"testo": "Ottieni 2 legno. Metti gettone azione lenta sulla tessera Isola dove state raccogliendo risorse. Mescola nel mazzo Eventi.",
+"ev_nome": "Di nuovo tempesta",
+"ev_testo": "La tessera con gettone azione lenta diventa inaccessibile. Girala a faccia in giù (scarta tutti i segnalini e i marcatori). Pesca un'altra carta.",
+"top": [
+[
+"ris",
+"legno",
+2
+],
+[
+"gettone_qui",
+"lento"
+],
+[
+"mescola"
+]
+],
+"ev": [
+[
+"capovolgi_gettone",
+"lento"
+]
+]
+},
+{
+"id": 928,
+"tipo": "avventura",
+"azione": "raccogliere",
+"nome": "Il tempo si guasta",
+"nome_en": "Weather Breakdown",
+"flavor": "Vedete una tempesta avvicinarsi all'isola.",
+"testo": "Mescola nel mazzo Eventi.",
+"ev_nome": "Tempesta",
+"ev_testo": "Metti tempesta nello spazio Meteo. Pesca un'altra carta.",
+"top": [
+[
+"mescola"
+]
+],
+"ev": [
+[
+"meteo",
+"tempesta"
+]
+]
+},
+{
+"id": 929,
+"tipo": "avventura",
+"azione": "raccogliere",
+"nome": "Scheletro",
+"nome_en": "Skeleton",
+"flavor": "Camminando nella foresta trovate uno scheletro che stringe un vecchio libro e lo prendete.",
+"testo": "Mescola nel mazzo Eventi.",
+"ev_nome": "Memorie di un esploratore morto",
+"ev_testo": "-1 morale Pesca 1 carta Invenzione. Pesca un'altra carta.",
+"top": [
+[
+"mescola"
+]
+],
+"ev": [
+[
+"morale",
+-1
+],
+[
+"pesca_inv"
+]
+]
+},
+{
+"id": 1000,
+"tipo": "avventura",
+"azione": "esplorare",
+"nome": "Tigre!",
+"nome_en": "Tiger!",
+"flavor": "Trovi una tigre e ti nascondi. Se torni al campo adesso, ti seguirà.",
+"testo": "DECIDI: Scarta questa carta e svolgi la fase Notte fuori dal campo OPPURE mescola nel mazzo Eventi.",
+"ev_nome": "La tigre ti trova!",
+"ev_testo": "Combatti la Belva: [tabella Belva] Pesca un'altra carta.",
+"top": [
+[
+"decidi",
+[
+[
+"Scarta questa carta e passa la notte fuori dal campo",
+[
+[
+"notte_fuori"
+]
+]
+],
+[
+"Mescola nel mazzo Eventi",
+[
+[
+"mescola"
+]
+]
+]
+]
+]
+],
+"ev": [
+[
+"combatti",
+{
+"forza": 4,
+"arma": -1,
+"cibo": 2,
+"pelliccia": 1,
+"palizzata": -1
+}
+]
+]
+},
+{
+"id": 1001,
+"tipo": "avventura",
+"azione": "esplorare",
+"nome": "Palude",
+"nome_en": "Swamp",
+"flavor": "La zona che stai esplorando è a malapena accessibile.",
+"testo": "Metti gettone azione lenta sulla tessera Isola che stai esplorando. (Se l'azione Esplorare non ha avuto successo, mettilo sullo spazio che volevi esplorare.)",
+"ev_nome": "",
+"ev_testo": "",
+"top": [
+[
+"gettone_qui",
+"lento"
+]
+],
+"ev": []
+},
+{
+"id": 1002,
+"tipo": "avventura",
+"azione": "esplorare",
+"nome": "Influenza",
+"nome_en": "Flu",
+"flavor": "Durante il viaggio una pioggia fredda ti inzuppa. Ti senti come se stessi prendendo l'influenza.",
+"testo": "DECIDI: Scarta cibo OPPURE mescola nel mazzo Eventi.",
+"ev_nome": "Mal di gola",
+"ev_testo": "Metti questa carta nello spazio Notte. Durante la prossima fase Notte, ogni giocatore deve mangiare +1 cibo o subire una ferita aggiuntiva. Scartala dopo la fase Notte. Pesca un'altra carta.",
+"top": [
+[
+"decidi",
+[
+[
+"Scarta 1 cibo",
+[
+[
+"ris",
+"cibo",
+-1
+]
+]
+],
+[
+"Mescola nel mazzo Eventi",
+[
+[
+"mescola"
+]
+]
+]
+]
+]
+],
+"ev": [
+[
+"gettone",
+"notte",
+"cibo_extra"
+]
+]
+},
+{
+"id": 1003,
+"tipo": "avventura",
+"azione": "esplorare",
+"nome": "Scoperta sorprendente",
+"nome_en": "Surprising Discovery",
+"flavor": "Hai trovato uno scheletro nella giungla. Tiene in mano... una pistola!",
+"testo": "Tieni questa carta. Puoi usarla una volta. Ti dà temporaneamente +3 Arma. Scartala dopo l'uso.",
+"ev_nome": "",
+"ev_testo": "",
+"top": [
+[
+"tieni"
+]
+],
+"ev": []
+},
+{
+"id": 1004,
+"tipo": "avventura",
+"azione": "esplorare",
+"nome": "Vipere!",
+"nome_en": "Vipers!",
+"flavor": "Al passo successivo vieni morso da una vipera.",
+"testo": "Metti ferita speciale sulla testa del tuo Personaggio. Mescola nel mazzo Eventi.",
+"ev_nome": "Febbre",
+"ev_testo": "Se non hai Medicina, il Personaggio con ferita speciale sulla testa ha solo una pedina disponibile in questo round. Scarta ferita speciale. Pesca un'altra carta.",
+"top": [
+[
+"ferita_speciale",
+"testa"
+],
+[
+"mescola"
+]
+],
+"ev": [
+[
+"se_non_inv",
+"medicina",
+[
+[
+"una_pedina",
+"vittima"
+]
+]
+],
+[
+"togli_speciale",
+"testa"
+]
+]
+},
+{
+"id": 1005,
+"tipo": "avventura",
+"azione": "esplorare",
+"nome": "C'è qualcosa nell'aria",
+"nome_en": "There's Something in the Air",
+"flavor": "L'isola è piena di pericoli. Sta per succedere qualcosa di brutto.",
+"testo": "Metti segnalino Avventura (Esplorare) sullo spazio dell'azione Esplorare. Mescola nel mazzo Eventi.",
+"ev_nome": "Isola maledetta",
+"ev_testo": "Metti segnalino Avventura (Esplorare) sullo spazio dell'azione Esplorare. Pesca un'altra carta.",
+"top": [
+[
+"avv",
+"esplorare"
+],
+[
+"mescola"
+]
+],
+"ev": [
+[
+"avv",
+"esplorare"
+]
+]
+},
+{
+"id": 1006,
+"tipo": "avventura",
+"azione": "esplorare",
+"nome": "Pista sbagliata",
+"nome_en": "Wrong Track",
+"flavor": "Ti sei perso e non torni al campo per la notte. All'inizio del giorno dopo torni al campo con un po' di legna.",
+"testo": "Svolgi la fase Notte fuori dal campo. All'inizio del prossimo round (prima della fase Evento): ottieni 2 legno.",
+"ev_nome": "",
+"ev_testo": "",
+"top": [
+[
+"notte_fuori"
+],
+[
+"inizio_round",
+[
+[
+"ris",
+"legno",
+2
+]
+]
+]
+],
+"ev": []
+},
+{
+"id": 1007,
+"tipo": "avventura",
+"azione": "esplorare",
+"nome": "Foresta vuota",
+"nome_en": "Empty Forest",
+"flavor": "Gli animali sono affamati e lottano per sopravvivere.",
+"testo": "Mescola nel mazzo Eventi.",
+"ev_nome": "Predatori affamati",
+"ev_testo": "Durante la prossima azione di Caccia, la Belva è più forte. Metti gettone pericolo accanto al mazzo Caccia. Pesca un'altra carta.",
+"top": [
+[
+"mescola"
+]
+],
+"ev": [
+[
+"gettone",
+"caccia",
+"pericolo"
+]
+]
+},
+{
+"id": 1008,
+"tipo": "avventura",
+"azione": "esplorare",
+"nome": "Carcassa",
+"nome_en": "Carcass",
+"flavor": "Hai trovato una capra morta ma non hai idea di come sia morta.",
+"testo": "DECIDI: Scarta questa carta OPPURE ottieni 2 cibo e pelliccia e mescola nel mazzo Eventi.",
+"ev_nome": "Diarrea",
+"ev_testo": "Ogni giocatore subisce ferita. Pesca un'altra carta.",
+"top": [
+[
+"decidi",
+[
+[
+"Scarta questa carta",
+[]
+],
+[
+"Prendi 2 cibo e 1 pelliccia e mescola nel mazzo Eventi",
+[
+[
+"ris",
+"cibo",
+2
+],
+[
+"ris",
+"pelliccia",
+1
+],
+[
+"mescola"
+]
+]
+]
+]
+]
+],
+"ev": [
+[
+"ferita",
+1,
+"tutti"
+]
+]
+},
+{
+"id": 1009,
+"tipo": "avventura",
+"azione": "esplorare",
+"nome": "Santuario",
+"nome_en": "Shrine",
+"flavor": "Giù nella valle scorgi un santuario nei boschi.",
+"testo": "DECIDI: Scarta questa carta OPPURE pesca 1 carta Mistero (risolvi solo tesori) e mescola questa Avventura nel mazzo Eventi.",
+"ev_nome": "Incubi",
+"ev_testo": "Metti gettone «rilancia il successo» sugli spazi delle azioni Costruire, Raccogliere risorse ed Esplorare. Durante la prossima azione di ciascuno di questi tipi devi rilanciare un risultato successo. Pesca un'altra carta.",
+"top": [
+[
+"decidi",
+[
+[
+"Scarta questa carta",
+[]
+],
+[
+"Pesca 1 carta Mistero (solo tesori) e mescola nel mazzo Eventi",
+[
+[
+"mistero",
+{
+"tesoro": 1
+},
+"max"
+],
+[
+"mescola"
+]
+]
+]
+]
+]
+],
+"ev": [
+[
+"gettone",
+"costruire",
+"rilancio"
+],
+[
+"gettone",
+"raccogliere",
+"rilancio"
+],
+[
+"gettone",
+"esplorare",
+"rilancio"
+]
+]
+},
+{
+"id": 1010,
+"tipo": "avventura",
+"azione": "esplorare",
+"nome": "Tracce d'incendio",
+"nome_en": "Signs of Fire",
+"flavor": "Tutta la zona è devastata da un grande incendio.",
+"testo": "Copri una fonte sulla tessera Isola che stai esplorando con segnalino nero. È esaurita. (Se l'esplorazione non ha avuto successo, metti segnalino nero sullo spazio che volevi esplorare e dovrai coprire la fonte in seguito).",
+"ev_nome": "",
+"ev_testo": "",
+"top": [
+[
+"esaurisci_qui",
+"scelta"
+]
+],
+"ev": []
+},
+{
+"id": 1011,
+"tipo": "avventura",
+"azione": "esplorare",
+"nome": "Vento freddo",
+"nome_en": "Cold Wind",
+"flavor": "Durante la camminata senti un freddo vento invernale soffiarti alle spalle.",
+"testo": "Mescola nel mazzo Eventi.",
+"ev_nome": "Neve",
+"ev_testo": "Metti nuvola di neve nello spazio Meteo. Pesca un'altra carta.",
+"top": [
+[
+"mescola"
+]
+],
+"ev": [
+[
+"meteo",
+"neve"
+]
+]
+},
+{
+"id": 1012,
+"tipo": "avventura",
+"azione": "esplorare",
+"nome": "Grotta segreta",
+"nome_en": "Secret Cave",
+"flavor": "In mezzo ai cespugli trovi una grotta misteriosa.",
+"testo": "DECIDI: Scarta questa carta OPPURE pesca 3 carte Mistero (risolvi solo 1 creature o 1 trappole e fino a 2 tesori) e mescola questa Avventura nel mazzo Eventi.",
+"ev_nome": "La Belva si sveglia",
+"ev_testo": "Combatti la Belva: [tabella Belva] Pesca un'altra carta.",
+"top": [
+[
+"decidi",
+[
+[
+"Scarta questa carta",
+[]
+],
+[
+"Pesca 3 carte Mistero (1 creatura o trappola, fino a 2 tesori) e mescola nel mazzo Eventi",
+[
+[
+"mistero",
+{
+"tesoro": 2,
+"creatura_o_trappola": 1
+}
+],
+[
+"mescola"
+]
+]
+]
+]
+]
+],
+"ev": [
+[
+"combatti",
+{
+"forza": 3,
+"arma": 0,
+"cibo": 2,
+"pelliccia": 1,
+"palizzata": -1
+}
+]
+]
+},
+{
+"id": 1013,
+"tipo": "avventura",
+"azione": "esplorare",
+"nome": "Rovo spinoso",
+"nome_en": "Thorny Bush",
+"flavor": "Ti sei graffiato tra i rovi spinosi. Il braccio ti brucia.",
+"testo": "Metti ferita speciale sul braccio del tuo Personaggio. Mescola nel mazzo Eventi.",
+"ev_nome": "Braccio gonfio",
+"ev_testo": "Se non hai Medicina, il Personaggio con ferita speciale sul braccio ha solo una pedina disponibile in questo round. Scarta ferita speciale. Pesca un'altra carta.",
+"top": [
+[
+"ferita_speciale",
+"braccio"
+],
+[
+"mescola"
+]
+],
+"ev": [
+[
+"se_non_inv",
+"medicina",
+[
+[
+"una_pedina",
+"vittima"
+]
+]
+],
+[
+"togli_speciale",
+"braccio"
+]
+]
+},
+{
+"id": 1014,
+"tipo": "avventura",
+"azione": "esplorare",
+"nome": "Sta per piovere",
+"nome_en": "It's Going to Rain",
+"flavor": "Nubi scure di pioggia si addensano sopra l'isola.",
+"testo": "Mescola nel mazzo Eventi.",
+"ev_nome": "Pioggia battente",
+"ev_testo": "Metti nuvola di pioggia nello spazio Meteo. Pesca un'altra carta.",
+"top": [
+[
+"mescola"
+]
+],
+"ev": [
+[
+"meteo",
+"pioggia"
+]
+]
+},
+{
+"id": 1015,
+"tipo": "avventura",
+"azione": "esplorare",
+"nome": "Resti di un insediamento",
+"nome_en": "Remains of a Settlement",
+"flavor": "Nel fitto della foresta scopri un insediamento in rovina.",
+"testo": "DECIDI: Scarta questa carta OPPURE pesca 3 carte Mistero (risolvi solo 1 trappole e 2 tesori) e mescola nel mazzo Eventi.",
+"ev_nome": "Epidemia",
+"ev_testo": "Ogni giocatore subisce ferita. Pesca un'altra carta.",
+"top": [
+[
+"decidi",
+[
+[
+"Scarta questa carta",
+[]
+],
+[
+"Pesca 3 carte Mistero (1 trappola, 2 tesori) e mescola nel mazzo Eventi",
+[
+[
+"mistero",
+{
+"trappola": 1,
+"tesoro": 2
+}
+],
+[
+"mescola"
+]
+]
+]
+]
+]
+],
+"ev": [
+[
+"ferita",
+1,
+"tutti"
+]
+]
+},
+{
+"id": 1016,
+"tipo": "avventura",
+"azione": "esplorare",
+"nome": "Perso nei boschi",
+"nome_en": "Lost in the Woods",
+"flavor": "Ti sei spinto così lontano che ti sei perso e sei spaventato.",
+"testo": "Scarta 2 Determinazione.",
+"ev_nome": "",
+"ev_testo": "",
+"top": [
+[
+"det",
+-2,
+"chi"
+]
+],
+"ev": []
+},
+{
+"id": 1017,
+"tipo": "avventura",
+"azione": "esplorare",
+"nome": "Smarrito",
+"nome_en": "Lost",
+"flavor": "Si fa buio. Perdi la strada per il campo. All'inizio del giorno dopo torni e tutti sono felici di vederti vivo.",
+"testo": "Svolgi la fase Notte fuori dal campo. All'inizio del prossimo round (prima della fase Evento): +1 morale",
+"ev_nome": "",
+"ev_testo": "",
+"top": [
+[
+"notte_fuori"
+],
+[
+"inizio_round",
+[
+[
+"morale",
+1
+]
+]
+]
+],
+"ev": []
+},
+{
+"id": 1018,
+"tipo": "avventura",
+"azione": "esplorare",
+"nome": "Vecchia capanna",
+"nome_en": "Old Hut",
+"flavor": "Vagando per la foresta, ti imbatti in una vecchia capanna.",
+"testo": "DECIDI: Scarta questa carta OPPURE pesca 2 carte Mistero (risolvi solo 1 creature e 1 tesori) e mescola nel mazzo Eventi.",
+"ev_nome": "Il fantasma di Robinson",
+"ev_testo": "Ogni giocatore scarta Determinazione. Pesca un'altra carta.",
+"top": [
+[
+"decidi",
+[
+[
+"Scarta questa carta",
+[]
+],
+[
+"Pesca 2 carte Mistero (1 creatura, 1 tesoro) e mescola nel mazzo Eventi",
+[
+[
+"mistero",
+{
+"creatura": 1,
+"tesoro": 1
+}
+],
+[
+"mescola"
+]
+]
+]
+]
+]
+],
+"ev": [
+[
+"det",
+-1,
+"tutti"
+]
+]
+},
+{
+"id": 1019,
+"tipo": "avventura",
+"azione": "esplorare",
+"nome": "Disavventura",
+"nome_en": "Misadventure",
+"flavor": "All'improvviso sei caduto in una tana.",
+"testo": "Metti ferita speciale sulla gamba del tuo Personaggio. Mescola nel mazzo Eventi.",
+"ev_nome": "Caviglia gonfia",
+"ev_testo": "In questo round, il Personaggio con ferita speciale sulla gamba può solo Riposo Sistemare il campo Costruire. Scarta ferita speciale. Pesca un'altra carta.",
+"top": [
+[
+"ferita_speciale",
+"gamba"
+],
+[
+"mescola"
+]
+],
+"ev": [
+[
+"solo_azioni",
+[
+"riposo",
+"sistemare",
+"costruire"
+],
+"vittima"
+],
+[
+"togli_speciale",
+"gamba"
+]
+]
+},
+{
+"id": 1020,
+"tipo": "avventura",
+"azione": "esplorare",
+"nome": "Perso nella boscaglia",
+"nome_en": "Lost in the Thicket",
+"flavor": "Non torni al campo per la notte. All'inizio del giorno dopo torni con qualcosa di utile.",
+"testo": "Svolgi la fase Notte fuori dal campo. All'inizio del prossimo round (prima della fase Evento): pesca segnalino Scoperta.",
+"ev_nome": "",
+"ev_testo": "",
+"top": [
+[
+"notte_fuori"
+],
+[
+"inizio_round",
+[
+[
+"scoperte",
+1
+]
+]
+]
+],
+"ev": []
+},
+{
+"id": 1021,
+"tipo": "avventura",
+"azione": "esplorare",
+"nome": "Cane selvatico",
+"nome_en": "Wild Dog",
+"flavor": "Vedi un cane selvatico nella radura. Prima ti fissa, poi ti morde e scappa.",
+"testo": "Subisci ferita. Mescola nel mazzo Eventi.",
+"ev_nome": "Il cane è tornato!",
+"ev_testo": "DECIDI: Scarta cibo e ottieni +1 Arma OPPURE scarta questa carta. Pesca un'altra carta.",
+"top": [
+[
+"ferita",
+1,
+"chi"
+],
+[
+"mescola"
+]
+],
+"ev": [
+[
+"decidi",
+[
+[
+"Scarta 1 cibo e +1 Arma",
+[
+[
+"ris",
+"cibo",
+-1
+],
+[
+"liv",
+"arma",
+1
+]
+]
+],
+[
+"Scarta questa carta",
+[]
+]
+]
+]
+]
+},
+{
+"id": 1022,
+"tipo": "avventura",
+"azione": "esplorare",
+"nome": "Terreno pericoloso",
+"nome_en": "Dangerous Terrain",
+"flavor": "Durante il cammino nei boschi vedi molti predatori.",
+"testo": "Metti gettone pericolo sulla tessera Isola che stai esplorando. (Se l'azione Esplorare non ha avuto successo, metti gettone pericolo sullo spazio che volevi esplorare). Dal prossimo round, ogni volta che un giocatore vuole raccogliere risorse da questa tessera (o esplorare questo spazio), il livello dell'Arma Arma deve essere almeno 1 (altrimenti il giocatore subisce ferita).",
+"ev_nome": "",
+"ev_testo": "",
+"top": [
+[
+"gettone_qui",
+"pericolo"
+]
+],
+"ev": []
+},
+{
+"id": 1023,
+"tipo": "avventura",
+"azione": "esplorare",
+"nome": "Tracce d'incendio",
+"nome_en": "Signs of Fire",
+"flavor": "Tutta la zona è devastata da un grande incendio.",
+"testo": "Copri una fonte sulla tessera Isola che stai esplorando con segnalino nero. È esaurita. (Se l'esplorazione non ha avuto successo, metti segnalino nero sullo spazio che volevi esplorare e dovrai coprire la fonte in seguito).",
+"ev_nome": "",
+"ev_testo": "",
+"top": [
+[
+"esaurisci_qui",
+"scelta"
+]
+],
+"ev": []
+},
+{
+"id": 1024,
+"tipo": "avventura",
+"azione": "esplorare",
+"nome": "Bambù",
+"nome_en": "Bamboo",
+"flavor": "Hai trovato qualche canna di bambù nei boschi.",
+"testo": "DECIDI: Scarta questa carta OPPURE ottieni 2 legno e mescola nel mazzo Eventi.",
+"ev_nome": "Schianto di legno rotto",
+"ev_testo": "-1 Tetto o Palizzata. Pesca un'altra carta.",
+"top": [
+[
+"decidi",
+[
+[
+"Scarta questa carta",
+[]
+],
+[
+"Prendi 2 legno e mescola nel mazzo Eventi",
+[
+[
+"ris",
+"legno",
+2
+],
+[
+"mescola"
+]
+]
+]
+]
+]
+],
+"ev": [
+[
+"liv_scelta",
+-1
+]
+]
+},
+{
+"id": 1025,
+"tipo": "avventura",
+"azione": "esplorare",
+"nome": "Bacche selvatiche",
+"nome_en": "Wild Berries",
+"flavor": "Hai mangiato delle strane bacche trovate nei boschi. Avevi così fame che ne hai mangiate più del dovuto.",
+"testo": "Metti ferita speciale sulla pancia del tuo Personaggio. Mescola nel mazzo Eventi.",
+"ev_nome": "Nausea",
+"ev_testo": "Il Personaggio con ferita speciale sulla pancia ha solo una pedina in questo round. Scarta ferita speciale. Pesca un'altra carta.",
+"top": [
+[
+"ferita_speciale",
+"pancia"
+],
+[
+"mescola"
+]
+],
+"ev": [
+[
+"una_pedina",
+"vittima"
+],
+[
+"togli_speciale",
+"pancia"
+]
+]
+},
+{
+"id": 1026,
+"tipo": "avventura",
+"azione": "esplorare",
+"nome": "Vecchia tomba",
+"nome_en": "Old Grave",
+"flavor": "Ti imbatti in una vecchia tomba. Controvoglia guardi dentro, ma te ne penti subito alla vista del vecchio cadavere.",
+"testo": "Scarta Determinazione. Mescola nel mazzo Eventi.",
+"ev_nome": "Ricordi di un naufrago morto",
+"ev_testo": "Il primo giocatore scarta 2 Determinazione. Pesca un'altra carta.",
+"top": [
+[
+"det",
+-1,
+"chi"
+],
+[
+"mescola"
+]
+],
+"ev": [
+[
+"det",
+-2,
+"primo"
+]
+]
+},
+{
+"id": 1027,
+"tipo": "avventura",
+"azione": "esplorare",
+"nome": "Capanna diroccata",
+"nome_en": "Ruined Hut",
+"flavor": "Ti imbatti in una vecchia capanna diroccata tra i cespugli.",
+"testo": "DECIDI: Scarta questa carta OPPURE costruisci un Oggetto (Coltello, Corda, Pala o Medicina) gratis e senza azione e mescola questa Avventura nel mazzo Eventi.",
+"ev_nome": "Brutti sogni",
+"ev_testo": "-1 morale Pesca un'altra carta.",
+"top": [
+[
+"decidi",
+[
+[
+"Scarta questa carta",
+[]
+],
+[
+"Costruisci gratis Coltello, Corda, Pala o Medicina e mescola nel mazzo Eventi",
+[
+[
+"costruisci_gratis",
+[
+"coltello",
+"corda",
+"pala",
+"medicina"
+]
+],
+[
+"mescola"
+]
+]
+]
+]
+]
+],
+"ev": [
+[
+"morale",
+-1
+]
+]
+},
+{
+"id": 1028,
+"tipo": "avventura",
+"azione": "esplorare",
+"nome": "Puma!",
+"nome_en": "Puma!",
+"flavor": "Scorgi un puma tra i cespugli. Se torni al campo adesso, porterai la morte con te.",
+"testo": "DECIDI: Scarta questa carta e svolgi la fase Notte fuori dal campo OPPURE mescola nel mazzo Eventi.",
+"ev_nome": "Il puma attacca!",
+"ev_testo": "Combatti la Belva: [tabella Belva] Pesca un'altra carta.",
+"top": [
+[
+"decidi",
+[
+[
+"Scarta questa carta e passa la notte fuori dal campo",
+[
+[
+"notte_fuori"
+]
+]
+],
+[
+"Mescola nel mazzo Eventi",
+[
+[
+"mescola"
+]
+]
+]
+]
+]
+],
+"ev": [
+[
+"combatti",
+{
+"forza": 3,
+"arma": -1,
+"cibo": 2,
+"pelliccia": 1,
+"palizzata": -1
+}
+]
+]
+},
+{
+"id": 1029,
+"tipo": "avventura",
+"azione": "esplorare",
+"nome": "Tempesta all'orizzonte",
+"nome_en": "Storm on the Horizon",
+"flavor": "Una tempesta si avvicina rapidamente all'isola.",
+"testo": "Mescola nel mazzo Eventi.",
+"ev_nome": "Tempesta",
+"ev_testo": "Metti tempesta nello spazio Meteo. Pesca un'altra carta.",
+"top": [
+[
+"mescola"
+]
+],
+"ev": [
+[
+"meteo",
+"tempesta"
+]
+]
+},
+{
+"id": 1100,
+"tipo": "invenzione",
+"k": "cesto",
+"nome": "Cesto",
+"nome_en": "Basket",
+"testo": "Durante un'azione Raccogliere riuscita ottieni 1 risorsa aggiuntiva del tipo raccolto. Utilizzabile per una sola azione per round.",
+"ter": [
+"pianura"
+],
+"inv": [],
+"costo": [
+{}
+],
+"eff": [],
+"base": false,
+"scen": 0,
+"ripeti": false
+},
+{
+"id": 1101,
+"tipo": "invenzione",
+"k": "letto",
+"nome": "Letto",
+"nome_en": "Bed",
+"testo": "Riposo -> +1 Determinazione +2 vita",
+"ter": [
+"pianura"
+],
+"inv": [],
+"costo": [
+{}
+],
+"eff": [],
+"base": false,
+"scen": 0,
+"ripeti": false
+},
+{
+"id": 1102,
+"tipo": "invenzione",
+"k": "cinture",
+"nome": "Cinture",
+"nome_en": "Belts",
+"testo": "pedina aggiuntiva",
+"ter": [],
+"inv": [
+"coltello"
+],
+"costo": [
+{
+"pelliccia": 1
+}
+],
+"eff": [],
+"base": false,
+"scen": 0,
+"ripeti": false
+},
+{
+"id": 1103,
+"tipo": "invenzione",
+"k": "arco",
+"nome": "Arco",
+"nome_en": "Bow",
+"testo": "+3 Arma",
+"ter": [],
+"inv": [
+"corda",
+"coltello"
+],
+"costo": [
+{
+"legno": 1
+}
+],
+"eff": [
+[
+"liv",
+"arma",
+3
+]
+],
+"base": false,
+"scen": 0,
+"ripeti": false
+},
+{
+"id": 1104,
+"tipo": "invenzione",
+"k": "mattoni",
+"nome": "Mattoni",
+"nome_en": "Bricks",
+"testo": "mattone +1 Palizzata",
+"ter": [
+"collina"
+],
+"inv": [],
+"costo": [
+{}
+],
+"eff": [
+[
+"liv",
+"palizzata",
+1
+]
+],
+"base": true,
+"scen": 0,
+"ripeti": false
+},
+{
+"id": 1105,
+"tipo": "invenzione",
+"k": "cantina",
+"nome": "Cantina",
+"nome_en": "Cellar",
+"testo": "cibo = cibo non deperibile",
+"ter": [],
+"inv": [
+"pala"
+],
+"costo": [
+{}
+],
+"eff": [],
+"base": false,
+"scen": 0,
+"ripeti": false
+},
+{
+"id": 1106,
+"tipo": "invenzione",
+"k": "recinto",
+"nome": "Recinto",
+"nome_en": "Corral",
+"testo": "Copri fonte di cibo su una tessera Isola adiacente al tuo campo con segnalino nero e metti gettone cibo extra sulla tessera del tuo campo.",
+"ter": [],
+"inv": [
+"corda"
+],
+"costo": [
+{
+"legno": 1
+}
+],
+"eff": [
+[
+"recinto"
+]
+],
+"base": false,
+"scen": 0,
+"ripeti": false
+},
+{
+"id": 1107,
+"tipo": "invenzione",
+"k": "medicina",
+"nome": "Medicina",
+"nome_en": "Cure",
+"testo": "mortaio (Medicina)",
+"ter": [
+"pianura"
+],
+"inv": [],
+"costo": [
+{}
+],
+"eff": [],
+"base": true,
+"scen": 0,
+"ripeti": false
+},
+{
+"id": 1108,
+"tipo": "invenzione",
+"k": "diga",
+"nome": "Diga",
+"nome_en": "Dam",
+"testo": "+2 cibo non deperibile",
+"ter": [
+"fiume"
+],
+"inv": [],
+"costo": [
+{
+"legno": 1
+}
+],
+"eff": [
+[
+"ris",
+"cibo_np",
+2
+]
+],
+"base": true,
+"scen": 0,
+"ripeti": false
+},
+{
+"id": 1109,
+"tipo": "invenzione",
+"k": "diario",
+"nome": "Diario",
+"nome_en": "Diary",
+"testo": "+1 Determinazione durante la fase Morale",
+"ter": [],
+"inv": [],
+"costo": [
+{
+"pelliccia": 1
+}
+],
+"eff": [],
+"base": false,
+"scen": 0,
+"ripeti": false
+},
+{
+"id": 1110,
+"tipo": "invenzione",
+"k": "tamburi",
+"nome": "Tamburi",
+"nome_en": "Drums",
+"testo": "+2 Determinazione durante la fase Morale",
+"ter": [
+"collina"
+],
+"inv": [],
+"costo": [
+{
+"pelliccia": 1
+}
+],
+"eff": [],
+"base": false,
+"scen": 0,
+"ripeti": false
+},
+{
+"id": 1111,
+"tipo": "invenzione",
+"k": "fuoco",
+"nome": "Fuoco",
+"nome_en": "Fire",
+"testo": "fuoco +1 Palizzata",
+"ter": [
+"montagna"
+],
+"inv": [],
+"costo": [
+{}
+],
+"eff": [
+[
+"liv",
+"palizzata",
+1
+]
+],
+"base": true,
+"scen": 0,
+"ripeti": false
+},
+{
+"id": 1112,
+"tipo": "invenzione",
+"k": "focolare",
+"nome": "Focolare",
+"nome_en": "Fireplace",
+"testo": "cibo -> +2 vita durante la fase Notte",
+"ter": [],
+"inv": [
+"fuoco"
+],
+"costo": [
+{}
+],
+"eff": [],
+"base": false,
+"scen": 0,
+"ripeti": false
+},
+{
+"id": 1113,
+"tipo": "invenzione",
+"k": "fornace",
+"nome": "Fornace",
+"nome_en": "Furnace",
+"testo": "nuvola di neve barrata",
+"ter": [],
+"inv": [
+"mattoni"
+],
+"costo": [
+{}
+],
+"eff": [],
+"base": false,
+"scen": 0,
+"ripeti": false
+},
+{
+"id": 1114,
+"tipo": "invenzione",
+"k": "coltello",
+"nome": "Coltello",
+"nome_en": "Knife",
+"testo": "coltello +1 Arma",
+"ter": [
+"montagna"
+],
+"inv": [],
+"costo": [
+{}
+],
+"eff": [
+[
+"liv",
+"arma",
+1
+]
+],
+"base": true,
+"scen": 0,
+"ripeti": false
+},
+{
+"id": 1115,
+"tipo": "invenzione",
+"k": "lanterna",
+"nome": "Lanterna",
+"nome_en": "Lantern",
+"testo": "pedina aggiuntiva",
+"ter": [
+"collina"
+],
+"inv": [
+"fuoco"
+],
+"costo": [
+{}
+],
+"eff": [],
+"base": false,
+"scen": 0,
+"ripeti": false
+},
+{
+"id": 1116,
+"tipo": "invenzione",
+"k": "mappa",
+"nome": "Mappa",
+"nome_en": "Map",
+"testo": "mappa + pedina aggiuntiva",
+"ter": [
+"fiume"
+],
+"inv": [],
+"costo": [
+{}
+],
+"eff": [],
+"base": true,
+"scen": 0,
+"ripeti": false
+},
+{
+"id": 1117,
+"tipo": "invenzione",
+"k": "fossato",
+"nome": "Fossato",
+"nome_en": "Moat",
+"testo": "+2 Palizzata",
+"ter": [],
+"inv": [
+"pala"
+],
+"costo": [
+{
+"legno": 1
+}
+],
+"eff": [
+[
+"liv",
+"palizzata",
+2
+]
+],
+"base": false,
+"scen": 0,
+"ripeti": false
+},
+{
+"id": 1118,
+"tipo": "invenzione",
+"k": "fossa",
+"nome": "Fossa",
+"nome_en": "Pit",
+"testo": "Durante la fase Produzione, tira dado marrone con ferita. ferita -> +2 cibo",
+"ter": [],
+"inv": [
+"pala"
+],
+"costo": [
+{
+"legno": 1
+}
+],
+"eff": [],
+"base": false,
+"scen": 0,
+"ripeti": false
+},
+{
+"id": 1119,
+"tipo": "invenzione",
+"k": "pentola",
+"nome": "Pentola",
+"nome_en": "Pot",
+"testo": "pentola cibo -> +vita durante la fase Notte",
+"ter": [
+"collina"
+],
+"inv": [],
+"costo": [
+{}
+],
+"eff": [],
+"base": true,
+"scen": 0,
+"ripeti": false
+},
+{
+"id": 1120,
+"tipo": "invenzione",
+"k": "zattera",
+"nome": "Zattera",
+"nome_en": "Raft",
+"testo": "pedina aggiuntiva / pedina aggiuntiva",
+"ter": [],
+"inv": [
+"corda"
+],
+"costo": [
+{
+"legno": 2
+}
+],
+"eff": [],
+"base": false,
+"scen": 0,
+"ripeti": false
+},
+{
+"id": 1121,
+"tipo": "invenzione",
+"k": "corda",
+"nome": "Corda",
+"nome_en": "Rope",
+"testo": "corda",
+"ter": [
+"pianura"
+],
+"inv": [],
+"costo": [
+{}
+],
+"eff": [],
+"base": true,
+"scen": 0,
+"ripeti": false
+},
+{
+"id": 1122,
+"tipo": "invenzione",
+"k": "sacco",
+"nome": "Sacco",
+"nome_en": "Sack",
+"testo": "Durante un'azione Raccogliere riuscita ottieni 1 risorsa aggiuntiva del tipo raccolto. Utilizzabile per una sola azione per round.",
+"ter": [],
+"inv": [],
+"costo": [
+{
+"pelliccia": 1
+}
+],
+"eff": [],
+"base": false,
+"scen": 0,
+"ripeti": false
+},
+{
+"id": 1123,
+"tipo": "invenzione",
+"k": "scudo",
+"nome": "Scudo",
+"nome_en": "Shield",
+"testo": "pedina aggiuntiva",
+"ter": [],
+"inv": [
+"corda"
+],
+"costo": [
+{
+"legno": 1
+}
+],
+"eff": [],
+"base": false,
+"scen": 0,
+"ripeti": false
+},
+{
+"id": 1124,
+"tipo": "invenzione",
+"k": "scorciatoia",
+"nome": "Scorciatoia",
+"nome_en": "Shortcut",
+"testo": "Metti Scorciatoia su una tessera Isola adiacente al tuo campo. Durante la fase Produzione ottieni 1 risorsa a scelta tra quelle disponibili su quella tessera.",
+"ter": [],
+"inv": [
+"mappa"
+],
+"costo": [
+{}
+],
+"eff": [
+[
+"scorciatoia"
+]
+],
+"base": false,
+"scen": 0,
+"ripeti": false
+},
+{
+"id": 1125,
+"tipo": "invenzione",
+"k": "pala",
+"nome": "Pala",
+"nome_en": "Shovel",
+"testo": "pala",
+"ter": [
+"spiaggia"
+],
+"inv": [],
+"costo": [
+{}
+],
+"eff": [],
+"base": true,
+"scen": 0,
+"ripeti": false
+},
+{
+"id": 1126,
+"tipo": "invenzione",
+"k": "fionda",
+"nome": "Fionda",
+"nome_en": "Sling",
+"testo": "+2 Arma",
+"ter": [],
+"inv": [],
+"costo": [
+{
+"pelliccia": 1
+},
+{
+"legno": 1
+}
+],
+"eff": [
+[
+"liv",
+"arma",
+2
+]
+],
+"base": false,
+"scen": 0,
+"ripeti": false
+},
+{
+"id": 1127,
+"tipo": "invenzione",
+"k": "laccio",
+"nome": "Laccio",
+"nome_en": "Snare",
+"testo": "gettone cibo extra sulla tessera del tuo campo",
+"ter": [],
+"inv": [
+"corda"
+],
+"costo": [
+{}
+],
+"eff": [
+[
+"gettone_campo",
+"cibo_extra",
+"laccio"
+]
+],
+"base": false,
+"scen": 0,
+"ripeti": false
+},
+{
+"id": 1128,
+"tipo": "invenzione",
+"k": "lancia",
+"nome": "Lancia",
+"nome_en": "Spear",
+"testo": "+3 Arma",
+"ter": [],
+"inv": [
+"coltello"
+],
+"costo": [
+{
+"legno": 1
+}
+],
+"eff": [
+[
+"liv",
+"arma",
+3
+]
+],
+"base": false,
+"scen": 0,
+"ripeti": false
+},
+{
+"id": 1129,
+"tipo": "invenzione",
+"k": "muro",
+"nome": "Muro",
+"nome_en": "Wall",
+"testo": "+2 Palizzata",
+"ter": [],
+"inv": [
+"mattoni"
+],
+"costo": [
+{}
+],
+"eff": [
+[
+"liv",
+"palizzata",
+2
+]
+],
+"base": false,
+"scen": 0,
+"ripeti": false
+},
+{
+"id": 1200,
+"tipo": "invenzione",
+"k": "accetta",
+"nome": "Accetta",
+"nome_en": "Hatchet",
+"testo": "gettone legno extra sulla tessera del tuo campo",
+"ter": [
+"montagna"
+],
+"inv": [],
+"costo": [
+{
+"legno": 1
+}
+],
+"eff": [
+[
+"gettone_campo",
+"legno_extra",
+"accetta_inv"
+]
+],
+"base": false,
+"scen": 1,
+"ripeti": false
+},
+{
+"id": 1201,
+"tipo": "invenzione",
+"k": "albero_maestro",
+"nome": "Albero maestro",
+"nome_en": "Mast",
+"testo": "+3 legno Solo per la catasta.",
+"ter": [],
+"inv": [
+"corda"
+],
+"costo": [
+{
+"pelliccia": 1,
+"legno": 1
+}
+],
+"eff": [
+[
+"pira",
+3
+]
+],
+"base": false,
+"scen": 1,
+"ripeti": false
+},
+{
+"id": 1202,
+"tipo": "invenzione",
+"k": "campana",
+"nome": "Campana sacra",
+"nome_en": "Sacred Bell",
+"testo": "Rimuovi 3 segnalino bianco. Può essere costruita più volte.",
+"ter": [
+"collina"
+],
+"inv": [
+"corda"
+],
+"costo": [
+{}
+],
+"eff": [
+[
+"togli_nebbia",
+3
+]
+],
+"base": false,
+"scen": 2,
+"ripeti": true
+},
+{
+"id": 1203,
+"tipo": "invenzione",
+"k": "croce",
+"nome": "Croce",
+"nome_en": "Cross",
+"testo": "dischetto blu Può essere costruita più volte.",
+"ter": [],
+"inv": [],
+"costo": [
+{
+"legno": 2
+}
+],
+"eff": [],
+"base": false,
+"scen": 2,
+"ripeti": true
+},
+{
+"id": 1204,
+"tipo": "invenzione",
+"k": "zattera_jenny",
+"nome": "Zattera",
+"nome_en": "Raft",
+"testo": "Esplorare pedinapedina / pedinapedinapedina -> Salva Jenny. ? = ferita",
+"ter": [],
+"inv": [
+"corda"
+],
+"costo": [
+{
+"legno": 2
+}
+],
+"eff": [],
+"base": false,
+"scen": 3,
+"ripeti": false
+},
+{
+"id": 1205,
+"tipo": "invenzione",
+"k": "scialuppa",
+"nome": "Scialuppa di salvataggio",
+"nome_en": "Lifeboat",
+"testo": "Hai vinto!",
+"ter": [],
+"inv": [
+"coltello",
+"corda"
+],
+"costo": [
+{
+"pelliccia": 4,
+"legno": 6
+}
+],
+"eff": [
+[
+"vittoria"
+]
+],
+"base": false,
+"scen": 3,
+"ripeti": false
+},
+{
+"id": 1206,
+"tipo": "invenzione",
+"k": "scala_corda",
+"nome": "Scala di corda",
+"nome_en": "Rope Ladder",
+"testo": "pedina aggiuntiva solo per totem",
+"ter": [],
+"inv": [
+"corda"
+],
+"costo": [
+{}
+],
+"eff": [],
+"base": false,
+"scen": 4,
+"ripeti": false
+},
+{
+"id": 1207,
+"tipo": "invenzione",
+"k": "lancia_bordo",
+"nome": "Lancia di bordo",
+"nome_en": "Jolly-Boat",
+"testo": "Hai vinto!",
+"ter": [],
+"inv": [
+"corda"
+],
+"costo": [
+{
+"legno": 3
+}
+],
+"eff": [
+[
+"vittoria"
+]
+],
+"base": false,
+"scen": 4,
+"ripeti": false
+},
+{
+"id": 1208,
+"tipo": "invenzione",
+"k": "balista",
+"nome": "Balista",
+"nome_en": "Ballista",
+"testo": "+2 Palizzata + Arma",
+"ter": [],
+"inv": [
+"corda"
+],
+"costo": [
+{
+"legno": 2
+}
+],
+"eff": [
+[
+"liv",
+"palizzata",
+2
+],
+[
+"liv",
+"arma",
+1
+]
+],
+"base": false,
+"scen": 5,
+"ripeti": false
+},
+{
+"id": 1209,
+"tipo": "invenzione",
+"k": "canoa",
+"nome": "Canoa",
+"nome_en": "Canoe",
+"testo": "Durante l'esplorazione prendi 2 segnalino Scoperta e scegline 1",
+"ter": [
+"fiume"
+],
+"inv": [],
+"costo": [
+{
+"legno": 1
+}
+],
+"eff": [],
+"base": false,
+"scen": 5,
+"ripeti": false
+},
+{
+"id": 1210,
+"tipo": "invenzione",
+"k": "staccionata",
+"nome": "Staccionata",
+"nome_en": "Fence",
+"testo": "+1 Palizzata",
+"ter": [],
+"inv": [
+"pala"
+],
+"costo": [
+{}
+],
+"eff": [
+[
+"liv",
+"palizzata",
+1
+]
+],
+"base": false,
+"scen": 6,
+"ripeti": false
+},
+{
+"id": 1211,
+"tipo": "invenzione",
+"k": "orto",
+"nome": "Orto",
+"nome_en": "Garden",
+"testo": "+4 cibo",
+"ter": [],
+"inv": [
+"pala"
+],
+"costo": [
+{
+"cibo": 2
+}
+],
+"eff": [
+[
+"ris",
+"cibo",
+4
+]
+],
+"base": false,
+"scen": 6,
+"ripeti": false
+}
+]

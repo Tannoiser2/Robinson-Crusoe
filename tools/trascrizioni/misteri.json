@@ -1,0 +1,696 @@
+[
+ {
+  "id": 500,
+  "titolo_en": "Blunt Spear",
+  "titolo_it": "Lancia spuntata",
+  "dati": {
+   "tipo": "trappola"
+  },
+  "flavor_en": "Old and covered in spider webs, a spear hits you in the chest.",
+  "flavor_it": "Vecchia e coperta di ragnatele, una lancia ti colpisce al petto.",
+  "testo_en": "Get 2 {ferita}.",
+  "testo_it": "Subisci 2 {ferita}."
+ },
+ {
+  "id": 501,
+  "titolo_en": "Ceremonial Bowl",
+  "titolo_it": "Ciotola cerimoniale",
+  "dati": {
+   "tipo": "tesoro"
+  },
+  "flavor_en": "An artifact of ancient tribes.",
+  "flavor_it": "Un manufatto di antiche tribù.",
+  "testo_en": "Put {successo_negato} on your Character card. Starting next round, you will have to reroll one {succ} result per Action. Shuffle into the Event deck.",
+  "testo_it": "Metti {successo_negato} sulla tua carta Personaggio. A partire dal prossimo round, dovrai rilanciare un risultato {succ} per Azione. Mescola nel mazzo Eventi.",
+  "parte2": {
+   "titolo_en": "Overcoming the Curse",
+   "titolo_it": "Superare la maledizione",
+   "angolo": "?",
+   "flavor_en": "The curse is gone.",
+   "flavor_it": "La maledizione è svanita.",
+   "testo_en": "Remove {successo_negato} from the Character card. Draw another card.",
+   "testo_it": "Rimuovi {successo_negato} dalla carta Personaggio. Pesca un'altra carta."
+  }
+ },
+ {
+  "id": 502,
+  "titolo_en": "Collapse",
+  "titolo_it": "Crollo",
+  "dati": {
+   "tipo": "trappola"
+  },
+  "flavor_en": "You can't go any further.",
+  "flavor_it": "Non puoi proseguire oltre.",
+  "testo_en": "Stop drawing Mystery cards.",
+  "testo_it": "Smetti di pescare carte Mistero."
+ },
+ {
+  "id": 503,
+  "titolo_en": "Helmet",
+  "titolo_it": "Elmo",
+  "dati": {
+   "tipo": "tesoro"
+  },
+  "flavor_en": "You find a rotten and damaged, but still useable, conquistador helmet.",
+  "flavor_it": "Trovi un elmo da conquistador marcio e rovinato, ma ancora utilizzabile.",
+  "testo_en": "Keep this card. Starting next round, each time a player Fights a Beast, he can ignore 1 {ferita}.",
+  "testo_it": "Tieni questa carta. A partire dal prossimo round, ogni volta che un giocatore combatte una Belva, può ignorare 1 {ferita}."
+ },
+ {
+  "id": 504,
+  "titolo_en": "Spiders",
+  "titolo_it": "Ragni",
+  "dati": {
+   "tipo": "creatura"
+  },
+  "flavor_en": "Hundreds of skittering spiders surround you.",
+  "flavor_it": "Centinaia di ragni zampettanti ti circondano.",
+  "testo_en": "Discard 2 {det}.",
+  "testo_it": "Scarta 2 {det}."
+ },
+ {
+  "id": 505,
+  "titolo_en": "Cave with Furs",
+  "titolo_it": "Grotta con pellicce",
+  "dati": {
+   "tipo": "tesoro"
+  },
+  "flavor_en": "The walls are covered with wolf and bear furs. You take those furs to your camp.",
+  "flavor_it": "Le pareti sono coperte di pellicce di lupo e di orso. Porti quelle pellicce al tuo accampamento.",
+  "testo_en": "Get 2 {pelliccia}.",
+  "testo_it": "Ottieni 2 {pelliccia}."
+ },
+ {
+  "id": 506,
+  "titolo_en": "Old Rifle",
+  "titolo_it": "Vecchio fucile",
+  "dati": {
+   "tipo": "tesoro"
+  },
+  "flavor_en": "You find an old rifle and some gunpowder.",
+  "flavor_it": "Trovi un vecchio fucile e un po' di polvere da sparo.",
+  "testo_en": "Keep this card. Any player can use it once to temporarily get +3 {arma}. Discard after use.",
+  "testo_it": "Tieni questa carta. Qualsiasi giocatore può usarla una volta per ottenere temporaneamente +3 {arma}. Scartala dopo l'uso."
+ },
+ {
+  "id": 507,
+  "titolo_en": "Herbal Mixture",
+  "titolo_it": "Miscela di erbe",
+  "dati": {
+   "tipo": "tesoro"
+  },
+  "flavor_en": "Strange taste - strange effect.",
+  "flavor_it": "Strano sapore - strano effetto.",
+  "testo_en": "Keep this card. You can use it once. You may to look at the top Event card. Discard after use.",
+  "testo_it": "Tieni questa carta. Puoi usarla una volta. Puoi guardare la prima carta del mazzo Eventi. Scartala dopo l'uso."
+ },
+ {
+  "id": 508,
+  "titolo_en": "Boxes",
+  "titolo_it": "Casse",
+  "dati": {
+   "tipo": "tesoro"
+  },
+  "flavor_en": "Strong wooden boxes - very useful in your situation!",
+  "flavor_it": "Robuste casse di legno - molto utili nella vostra situazione!",
+  "testo_en": "Keep this card. From now on, your {cibo} does not rot during the Night Phase. {cibo} = {cibo_np}",
+  "testo_it": "Tieni questa carta. D'ora in poi, il tuo {cibo} non deperisce durante la Fase Notte. {cibo} = {cibo_np}"
+ },
+ {
+  "id": 509,
+  "titolo_en": "Backpack",
+  "titolo_it": "Zaino",
+  "dati": {
+   "tipo": "tesoro"
+  },
+  "flavor_en": "You find an old backpack. Filled with hope, you look inside. Unfortunately, it is empty.",
+  "flavor_it": "Trovi un vecchio zaino. Pieno di speranza, guardi dentro. Purtroppo è vuoto.",
+  "testo_en": "Keep this card. Starting next round, when a player takes an Exploration Action, he additionally draws 2 {scoperta}, chooses one and discards the other.",
+  "testo_it": "Tieni questa carta. A partire dal prossimo round, quando un giocatore compie un'azione Esplorare, pesca in aggiunta 2 {scoperta}, ne sceglie uno e scarta l'altro."
+ },
+ {
+  "id": 510,
+  "titolo_en": "Gold!",
+  "titolo_it": "Oro!",
+  "dati": {
+   "tipo": "tesoro"
+  },
+  "flavor_en": "You spot an unobtrusive chest hidden in the shadows. You come closer and open it – it's full of gold coins!",
+  "flavor_it": "Noti un forziere poco appariscente nascosto nell'ombra. Ti avvicini e lo apri: è pieno di monete d'oro!",
+  "testo_en": "Unfortunately, gold is of no use on the island.",
+  "testo_it": "Purtroppo l'oro non serve a nulla sull'isola."
+ },
+ {
+  "id": 511,
+  "titolo_en": "Unleashed Beast",
+  "titolo_it": "Belva scatenata",
+  "dati": {
+   "tipo": "creatura"
+  },
+  "flavor_en": "You hear a frightening roar and a large animal runs past you.",
+  "flavor_it": "Senti un ruggito spaventoso e un grosso animale ti passa accanto di corsa.",
+  "testo_en": "IF POSSIBLE: Discard 1 Beast card from the Hunting deck.",
+  "testo_it": "SE POSSIBILE: scarta 1 carta Belva dal mazzo Caccia."
+ },
+ {
+  "id": 512,
+  "titolo_en": "Gremlins",
+  "titolo_it": "Gremlins",
+  "dati": {
+   "tipo": "creatura",
+   "forza": 2
+  },
+  "flavor_en": "What kind of creatures are they?",
+  "flavor_it": "Che razza di creature sono?",
+  "testo_en": "Fight the Beast: 2{?:teschio forza belva}. Regardless of your {arma}, shuffle into the Event deck.",
+  "testo_it": "Combatti la Belva: 2{?:teschio forza belva}. Indipendentemente dal tuo {arma}, mescola nel mazzo Eventi.",
+  "parte2": {
+   "titolo_en": "Gremlins Hunted You Down",
+   "titolo_it": "I Gremlins ti hanno scovato",
+   "angolo": "?",
+   "flavor_en": "They're back. And they're everywhere!",
+   "flavor_it": "Sono tornati. E sono ovunque!",
+   "testo_en": "Fight the Beast: 3{?:teschio forza belva}. Shuffle into the Event deck and draw another card.",
+   "testo_it": "Combatti la Belva: 3{?:teschio forza belva}. Mescola nel mazzo Eventi e pesca un'altra carta.",
+   "dati": {
+    "forza": 3
+   }
+  },
+  "note": "Il teschio nero tondo dopo il numero (diverso dal teschio con tibie incrociate dell'Arma) indica la forza della Belva: scritto come {?:teschio forza belva}."
+ },
+ {
+  "id": 513,
+  "titolo_en": "Strange Disease",
+  "titolo_it": "Strana malattia",
+  "dati": {
+   "tipo": "trappola"
+  },
+  "flavor_en": "You catch a strange disease and you all get sick.",
+  "flavor_it": "Contraete una strana malattia e vi ammalate tutti.",
+  "testo_en": "Take twice as many {segno_bianco} as there are players and divide them as you like amongst the players. During the next Night phase, each player gets as many {ferita} as he has {segno_bianco}. Discard {segno_bianco} after that.",
+  "testo_it": "Prendi il doppio di {segno_bianco} rispetto al numero di giocatori e dividili come preferite tra i giocatori. Durante la prossima Fase Notte, ogni giocatore subisce tante {ferita} quanti {segno_bianco} possiede. Poi scarta i {segno_bianco}.",
+  "note": "Icona: cubetto chiaro/bianco, reso come {segno_bianco}."
+ },
+ {
+  "id": 514,
+  "titolo_en": "Furious Tiger",
+  "titolo_it": "Tigre furiosa",
+  "dati": {
+   "tipo": "creatura",
+   "forza": 4
+  },
+  "flavor_en": "It growls, fangs glistening, then all of a sudden, it springs for your throat!",
+  "flavor_it": "Ringhia, con le zanne che luccicano, poi all'improvviso ti salta alla gola!",
+  "testo_en": "Fight a Beast: 4{?:teschio forza belva}",
+  "testo_it": "Combatti una Belva: 4{?:teschio forza belva}"
+ },
+ {
+  "id": 515,
+  "titolo_en": "Scorpion",
+  "titolo_it": "Scorpione",
+  "dati": {
+   "tipo": "creatura"
+  },
+  "flavor_en": "A scorpion suddenly stings you.",
+  "flavor_it": "Uno scorpione ti punge all'improvviso.",
+  "testo_en": "If you do not have the {inv:Medicine}, you get 3 {ferita}.",
+  "testo_it": "Se non hai la {inv:Medicina}, subisci 3 {ferita}.",
+  "note": "Icona mortaio e pestello = Invenzione Medicine (Medicina), dedotto dal regolamento."
+ },
+ {
+  "id": 516,
+  "titolo_en": "Antique Rapier",
+  "titolo_it": "Antico stocco",
+  "dati": {
+   "tipo": "tesoro"
+  },
+  "flavor_en": "Apparently this island was visited before. You begin to wonder... did this weapon belong to a soldier, or a pirate?",
+  "flavor_it": "A quanto pare quest'isola è già stata visitata. Cominci a chiederti... quest'arma apparteneva a un soldato o a un pirata?",
+  "testo_en": "+2 {arma}",
+  "testo_it": "+2 {arma}"
+ },
+ {
+  "id": 517,
+  "titolo_en": "Unfortunate Adventure",
+  "titolo_it": "Avventura sfortunata",
+  "dati": {
+   "tipo": "trappola"
+  },
+  "flavor_en": "Once again, the island shows its ominous face.",
+  "flavor_it": "Ancora una volta, l'isola mostra il suo volto minaccioso.",
+  "testo_en": "{libro}",
+  "testo_it": "{libro}"
+ },
+ {
+  "id": 518,
+  "titolo_en": "Trapdoor",
+  "titolo_it": "Botola",
+  "dati": {
+   "tipo": "trappola"
+  },
+  "flavor_en": "You encounter a trapdoor and manage to jump aside. Sadly, you lose everything you were carrying with you.",
+  "flavor_it": "Ti imbatti in una botola e riesci a saltare di lato. Purtroppo perdi tutto ciò che portavi con te.",
+  "testo_en": "If you drew any {?:scrigno (carte Mistero tesoro)} during this Action, discard them all.",
+  "testo_it": "Se durante questa Azione hai pescato dei {?:scrigno (carte Mistero tesoro)}, scartali tutti.",
+  "note": "Icona scrigno = carte Mistero di tipo tesoro."
+ },
+ {
+  "id": 519,
+  "titolo_en": "Gorilla",
+  "titolo_it": "Gorilla",
+  "dati": {
+   "tipo": "creatura"
+  },
+  "flavor_en": "A gorilla jumps out of the darkness! It hits you, knocks you down, and runs into the woods.",
+  "flavor_it": "Un gorilla balza fuori dall'oscurità! Ti colpisce, ti butta a terra e scappa nel bosco.",
+  "testo_en": "Get 2 {ferita}. Shuffle into the Event deck.",
+  "testo_it": "Subisci 2 {ferita}. Mescola nel mazzo Eventi.",
+  "parte2": {
+   "titolo_en": "Gorilla in the Camp",
+   "titolo_it": "Gorilla nell'accampamento",
+   "angolo": "?",
+   "flavor_en": "It probably followed you.",
+   "flavor_it": "Probabilmente ti ha seguito.",
+   "testo_en": "-2 {arma}. Draw another card.",
+   "testo_it": "-2 {arma}. Pesca un'altra carta."
+  }
+ },
+ {
+  "id": 520,
+  "titolo_en": "Sharp Blade",
+  "titolo_it": "Lama affilata",
+  "dati": {
+   "tipo": "trappola"
+  },
+  "flavor_en": "A sharp blade cuts your skin.",
+  "flavor_it": "Una lama affilata ti taglia la pelle.",
+  "testo_en": "Get 2 {ferita}.",
+  "testo_it": "Subisci 2 {ferita}."
+ },
+ {
+  "id": 521,
+  "titolo_en": "Terrible Scream",
+  "titolo_it": "Urlo terribile",
+  "dati": {
+   "tipo": "trappola"
+  },
+  "flavor_en": "You hear a terrible scream behind you.",
+  "flavor_it": "Senti un urlo terribile alle tue spalle.",
+  "testo_en": "Discard all your {det}.",
+  "testo_it": "Scarta tutti i tuoi {det}."
+ },
+ {
+  "id": 522,
+  "titolo_en": "Bottle of Wine",
+  "titolo_it": "Bottiglia di vino",
+  "dati": {
+   "tipo": "tesoro"
+  },
+  "flavor_en": "In vino veritas.",
+  "flavor_it": "In vino veritas.",
+  "testo_en": "Keep this card. You can use it once to heal 2 {cuore}. Discard after use.",
+  "testo_it": "Tieni questa carta. Puoi usarla una volta per guarire 2 {cuore}. Scartala dopo l'uso."
+ },
+ {
+  "id": 523,
+  "titolo_en": "Whip",
+  "titolo_it": "Frusta",
+  "dati": {
+   "tipo": "tesoro"
+  },
+  "flavor_en": "You stumble upon a skeleton of a man in a fedora. He has something in his hand...",
+  "flavor_it": "Ti imbatti nello scheletro di un uomo con un cappello fedora. Ha qualcosa in mano...",
+  "testo_en": "+1 {arma}. Keep this card. Starting next round, whenever a player draws Mystery cards where he must resolve any number of {?:icona trappola (ciotola con punte)}, he can ignore 1.",
+  "testo_it": "+1 {arma}. Tieni questa carta. A partire dal prossimo round, ogni volta che un giocatore pesca carte Mistero e deve risolvere un qualsiasi numero di {?:icona trappola (ciotola con punte)}, può ignorarne 1.",
+  "note": "L'icona nel testo è il simbolo trappola delle carte Mistero (carte Mistero di tipo trappola)."
+ },
+ {
+  "id": 524,
+  "titolo_en": "Old Map",
+  "titolo_it": "Vecchia mappa",
+  "dati": {
+   "tipo": "tesoro"
+  },
+  "flavor_en": "You find a map leading to a chest filled with pirate's gold.",
+  "flavor_it": "Trovi una mappa che porta a un forziere pieno dell'oro dei pirati.",
+  "testo_en": "Each player gets {det}.",
+  "testo_it": "Ogni giocatore ottiene {det}."
+ },
+ {
+  "id": 525,
+  "titolo_en": "Bats",
+  "titolo_it": "Pipistrelli",
+  "dati": {
+   "tipo": "creatura"
+  },
+  "flavor_en": "A swarm of bats flies over your head.",
+  "flavor_it": "Uno sciame di pipistrelli ti vola sopra la testa.",
+  "testo_en": "Discard {det} or get {ferita}.",
+  "testo_it": "Scarta {det} oppure subisci {ferita}."
+ },
+ {
+  "id": 526,
+  "titolo_en": "Protective Amulet",
+  "titolo_it": "Amuleto protettivo",
+  "dati": {
+   "tipo": "tesoro"
+  },
+  "flavor_en": "The mysterious legacy of a tribal shaman.",
+  "flavor_it": "Il misterioso lascito di uno sciamano tribale.",
+  "testo_en": "Keep this card. You can use it once to remove any token from the board. Discard after use.",
+  "testo_it": "Tieni questa carta. Puoi usarla una volta per rimuovere un segnalino qualsiasi dal tabellone. Scartala dopo l'uso."
+ },
+ {
+  "id": 527,
+  "titolo_en": "Hatchet",
+  "titolo_it": "Accetta",
+  "dati": {
+   "tipo": "tesoro"
+  },
+  "flavor_en": "In the shadows, you see something glittering.",
+  "flavor_it": "Nell'ombra vedi qualcosa che luccica.",
+  "testo_en": "Put {legno_extra} on the tile where you camp. From now on, during the Production Phase of each round, you get +1 {legno}, even if there is no {?:fonte di legno (riquadro sulla tessera Isola)} on the tile.",
+  "testo_it": "Metti {legno_extra} sulla tessera dove si trova il tuo accampamento. D'ora in poi, durante la Fase Produzione di ogni round, ottieni +1 {legno}, anche se sulla tessera non c'è {?:fonte di legno (riquadro sulla tessera Isola)}.",
+  "note": "Il gettone da mettere è il segnalino tondo «+1 legno» (risorsa aggiuntiva)."
+ },
+ {
+  "id": 528,
+  "titolo_en": "Captain Stone's Spyglass",
+  "titolo_it": "Il cannocchiale del capitano Stone",
+  "dati": {
+   "tipo": "tesoro"
+  },
+  "flavor_en": "An explorer's Holy Grail.",
+  "flavor_it": "Il Santo Graal di ogni esploratore.",
+  "testo_en": "Reveal the top 3 Island tiles and put them back on the pile, face-up and in any order.",
+  "testo_it": "Rivela le prime 3 tessere Isola e rimettile sulla pila, a faccia in su e nell'ordine che preferisci."
+ },
+ {
+  "id": 529,
+  "titolo_en": "Hammock",
+  "titolo_it": "Amaca",
+  "dati": {
+   "tipo": "tesoro"
+  },
+  "flavor_en": "Rest in peace.",
+  "flavor_it": "Riposa in pace.",
+  "testo_en": "Keep this card. Starting next round, when a player {riposo}, he gets {det} in addition to the usual +{cuore}. Cannot be used with the Bed Item card.",
+  "testo_it": "Tieni questa carta. A partire dal prossimo round, quando un giocatore compie {riposo}, ottiene {det} oltre al normale +{cuore}. Non può essere usata insieme alla carta Oggetto Letto."
+ },
+ {
+  "id": 530,
+  "titolo_en": "Barrel",
+  "titolo_it": "Barile",
+  "dati": {
+   "tipo": "tesoro"
+  },
+  "flavor_en": "A barrel? You can't believe your own eyes... and it is still in good condition. What's inside? A miracle! Burgundy wine!",
+  "flavor_it": "Un barile? Non credi ai tuoi occhi... ed è ancora in buone condizioni. Cosa c'è dentro? Un miracolo! Vino di Borgogna!",
+  "testo_en": "Keep this card. Use once during a Night phase: each player can heal 1 {cuore}. After use, you can store up to 2 {cibo} on this card. This food does not rot during the Night phase.",
+  "testo_it": "Tieni questa carta. Usala una volta durante una Fase Notte: ogni giocatore può guarire 1 {cuore}. Dopo l'uso, puoi conservare fino a 2 {cibo} su questa carta. Questo cibo non deperisce durante la Fase Notte."
+ },
+ {
+  "id": 531,
+  "titolo_en": "Hidden Rope",
+  "titolo_it": "Corda nascosta",
+  "dati": {
+   "tipo": "trappola"
+  },
+  "flavor_en": "A rope pulls you up and you lose your weapon.",
+  "flavor_it": "Una corda ti solleva in aria e perdi la tua arma.",
+  "testo_en": "IF POSSIBLE: up to -2 {arma}.",
+  "testo_it": "SE POSSIBILE: fino a -2 {arma}."
+ },
+ {
+  "id": 532,
+  "titolo_en": "Treasure Map",
+  "titolo_it": "Mappa del tesoro",
+  "dati": {
+   "tipo": "tesoro"
+  },
+  "flavor_en": "You can't believe your eyes when you find it. There really were pirates on this island!",
+  "flavor_it": "Non credi ai tuoi occhi quando la trovi. Su quest'isola c'erano davvero dei pirati!",
+  "testo_en": "Keep this card. You can use it once. Take an Exploration Action on this card to draw 2 Mystery cards – only resolve 2 {?:scrigno (carte Mistero tesoro)}. Discard after use.",
+  "testo_it": "Tieni questa carta. Puoi usarla una volta. Compi un'azione Esplorare su questa carta per pescare 2 carte Mistero: risolvi solo 2 {?:scrigno (carte Mistero tesoro)}. Scartala dopo l'uso."
+ },
+ {
+  "id": 533,
+  "titolo_en": "Saber",
+  "titolo_it": "Sciabola",
+  "dati": {
+   "tipo": "tesoro"
+  },
+  "flavor_en": "A lonely skeleton lying in the corner holds in his bony hands a saber – you recognize it as the saber of Captain Black Florian! In your current shape, it is hard to use...",
+  "flavor_it": "Uno scheletro solitario steso in un angolo stringe tra le mani ossute una sciabola: la riconosci, è la sciabola del capitano Black Florian! Nelle tue condizioni attuali è difficile da usare...",
+  "testo_en": "Keep this card. Each time a player Fights a Beast, he can use it to temporarily get +3 {arma}. When a player uses the saber, that player gets 1 {ferita}. Events, Adventures or Hunting cards that decrease {arma} do not lower the value of the saber.",
+  "testo_it": "Tieni questa carta. Ogni volta che un giocatore combatte una Belva, può usarla per ottenere temporaneamente +3 {arma}. Quando un giocatore usa la sciabola, quel giocatore subisce 1 {ferita}. Le carte Evento, Avventura o Caccia che riducono {arma} non abbassano il valore della sciabola."
+ },
+ {
+  "id": 534,
+  "titolo_en": "Crocks",
+  "titolo_it": "Orci",
+  "dati": {
+   "tipo": "tesoro"
+  },
+  "flavor_en": "You find an old basket with some clay pots in it.",
+  "flavor_it": "Trovi un vecchio cesto con dentro alcuni vasi di terracotta.",
+  "testo_en": "Build the Pot Invention for free, without using an Action (turn the Pot card face-down to the Item side).",
+  "testo_it": "Costruisci gratis l'Invenzione Pentola, senza usare un'Azione (gira la carta Pentola sul lato Oggetto)."
+ },
+ {
+  "id": 535,
+  "titolo_en": "Ropes",
+  "titolo_it": "Corde",
+  "dati": {
+   "tipo": "tesoro"
+  },
+  "flavor_en": "You can use them to reinforce your shelter.",
+  "flavor_it": "Puoi usarle per rinforzare il tuo rifugio.",
+  "testo_en": "+1 {palizzata} or {tetto}",
+  "testo_it": "+1 {palizzata} oppure {tetto}",
+  "note": "Prima icona: disco giallastro con punte radiali, interpretato come {palizzata}; seconda: foglie verdi a ventaglio = {tetto}. Verificare."
+ },
+ {
+  "id": 536,
+  "titolo_en": "Candles",
+  "titolo_it": "Candele",
+  "dati": {
+   "tipo": "tesoro"
+  },
+  "flavor_en": "In a small wrapped bundle, you find 2 old candles. They let you work longer.",
+  "flavor_it": "In un piccolo fagotto trovi 2 vecchie candele. Ti permettono di lavorare più a lungo.",
+  "testo_en": "Get 2 {?:pedina marrone (aggiuntiva Costruire)} and put them on this card. You can use them as additional pawns only for {costruire}. Each pawn can be used only once and is discarded after use. Discard after use.",
+  "testo_it": "Prendi 2 {?:pedina marrone (aggiuntiva Costruire)} e mettile su questa carta. Puoi usarle come pedine aggiuntive solo per {costruire}. Ogni pedina può essere usata una sola volta e viene scartata dopo l'uso. Scarta la carta dopo l'uso."
+ },
+ {
+  "id": 537,
+  "titolo_en": "Spider Web",
+  "titolo_it": "Ragnatela",
+  "dati": {
+   "tipo": "trappola"
+  },
+  "flavor_en": "A spider crawls onto your sleeve and bites you.",
+  "flavor_it": "Un ragno ti si arrampica sulla manica e ti morde.",
+  "testo_en": "Get {ferita}. If you do not have the {inv:Medicine} item, you get {ferita} each round during the Night phase. Keep this card as a reminder.",
+  "testo_it": "Subisci {ferita}. Se non hai l'oggetto {inv:Medicina}, subisci {ferita} ogni round durante la Fase Notte. Tieni questa carta come promemoria.",
+  "note": "Icona mortaio e pestello = Medicine (Medicina)."
+ },
+ {
+  "id": 538,
+  "titolo_en": "Compass",
+  "titolo_it": "Bussola",
+  "dati": {
+   "tipo": "tesoro"
+  },
+  "flavor_en": "What a wonderful find – a compass!",
+  "flavor_it": "Che scoperta meravigliosa: una bussola!",
+  "testo_en": "Get 1 {?:pedina verde (aggiuntiva Esplorare)} and put it on this card. You can use it multiple times as an additional pawn, but only for {esplorare}.",
+  "testo_it": "Prendi 1 {?:pedina verde (aggiuntiva Esplorare)} e mettila su questa carta. Puoi usarla più volte come pedina aggiuntiva, ma solo per {esplorare}."
+ },
+ {
+  "id": 539,
+  "titolo_en": "Savage",
+  "titolo_it": "Selvaggio",
+  "dati": {
+   "tipo": "creatura"
+  },
+  "flavor_en": "A savage jumps out of the darkness. He knocks you down and takes your weapon.",
+  "flavor_it": "Un selvaggio balza fuori dall'oscurità. Ti butta a terra e ti prende l'arma.",
+  "testo_en": "{arma} = 0. Shuffle into the Event deck.",
+  "testo_it": "{arma} = 0. Mescola nel mazzo Eventi.",
+  "parte2": {
+   "titolo_en": "Unsuccessful Hunting",
+   "titolo_it": "Caccia infruttuosa",
+   "angolo": "?",
+   "flavor_en": "You find the dead body of a savage. Your weapon is broken but he holds something valuable.",
+   "flavor_it": "Trovi il cadavere di un selvaggio. La tua arma è rotta, ma lui stringe qualcosa di prezioso.",
+   "testo_en": "Draw 1 Mystery card - resolve only {?:scrigno (carte Mistero tesoro)}. Draw another card.",
+   "testo_it": "Pesca 1 carta Mistero: risolvila solo se è {?:scrigno (carte Mistero tesoro)}. Pesca un'altra carta."
+  }
+ },
+ {
+  "id": 540,
+  "titolo_en": "Big Ape",
+  "titolo_it": "Grande scimmia",
+  "dati": {
+   "tipo": "creatura"
+  },
+  "flavor_en": "Something jumps out of the darkness - and disappears into the jungle.",
+  "flavor_it": "Qualcosa balza fuori dall'oscurità... e scompare nella giungla.",
+  "testo_en": "Shuffle into the Event deck.",
+  "testo_it": "Mescola nel mazzo Eventi.",
+  "parte2": {
+   "titolo_en": "Demon of the Night",
+   "titolo_it": "Demone della notte",
+   "angolo": "?",
+   "flavor_en": "It's back!",
+   "flavor_it": "È tornato!",
+   "testo_en": "Fight the Beast: [tabella] Draw another card.",
+   "testo_it": "Combatti la Belva: [tabella] Pesca un'altra carta.",
+   "dati": {
+    "forza": 4,
+    "arma": 0,
+    "cibo": 0,
+    "pelliccia": 2
+   }
+  },
+  "note": "Tabella belva nella parte2: forza 4, arma «-», cibo «-», pelliccia 2."
+ },
+ {
+  "id": 541,
+  "titolo_en": "Bite",
+  "titolo_it": "Morso",
+  "dati": {
+   "tipo": "creatura"
+  },
+  "flavor_en": "Something bites you.",
+  "flavor_it": "Qualcosa ti morde.",
+  "testo_en": "Get {ferita}.",
+  "testo_it": "Subisci {ferita}."
+ },
+ {
+  "id": 542,
+  "titolo_en": "Amulet with Portrait of a Beautiful Lady",
+  "titolo_it": "Amuleto con il ritratto di una bella dama",
+  "dati": {
+   "tipo": "tesoro"
+  },
+  "flavor_en": "Gives you hope in a moment of despair.",
+  "flavor_it": "Ti dà speranza in un momento di disperazione.",
+  "testo_en": "Cover 2 {morale-} on Character cards (2 on 1 Character, or 1 on 2 Characters) with {segno_bianco} to indicate that they are not resolved.",
+  "testo_it": "Copri 2 {morale-} sulle carte Personaggio (2 su 1 Personaggio, oppure 1 su 2 Personaggi) con {segno_bianco} per indicare che non vengono risolti.",
+  "note": "L'icona da coprire è la freccia del morale (punta a sinistra) sul tracciato vita del Personaggio; il segnalino è un cubetto chiaro, reso {segno_bianco}."
+ },
+ {
+  "id": 543,
+  "titolo_en": "Old Clothes",
+  "titolo_it": "Vecchi vestiti",
+  "dati": {
+   "tipo": "tesoro"
+  },
+  "flavor_en": "A little smelly, but they still work.",
+  "flavor_it": "Un po' puzzolenti, ma fanno ancora il loro lavoro.",
+  "testo_en": "Keep this card. From now on, one {neve} = {pioggia}.",
+  "testo_it": "Tieni questa carta. D'ora in poi, una {neve} = {pioggia}."
+ },
+ {
+  "id": 544,
+  "titolo_en": "Snake",
+  "titolo_it": "Serpente",
+  "dati": {
+   "tipo": "creatura"
+  },
+  "flavor_en": "A snake twists around your leg and crushes your bones.",
+  "flavor_it": "Un serpente si avvinghia alla tua gamba e ti stritola le ossa.",
+  "testo_en": "Get 2 {ferita}.",
+  "testo_it": "Subisci 2 {ferita}."
+ },
+ {
+  "id": 545,
+  "titolo_en": "Giant Snake",
+  "titolo_it": "Serpente gigante",
+  "dati": {
+   "tipo": "creatura"
+  },
+  "flavor_en": "You step on an ugly, giant snake. You get scared and run away.",
+  "flavor_it": "Calpesti un orribile serpente gigante. Ti spaventi e scappi via.",
+  "testo_en": "Discard all your {det}. Stop drawing Mystery cards.",
+  "testo_it": "Scarta tutti i tuoi {det}. Smetti di pescare carte Mistero."
+ },
+ {
+  "id": 546,
+  "titolo_en": "Net",
+  "titolo_it": "Rete",
+  "dati": {
+   "tipo": "trappola"
+  },
+  "flavor_en": "You get caught in a net. It pulls you up and it takes you the whole night to escape.",
+  "flavor_it": "Resti intrappolato in una rete. Ti solleva in aria e ti ci vuole tutta la notte per liberarti.",
+  "testo_en": "Stop drawing Mystery cards. You resolve the Night phase outside the camp.",
+  "testo_it": "Smetti di pescare carte Mistero. Risolvi la Fase Notte fuori dall'accampamento."
+ },
+ {
+  "id": 547,
+  "titolo_en": "Poison",
+  "titolo_it": "Veleno",
+  "dati": {
+   "tipo": "trappola"
+  },
+  "flavor_en": "You've inhaled a weird powder. It all starts with a single sneeze...",
+  "flavor_it": "Hai inalato una strana polvere. Tutto comincia con un semplice starnuto...",
+  "testo_en": "Get {ferita}. If you do not have the {inv:Medicine} item, each player gets {ferita} in the Night phase. Discard after the Night phase.",
+  "testo_it": "Subisci {ferita}. Se non hai l'oggetto {inv:Medicina}, ogni giocatore subisce {ferita} nella Fase Notte. Scarta dopo la Fase Notte.",
+  "note": "Icona mortaio e pestello = Medicine (Medicina)."
+ },
+ {
+  "id": 548,
+  "titolo_en": "Blankets",
+  "titolo_it": "Coperte",
+  "dati": {
+   "tipo": "tesoro",
+   "usi": 3
+  },
+  "flavor_en": "Half eaten by rats, but still usable.",
+  "flavor_it": "Mezze rosicchiate dai topi, ma ancora utilizzabili.",
+  "testo_en": "Keep this card. Each use allows you to ignore 1 {neve} during the Weather phase.",
+  "testo_it": "Tieni questa carta. Ogni uso ti permette di ignorare 1 {neve} durante la Fase Meteo.",
+  "note": "3 riquadri di legno in basso = 3 usi. Icona nuvola con fiocco sotto (piccola), letta come {neve}."
+ },
+ {
+  "id": 549,
+  "titolo_en": "Confused",
+  "titolo_it": "Confuso",
+  "dati": {
+   "tipo": "trappola"
+  },
+  "flavor_en": "A strange odor affects your senses: you suddenly being to feel dizzy.",
+  "flavor_it": "Uno strano odore ti confonde i sensi: all'improvviso inizi a sentirti stordito.",
+  "testo_en": "Put a {successo_negato} on your Character card. Next round, you have to reroll one {succ} result. If you take an Action with {pedina}{pedina}, then you must roll the Success Die (but not the other two dice).",
+  "testo_it": "Metti un {successo_negato} sulla tua carta Personaggio. Nel prossimo round, devi rilanciare un risultato {succ}. Se compi un'Azione con {pedina}{pedina}, devi tirare il dado Successo (ma non gli altri due dadi).",
+  "note": "Refuso sulla carta: «being to feel» (per «begin to feel»), trascritto com'è."
+ },
+ {
+  "id": 550,
+  "titolo_en": "Blowgun",
+  "titolo_it": "Cerbottana",
+  "dati": {
+   "tipo": "trappola"
+  },
+  "flavor_en": "You feel a light prick as a dart penetrates your skin.",
+  "flavor_it": "Senti una leggera puntura mentre un dardo ti penetra nella pelle.",
+  "testo_en": "Next round you have only one {pedina} available. Keep this card as a reminder. Discard after the next round.",
+  "testo_it": "Nel prossimo round hai a disposizione una sola {pedina}. Tieni questa carta come promemoria. Scartala dopo il prossimo round."
+ },
+ {
+  "id": 551,
+  "titolo_en": "A Shiny Jewel",
+  "titolo_it": "Un gioiello scintillante",
+  "dati": {
+   "tipo": "creatura"
+  },
+  "flavor_en": "You find a shiny jewel and take it to the camp. Later, you realize it's a nasty beetle.",
+  "flavor_it": "Trovi un gioiello scintillante e lo porti all'accampamento. Più tardi ti accorgi che è un brutto scarafaggio.",
+  "testo_en": "Put this card in the Night space. During the Night phase, each player gets {ferita}. Discard after the Night phase.",
+  "testo_it": "Metti questa carta nello spazio Notte. Durante la Fase Notte, ogni giocatore subisce {ferita}. Scartala dopo la Fase Notte."
+ }
+]
